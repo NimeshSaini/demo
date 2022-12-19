@@ -566,21 +566,22 @@ public class TestBaseActivity extends AppCompatActivity implements NetworkCall.M
 
     private void setPart() {
         if (partList != null) {
-            for (int i = 0; i < partList.size(); i++) {
+            PartId = partList.get(sectionCount - 1).getId();
+            textSpinner.setText(questionPart.get(sectionCount - 1));
+          /*  for (int i = 0; i < partList.size(); i++) {
                 if (!(i == partList.size() - 1)) {
                     if (testseriesBase.getLastanswerPosition() >= partList.get(i).getIndexOf() && testseriesBase.getLastanswerPosition() <= partList.get(i + 1).getIndexOf() - 1) {
-                        textSpinner.setText(questionPart.get(i));
                         PartId = partList.get(i).getId();
+                        textSpinner.setText(questionPart.get(i));
                         Log.d(TAG, "setPart: " + PartId);
                         break;
                     }
                 } else {
                     PartId = partList.get(i).getId();
-
                     textSpinner.setText(questionPart.get(i));
                     break;
                 }
-            }
+            }*/
         }
     }
 
@@ -1025,10 +1026,9 @@ public class TestBaseActivity extends AppCompatActivity implements NetworkCall.M
                     }
                     lastSection = getLastSection(questionBankList.get(currentPage + 1).getSectionId());
 
+                    sectionCount++;
                     setPart();
                     changeTextOnNextAndPrevButton();
-
-                    sectionCount++;
                     countDownTimer.cancel();
                     setTimer();
                     return;
@@ -1046,9 +1046,8 @@ public class TestBaseActivity extends AppCompatActivity implements NetworkCall.M
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
                             dialog.dismiss();
-                            finish();
-//                            testsubmit = true;
-//                            finishTestSeries();
+                            testsubmit = true;
+                            finishTestSeries();
                         }
                     });
                     alertDialog = builder.create();
@@ -1205,7 +1204,11 @@ public class TestBaseActivity extends AppCompatActivity implements NetworkCall.M
 
     @Override
     public void onBackPressed() {
-        showPopupSubmitTest();
+        if (drawerLayout.isDrawerOpen(llDrawerRight)) {
+            drawerLayout.closeDrawer(llDrawerRight);
+        } else {
+            showPopupSubmitTest();
+        }
 //        super.onBackPressed();
     }
 
