@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:weightSum="4">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_weight="3"
+        android:src="@mipmap/course_placeholder" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp10"
+        android:text="Ooops !"
+        android:textColor="@color/rewards_color"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.9"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp5"
+        android:paddingTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp5"
+        android:paddingBottom="@dimen/dp10"
+        android:text="@string/exception_api_error_message"
+        android:textColor="@color/dullBlack"
+        android:textSize="@dimen/sub_heading_text_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/tryAgainBtn"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_signup_btn"
+            android:paddingLeft="@dimen/dp50"
+            android:paddingRight="@dimen/dp50"
+            android:text="@string/try_again" />
+
+    </RelativeLayout>
+
+</LinearLayout>

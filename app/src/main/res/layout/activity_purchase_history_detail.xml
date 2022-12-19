@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="pruchasehistory"
+            type="com.utkarshnew.android.purchasehistory.model.Data" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/arrow_back_black" />
+
+                <TextView
+                    android:id="@+id/toolbarTitleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@id/image_back"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_bold"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="My Order Histroy "
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sp18" />
+
+
+                <CheckBox
+                    android:id="@+id/select_all_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center_vertical"
+                    android:text="Select"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center_vertical"
+                    android:text="Delete"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/courseImagebg"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp220"
+            android:layout_below="@id/main_toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp20"
+            android:src="@mipmap/book_placeholder"
+            app:coruseimage="@{pruchasehistory.cover_image}"
+            app:riv_corner_radius="@dimen/dp10"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseImagebg"
+            android:layout_marginTop="@dimen/dp40"
+            android:background="#ECECEC"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp60">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{pruchasehistory.title}"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="#071E57"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp5"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:text="@{pruchasehistory.mrp.equalsIgnoreCase(`0`) ? `Free` : `₹ `+pruchasehistory.mrp}"
+                android:textColor="#071E57"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40">
+
+            <TextView
+                android:id="@+id/payment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Payment ID          :"
+                android:textColor="@color/dark_quiz_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_toEndOf="@id/payment_id"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:text="@{pruchasehistory.payment_id.empty || pruchasehistory.payment_id==null ? `NA` : pruchasehistory.payment_id }"
+                android:textColor="#071E57"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout2"
+            android:layout_marginStart="@dimen/dp5"
+
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40">
+
+            <TextView
+                android:id="@+id/payment_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Payment Status :"
+                android:textColor="@color/dark_quiz_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_toEndOf="@id/payment_status"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:textColor="@color/correct"
+                android:textSize="15sp"
+                app:transactionstatus="@{pruchasehistory.transaction_status}" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout3"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40">
+
+            <TextView
+                android:id="@+id/payment_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Payment Mode  :"
+                android:textColor="@color/dark_quiz_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_toEndOf="@id/payment_mode"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:text="@{pruchasehistory.pay_via.empty || pruchasehistory.pay_via==null ? `NA` : pruchasehistory.pay_via }"
+
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout4"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40">
+
+            <TextView
+                android:id="@+id/payemnt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Payment Date   :"
+                android:textColor="@color/dark_quiz_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_toEndOf="@id/payemnt_date"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:date="@{pruchasehistory.purchase_date}" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/track_order"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@id/layout5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/round_black_bg"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="Track Order"
+            android:textColor="@color/black"
+            android:visibility="@{pruchasehistory.track_url_1.empty || pruchasehistory.track_url_1==null  ? View.GONE :View.VISIBLE}" />
+
+
+    </RelativeLayout>
+</layout>

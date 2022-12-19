@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp3">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ibt_single_sub_vd_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp6"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginRight="@dimen/dp6"
+        android:layout_marginBottom="@dimen/dp4"
+        android:padding="@dimen/dp4"
+        app:cardBackgroundColor="@color/background_all_Lite"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/queryLL"
+            android:padding="@dimen/dp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp6">
+
+                <LinearLayout
+                    android:id="@+id/titleLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:fontFamily="@font/inter_bold"
+                        android:id="@+id/queryIDTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DQ001"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/post_text_size" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/querystatusTV"
+                        android:layout_width="0dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_height="wrap_content"
+                        android:text="DQ001"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:gravity="end"
+                        android:textSize="@dimen/post_text_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/queryTextTV"
+                    android:fontFamily="@font/inter_medium"
+                    android:padding="@dimen/dp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleLL"
+                    android:text="@string/total_test"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/post_text_size"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/queryTimeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/queryTextTV"
+                    android:text="@string/time"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/extrasmall_text_size_12"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

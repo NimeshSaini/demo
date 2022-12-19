@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/oslibactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        app:layout_collapseMode="pin"
+        app:theme="@style/ToolbarTexAppearance" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oslibactionbar"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="19dp"
+        android:paddingRight="19dp">
+
+        <TextView
+            android:id="@+id/libheadertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/libraries_used"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/libheaderdesctext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/libheadertext"
+            android:layout_alignStart="@id/libheadertext"
+            android:layout_alignLeft="@id/libheadertext"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:text="@string/libusedtext"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/libusedlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/libheaderdesctext" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

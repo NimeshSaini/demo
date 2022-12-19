@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/backimag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/arrow_back_black"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="video_title"
+            android:id="@+id/video_title"
+            android:layout_marginStart="@dimen/dp20"
+            android:textSize="@dimen/sp20"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/black"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <VideoView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:id="@+id/video_play"/>
+
+</RelativeLayout>

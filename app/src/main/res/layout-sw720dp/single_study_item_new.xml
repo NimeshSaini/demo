@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp8"
+        android:padding="@dimen/dp3"
+        android:id="@+id/ibt_single_sub_vd_RL"
+        app:cardBackgroundColor="@color/background_all_Lite"
+        app:cardCornerRadius="@dimen/dp10"
+        android:outlineAmbientShadowColor="@color/gray_dark2"
+        android:outlineSpotShadowColor="@color/gray_dark2"
+        app:cardElevation="@dimen/dp4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp6">
+
+            <LinearLayout
+                android:id="@+id/study_single_itemLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp60"
+                android:orientation="horizontal">
+
+                <!--<TextView
+                    android:id="@+id/position"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:background="@drawable/circle_black"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible"
+                    android:textSize="10sp"
+                    android:textColor="@color/white" />-->
+
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="@dimen/dp10"
+                        app:cardElevation="0dp"
+                        app:cardMaxElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/courseImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:visibility="gone"
+                                android:src="@mipmap/square_placeholder" />
+
+                            <TextView
+                                android:id="@+id/position"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/rectangle_yello"
+                                android:fontFamily="@font/inter_bold"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp14"
+                                android:visibility="gone" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/lockRL"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:background="#8016A0BA"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_centerInParent="true"
+                                    android:src="@mipmap/white_lock" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/study_item_titleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:ellipsize="end"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:maxLines="2"
+                        android:textColor="@color/blackApp"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:textColor="@color/blackApp"
+                        android:textSize="@dimen/sp12" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/liveIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp25"
+                android:src="@mipmap/live"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/forwardIV"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:src="@mipmap/forward_black" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:minHeight="@dimen/dp200"
+        android:text="No Data found"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="livetestresult"
+            type="com.utkarshnew.android.feeds.dataclass.TestResult" />
+    </data>
+<RelativeLayout
+    android:id="@+id/parent_layout"
+    android:layout_width="@dimen/dp140"
+    android:layout_height="@dimen/dp160"
+    android:background="@drawable/test_result">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/test_image"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp15"
+        android:src="@mipmap/square_placeholder"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:imageUrl="@{livetestresult.image}" />
+
+    <TextView
+        android:id="@+id/test_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_image"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="10dp"
+        android:hint="Gate Exam"
+        android:text="@{livetestresult.test_series_name}"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/test_attempts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_name"
+        android:layout_marginTop="@dimen/dp2"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@{livetestresult.attempts}"
+        android:textColor="#7F7F8A"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/test_result"
+        android:layout_width="@dimen/dp70"
+        android:layout_height="26dp"
+        android:layout_below="@id/test_attempts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@drawable/black_round"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:text="View Result"
+        android:onClick="@{(v)-> livetestresult.click(v,livetestresult)}"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+</RelativeLayout>
+</layout>

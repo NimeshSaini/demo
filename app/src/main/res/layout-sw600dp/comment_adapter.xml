@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="commentdata"
+            type="com.utkarshnew.android.feeds.dataclass.comment.Data" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/cvrRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/dp5"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp300"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:baselineAligned="false"
+                android:gravity="right"
+                android:orientation="horizontal"
+               >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp6"
+                    android:layout_weight="3"
+                    android:background="@drawable/corner_chat_item_right"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp10"
+                    android:translationZ="@dimen/dp2">
+
+                    <TextView
+                        android:id="@+id/userNameright"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@{commentdata.name}"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/profile_text_color"
+                        android:textSize="@dimen/small_text_size2" />
+
+                    <TextView
+                        android:id="@+id/rightmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha=".7"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="end"
+                        android:text="@{commentdata.comment}"
+                        android:paddingTop="@dimen/dp6"
+                        android:textColor="@color/black_405461"
+                        android:textSize="@dimen/extrasmall_text_size_12" />
+
+                    <TextView
+                        android:id="@+id/righttexttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:fontFamily="@font/inter_regular"
+                        app:datecomment="@{commentdata.created}"
+                        android:textColor="#979797"
+                        android:textSize="8sp" />
+                    <TextView
+                        android:id="@+id/approval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        app:viewVisbile ="@{commentdata}"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:visibility="gone"
+                        android:text="Pending for approval"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/app_bg"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp10">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage2"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        app:imageUrl="@{commentdata.profile_picture}"
+                        android:src="@mipmap/default_pic" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:src="@mipmap/default_pic"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</layout>
+

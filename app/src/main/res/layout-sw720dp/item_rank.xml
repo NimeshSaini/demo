@@ -1,0 +1,132 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="@dimen/dp10"
+    android:layout_marginStart="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp3"
+    android:layout_marginBottom="@dimen/dp5"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/dp4"
+    app:cardCornerRadius="@dimen/dp10"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:id="@+id/rankLL"
+    android:weightSum="3"
+    android:background="@color/colorGray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgSuccess"
+        android:layout_weight="0.2"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginTop="-15dp"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="-15dp"
+        android:src="@mipmap/score_result_screen" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgthumb"
+        android:layout_weight="1"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp10"
+        android:src="@mipmap/default_pic"
+        />
+
+    <ImageView
+    android:id="@+id/imageIVText"
+    android:layout_width="@dimen/dp60"
+    android:layout_height="@dimen/dp60"
+        android:layout_marginLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:layout_weight="1"
+        android:visibility="gone"
+    android:layout_gravity="center_vertical"
+    android:src="@mipmap/default_pic" />
+
+    <LinearLayout
+        android:layout_weight="1.8"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:id="@+id/textname"
+                android:text="Ramesh Singh"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/dp15" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10/10"
+                android:id="@+id/mark"
+                android:paddingEnd="@dimen/dp15"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/blackApp"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/dp15" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10/10"
+                android:id="@+id/textrank"
+                android:paddingEnd="@dimen/dp15"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/blackApp"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/dp15" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="#2F000000"/>-->
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

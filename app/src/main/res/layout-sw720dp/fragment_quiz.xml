@@ -1,0 +1,432 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greayrefcode_light"
+    tools:context=".courses.Fragment.Quiz"
+    android:id="@+id/quizLL">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/quiz_swipe_RL">
+
+        <ProgressBar
+            android:id="@+id/timer_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp5"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dp2"
+            android:background="@color/white"
+            android:indeterminate="false"
+            android:maxHeight="@dimen/dp15"
+            android:minHeight="@dimen/dp7"
+            android:scaleY="1.75"
+            android:visibility="gone"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:padding="@dimen/dp10"
+            app:cardElevation="@dimen/dp2"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:id="@+id/quesCV"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/quesRV"></androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timer_progress"
+            android:layout_marginBottom="@dimen/dp2"
+            android:layout_marginLeft="@dimen/dp7"
+            android:layout_marginRight="@dimen/dp7"
+            android:layout_marginTop="@dimen/dp1"
+            app:cardBackgroundColor="@color/greayrefcode_light"
+            app:cardElevation="@dimen/dp2"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp7"
+                android:paddingRight="@dimen/dp7"
+                android:paddingTop="@dimen/dp5"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/resumeQuizLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left">
+
+                    <ImageView
+                        android:id="@+id/playBtn"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/download_pause" />
+
+                    <TextView
+                        android:id="@+id/playTextTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/playBtn"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp7"
+                        android:paddingRight="@dimen/dp7"
+                        android:text="Pause"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sub_heading_text_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/default_pic" />
+
+                    <!--   <TextView
+                           android:id="@+id/time_slot"
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:layout_centerVertical="true"
+                           android:layout_toRightOf="@id/timeimage"
+                           android:gravity="center_vertical"
+                           android:paddingLeft="@dimen/dp7"
+                           android:paddingRight="@dimen/dp7"
+                           android:text="08:45"
+                           android:textColor="@color/black"
+                           android:textSize="@dimen/sub_heading_text_size" />-->
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/finishQuizLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/tickblue"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/default_pic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/tickblue"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp7"
+                        android:paddingRight="@dimen/dp7"
+                        android:text="FINISH"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sub_heading_text_size" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--<View
+            android:id="@+id/line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/toolLayoutCV"
+            android:background="@color/greayrefcode_dark" />-->
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/correctIncorrectLL"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/quesCV">
+
+            <RelativeLayout
+                android:id="@+id/swipeRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp7"
+                android:paddingRight="@dimen/dp7"
+                android:paddingTop="@dimen/dp5">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/questionQuizCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/dp2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ibt_bottom_line_bg">
+
+                            <TextView
+                                android:id="@+id/quiz_question_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp10"
+                                android:text="Q.1"
+                                android:textColor="@color/light_black_font"
+                                android:textSize="@dimen/sub_heading_text_size" />
+
+                            <TextView
+                                android:id="@+id/time_slot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignBaseline="@+id/quiz_question_num"
+                                android:layout_alignBottom="@+id/quiz_question_num"
+                                android:layout_toEndOf="@+id/quiz_question_num"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/dp10"
+                                android:paddingRight="@dimen/dp10"
+                                android:text="08 mins : 45 secs"
+                                android:textColor="@color/light_black_font"
+                                android:textSize="@dimen/sub_heading_text_size" />
+
+                            <ImageView
+                                android:id="@+id/bookmark_ques"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/dp10"
+                                android:src="@drawable/ibt_bookmark"
+                                android:visibility="gone"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ques_coontainerRL"/>
+
+                        <com.utkarshnew.android.courses.Fragment.TestSeriesOptionWebView
+                            android:id="@+id/questionQuizTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp10"
+                            android:text="" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/quizQuestionLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_below="@+id/questionQuizCV"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp5"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/correctIncorrectLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+           android:padding="@dimen/dp10"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/quiz_correct_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp5"
+                android:layout_margin="@dimen/dp5"
+                android:elevation="@dimen/dp5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correct"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/post_text_size" />
+
+                <TextView
+                    android:id="@+id/correctAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/quiz_incorrect_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp5"
+                android:layout_margin="@dimen/dp5"
+                android:elevation="@dimen/dp5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/post_text_size" />
+
+                <TextView
+                    android:id="@+id/incorrectAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/quiz_options_bg_orange"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp5"
+                android:layout_margin="@dimen/dp5"
+                android:elevation="@dimen/dp5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coins"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/post_text_size" />
+
+                <TextView
+                    android:id="@+id/coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/controlLayoutCV"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp5"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/greayrefcode_light"
+            app:cardElevation="@dimen/dp2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/dp2"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp7"
+                android:paddingRight="@dimen/dp7"
+                android:paddingTop="@dimen/dp5"
+                android:weightSum="3.4">
+
+                <Button
+                    android:id="@+id/prevQuizBT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/bg_signup_btn"
+                    android:drawableLeft="@drawable/arrow_back_black"
+                    android:drawablePadding="-8dp"
+                    android:gravity="center"
+                    android:text="@string/prev"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/post_text_size" />
+
+                <TextView
+                    android:id="@+id/quesCount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp7"
+                    android:paddingRight="@dimen/dp7"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="2/20"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/nextQuizBT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/bg_signup_btn"
+                    android:drawablePadding="-15dp"
+                    android:drawableRight="@drawable/arrow_back_black"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="@string/next"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/post_text_size" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/clickBlockView"
+        />
+
+</RelativeLayout>

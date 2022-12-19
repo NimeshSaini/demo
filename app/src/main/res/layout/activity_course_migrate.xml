@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/arrow_back_black"/>
+
+                <TextView
+                    android:id="@+id/toolbarTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="Migrate User"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sp18" />
+
+
+                <CheckBox
+                    android:id="@+id/select_all_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:buttonTint="@color/black"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Select"/>
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:text="Delete"
+                    android:drawableLeft="@drawable/delete"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginEnd="@dimen/dp10"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_below="@id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            android:layout_margin="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp12">
+            <EditText
+                android:id="@+id/m_no"
+                android:layout_toStartOf="@id/refresh"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp16"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp16"
+                android:background="@drawable/round_corner_border_login_signup"
+                android:drawableStart="@mipmap/gray_mobile"
+                android:drawablePadding="@dimen/dp15"
+                android:fontFamily="@font/inter_bold"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:textSize="@dimen/small_text_size" />
+
+
+            <ImageView
+                android:src="@drawable/ic_refresh_black_24dp"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/refresh"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/buttonProceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Fetch User"
+                android:layout_margin="@dimen/dp12"
+                android:fontFamily="@font/inter_semibold"
+                android:background="@drawable/bg_round_corners_button_fade"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/post_text_size" />
+
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/no_data_found" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

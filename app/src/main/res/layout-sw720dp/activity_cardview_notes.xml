@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp5">
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        android:background="@drawable/curved_rectangle_background_white_with_primary"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_pdf"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:padding="@dimen/dp8"
+            android:src="@drawable/square_thumbnail" />
+
+        <TextView
+            android:id="@+id/pdftext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textpdf"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_toRightOf="@id/iv_pdf"
+            android:fontFamily="@font/inter_medium"
+            android:text="Pdf"
+            android:textColor="@color/blackApp" />
+
+        <ImageView
+            android:id="@+id/textpdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/ic_view_all" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

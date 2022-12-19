@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/sp10"
+    android:background="@drawable/bg_round_corners_white_back"
+    android:paddingLeft="@dimen/dp16"
+    android:paddingTop="@dimen/dp4"
+    android:paddingRight="@dimen/dp16"
+    android:paddingBottom="@dimen/dp4">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/cvrOption"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@drawable/circle_outline_bg_rectshape"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtOptionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/blackApp"
+            android:textSize="@dimen/sp12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_toRightOf="@id/cvrOption"
+        android:fontFamily="@font/inter_semibold"
+        android:maxLines="2"
+        android:text="17 years"
+        android:textColor="@color/blackApp"
+        android:textSize="@dimen/sp12" />
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.utkarshnew.android.R"/>
+        <import type="android.view.View"/>
+        <variable
+            name="quizbind"
+            type="com.utkarshnew.android.feeds.dataclass.Data" />
+
+
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp6"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        app:imageUrl="@{quizbind.profile_picture}"
+        android:src="@mipmap/square_placeholder"
+        app:civ_border_color="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp6"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_toStartOf="@id/pinIV"
+        android:layout_toEndOf="@id/profileImage"
+        android:fontFamily="@font/inter_bold"
+        android:text="@{quizbind.name}"
+        android:textColor="#071E57"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/pinIV"
+        android:layout_width="@dimen/dp18"
+        android:layout_height="@dimen/dp18"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp10"
+        app:imageResource="@{quizbind.my_pinned.equals(`1`) ? R.drawable.pinned : R.drawable.unpinned}" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_toEndOf="@id/profileImage"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="#8A000000"
+            android:textSize="10sp"
+            app:date="@{quizbind.created}" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp4"
+            android:background="@drawable/circle_skip" />
+
+
+        <TextView
+            android:id="@+id/post_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_medium"
+            android:text="Mathematics"
+            android:textColor="#8A000000"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/quiz_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="#F4F2F2"
+        android:gravity="bottom"
+        android:minHeight="230dp"
+        android:paddingBottom="@dimen/dp15">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/quiz_watch" />
+
+        <TextView
+            android:id="@+id/test_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:hint="ENGLISH "
+            android:text="@{quizbind.json.test_series_name}"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="@{quizbind.json.test_series_name.empty ? View.GONE :View.VISIBLE }" />
+
+        <LinearLayout
+            android:id="@+id/test_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_name"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/total_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@{quizbind.json.total_questions +` Questions`}"
+                android:textColor="#8A000000"
+
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp10"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp4"
+                android:background="#ccc" />
+
+
+            <TextView
+                android:id="@+id/total_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp6"
+                android:fontFamily="@font/inter_regular"
+                android:text="@{quizbind.json.time_in_mins +` Minutes`}"
+                android:textColor="#8A000000"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_quiz"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/test_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp15"
+            android:background="@drawable/bg_retry_bg"
+            android:fontFamily="@font/inter_bold"
+            android:text="@{quizbind.json.state.equalsIgnoreCase(`1`) ? `View Result` : `Start QUIZ`}" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/like_comment_count_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quiz_layout"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/post_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_regular"
+            app:like="@{quizbind.total_likes}"
+
+            android:textColor="#8A000000"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_skip" />
+
+
+        <TextView
+            android:id="@+id/post_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_regular"
+            android:text="@{quizbind.total_comments +` Comment`}"
+            android:visibility="invisible"
+            android:textColor="#8A000000"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/like_comment_count_layout"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/off_white"/>
+    <LinearLayout
+        android:id="@+id/like_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/view"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp6"
+            android:layout_marginEnd="@dimen/dp20"
+            android:drawableLeft="@drawable/favorite_border"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text="Like"
+            android:textColor="#8A000000"
+            android:textSize="15sp"
+            app:likeview="@{quizbind.my_like}" />
+
+
+        <TextView
+            android:id="@+id/post_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp6"
+            android:drawableLeft="@mipmap/comment"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text="Comment"
+            android:visibility="invisible"
+
+            android:layout_marginEnd="20dp"
+            android:textColor="#8A000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/postShare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp6"
+            android:drawableLeft="@drawable/share"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text="Share"
+            android:textColor="#8A000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@id/like_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_dark2" />
+
+
+</RelativeLayout>
+</layout>

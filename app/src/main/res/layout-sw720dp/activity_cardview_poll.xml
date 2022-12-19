@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainlayout"
+    android:layout_margin="@dimen/dp2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/stroke_poll"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/pollNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter_bold"
+            android:padding="@dimen/dp2"
+            android:text="1. Poll"
+            android:textColor="@color/color_071E57"
+            android:textSize="@dimen/sp14" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/takeAPollBtn"
+            android:layout_toRightOf="@id/pollNumber"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:background="@drawable/bg_round_corner_fill_green_curved"
+                android:fontFamily="@font/inter_medium"
+                android:padding="@dimen/dp3"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp10"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/expireddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:fontFamily="@font/inter_regular"
+                android:padding="@dimen/dp2"
+                android:text="Poll Expires in"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/sp10"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/takeAPollBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp36"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_corners_button_black"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Take a Poll"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buyNowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp24"
+        android:background="@drawable/bg_round_corners_button"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Quiz"
+        android:textAllCaps="false"
+        android:textColor="@color/profile_text_color"
+        android:textSize="@dimen/sp10" />
+</RelativeLayout>

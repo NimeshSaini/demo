@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/buttonLow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:elevation="10dp"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:id="@+id/notes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginEnd="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp10"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/dp5"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/physical_note"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#222222"
+            android:text="Physical Note"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:background="@drawable/round_gray_notes_yello"
+            android:layout_width="0dp"
+            android:paddingStart="@dimen/dp10"
+            android:drawableStart="@mipmap/writing"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/e_book"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#222222"
+            android:text="e-Books"
+            android:textSize="12sp"
+            android:paddingStart="@dimen/dp10"
+            android:drawableStart="@mipmap/online_learning"
+            android:layout_marginStart="@dimen/dp5"
+            android:gravity="center"
+            android:background="@drawable/round_gray_notes"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/both"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#222222"
+            android:text="Both"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/round_gray_notes"
+            android:layout_width="0dp"
+            android:paddingStart="@dimen/dp10"
+            android:drawableStart="@mipmap/book"
+            android:layout_weight="1"
+            android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notes_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp10"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginEnd="@dimen/dp5"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_below="@id/notes_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp1"
+        android:paddingRight="@dimen/dp1"
+        android:paddingBottom="@dimen/dp1">
+
+
+
+        <LinearLayout
+            android:id="@+id/priceLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/priceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_semibold"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp2"
+                    android:paddingRight="@dimen/dp1"
+                    android:text="@string/na"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/post_text_size_x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_regular"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5"
+                    android:text="@string/include_gst"
+                    android:textSize="@dimen/extrasmall_text_size_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_regular"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp2"
+                    android:paddingRight="@dimen/dp1"
+                    android:text="@string/price"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/mrpCutTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_regular"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp2"
+                    android:paddingRight="@dimen/dp1"
+                    android:text="@string/na"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/small_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buyNowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp12"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_corners_button"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="@dimen/dp8"
+            android:text="@string/buy_now"
+            android:textAllCaps="false"
+            android:textColor="@color/profile_text_color"
+            android:textSize="@dimen/post_text_size_x" />
+
+        <Button
+            android:id="@+id/myLibBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp12"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_corners_button"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="@dimen/dp8"
+            android:text="@string/open_in_my_lib"
+            android:textAllCaps="false"
+            android:textColor="@color/blackApp"
+            android:textSize="@dimen/small_text_size2" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

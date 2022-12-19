@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "614433407345",
+    "firebase_url": "https://utkarsh-window-app-default-rtdb.firebaseio.com",
+    "project_id": "utkarsh-window-app",
+    "storage_bucket": "utkarsh-window-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614433407345:android:fe774e235f8f8258bb76d0",
+        "android_client_info": {
+          "package_name": "com.utkarsh.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614433407345-hbandssqetiq574ekh30j6tk9dqfmdds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.utkarsh.android",
+            "certificate_hash": "201b01872d271e4c43c49b60670049bfe9cbbc8a"
+          }
+        },
+        {
+          "client_id": "614433407345-d2ptcgdsj5oe40ibdr7palnmtlkj7b7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWFSdTkDSXP3RlF_GMWGEOMwn2XmbgzPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614433407345-d2ptcgdsj5oe40ibdr7palnmtlkj7b7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "614433407345-8ei2v7mhes3bcqoch4e66tnctc69d7l9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.utkarsh"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614433407345:android:bebec5170b859077bb76d0",
+        "android_client_info": {
+          "package_name": "com.utkarsh.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614433407345-d2ptcgdsj5oe40ibdr7palnmtlkj7b7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWFSdTkDSXP3RlF_GMWGEOMwn2XmbgzPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614433407345-d2ptcgdsj5oe40ibdr7palnmtlkj7b7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "614433407345-8ei2v7mhes3bcqoch4e66tnctc69d7l9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.utkarsh"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614433407345:android:35dfa242380aef6ebb76d0",
+        "android_client_info": {
+          "package_name": "com.utkarshnew.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614433407345-d2ptcgdsj5oe40ibdr7palnmtlkj7b7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWFSdTkDSXP3RlF_GMWGEOMwn2XmbgzPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614433407345-d2ptcgdsj5oe40ibdr7palnmtlkj7b7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "614433407345-8ei2v7mhes3bcqoch4e66tnctc69d7l9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.utkarsh"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

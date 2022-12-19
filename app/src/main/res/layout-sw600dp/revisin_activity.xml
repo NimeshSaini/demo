@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/arrow_back_black" />
+
+            <TextView
+                android:id="@+id/toolbarTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_toEndOf="@id/image_back"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:text="Revision"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/heading_text_size" />
+
+
+            <CheckBox
+                android:id="@+id/select_all_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:buttonTint="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_vertical"
+                android:text="Select"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:drawableLeft="@drawable/delete"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_vertical"
+                android:text="Delete"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashCards"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_below="@id/main_toolbar"
+        android:layout_toStartOf="@id/holderView"
+        android:foreground="@drawable/ripple_dark"
+        android:visibility="gone"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <ImageView
+                android:id="@+id/flashCardImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_view_carousel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flashCardImg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="FLASH CARDS"
+                android:textColor="#444444"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/holderView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/main_toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mcqCards"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_below="@id/main_toolbar"
+        android:layout_toEndOf="@id/holderView"
+        android:layout_toRightOf="@id/holderView"
+        android:foreground="@drawable/ripple_dark"
+        android:visibility="gone"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/mcqCardImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_list" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mcqCardImg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="MULTIPLE CHOICE QUES"
+                android:textColor="#444444"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/save_revision"
+        android:layout_below="@id/flashCards"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_revision_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp40"
+                android:layout_marginEnd="@dimen/dp40"
+                android:background="@drawable/testgen_button_background"
+                android:fontFamily="@font/inter_bold"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center_vertical"
+                android:text="Add Revision Title"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+            <RelativeLayout
+                android:id="@+id/question_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Term"
+                    android:textColor="@color/black_405461"
+                    android:textSize="@dimen/sp16" />
+
+                <EditText
+                    android:id="@+id/terms_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/book_demo_customized"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7F7F8A"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/terms_edittext"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Definition"
+                    android:textColor="@color/black_405461"
+                    android:textSize="@dimen/sp16" />
+
+                <EditText
+                    android:id="@+id/description_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100"
+                    android:layout_below="@id/terms_edittext"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/book_demo_customized"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7F7F8A"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_layout"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+
+            <TextView
+                android:id="@+id/add_aonther"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/frame"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/notes_cancel_bg"
+                android:gravity="center"
+                android:text="Add another revision"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F8A"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/save_revision"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/inter_bold"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:text="Save Revision"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>

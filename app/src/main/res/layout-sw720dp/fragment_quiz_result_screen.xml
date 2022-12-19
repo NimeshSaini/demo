@@ -1,0 +1,461 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp3"
+    android:orientation="vertical"
+    tools:context=".courses.Fragment.QuizResultScreen">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp2"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                app:cardElevation="@dimen/dp2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp7"
+                        android:padding="@dimen/dp2"
+                        android:text="Score Card"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sub_heading_text_size"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/appLogoIV"
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="@dimen/dp80"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/dp3"
+                            android:src="@mipmap/both"/>
+
+                        <TextView
+                            android:id="@+id/testSeriesnameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/appLogoIV"
+                            android:layout_centerHorizontal="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sub_heading_text_size" />
+
+                        <View
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="@dimen/dp2"
+                            android:layout_below="@+id/testSeriesnameTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/dp2"
+                            android:background="@color/colorPrimary"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/dp3"
+                                android:src="@mipmap/default_pic" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@+id/imageIV"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/dp5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="Name"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/extrasmall_text_size_11" />
+
+                                <TextView
+                                    android:id="@+id/nameValueTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text=""
+                                    android:textColor="@color/black_overlay"
+                                    android:textSize="@dimen/small_text_size" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/scoreLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/dp3"
+                                android:src="@mipmap/default_pic" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@+id/imageIV"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/dp5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="You Scored"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/extrasmall_text_size_11" />
+
+                                <TextView
+                                    android:id="@+id/scoreValueTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text=""
+                                    android:textColor="@color/black_overlay"
+                                    android:textSize="@dimen/small_text_size" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rankLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp2"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/dp3"
+                                android:src="@mipmap/default_pic" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/dp5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="Your Rank"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/extrasmall_text_size_11" />
+
+                                <TextView
+                                    android:id="@+id/rankValueTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text=""
+                                    android:textColor="@color/black_overlay"
+                                    android:textSize="@dimen/small_text_size" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/leaderboardIV"
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/dp3"
+                                android:padding="@dimen/dp7"
+                                android:src="@mipmap/default_pic" />
+
+                            <ImageView
+                                android:id="@+id/rankreloadIV"
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/dp3"
+                                android:padding="@dimen/dp5"
+                                android:src="@mipmap/default_pic" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/dp3"
+                                android:src="@mipmap/default_pic" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@+id/imageIV"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/dp5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="Time Spent"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/extrasmall_text_size_11" />
+
+                                <TextView
+                                    android:id="@+id/timeSpentValueTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text=""
+                                    android:textColor="@color/black_overlay"
+                                    android:textSize="@dimen/small_text_size" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/shareRankLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@drawable/bg_card_bottom_corner"
+                android:elevation="@dimen/dp2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp3"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/default_pic"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp2"
+                    android:text="View solution"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sub_heading_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp7"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardElevation="@dimen/dp2"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp15"
+                            android:src="@mipmap/default_pic" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/dp2"
+                                android:text="Rewards Point Earned"
+                                android:textColor="@color/dullBlack"
+                                android:textSize="@dimen/heading_text_size" />
+
+                            <TextView
+                                android:id="@+id/rewardsValueTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/dp2"
+                                android:text="0 Points"
+                                android:textColor="@color/blackApp"
+                                android:textSize="@dimen/large_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/questionDistrLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp7"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    app:cardElevation="@dimen/dp2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp7"
+                            android:maxLines="1"
+                            android:padding="@dimen/dp2"
+                            android:text="Question Distribution"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text_size" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp2"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/correctTv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/dp2"
+                                android:text="Correct"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/wrongTv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/dp2"
+                                android:text="Wrong"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/unattemptedTv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1."
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/dp2"
+                                android:text="Unattempted"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:padding="@dimen/dp3" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

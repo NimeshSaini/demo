@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageCloseIV"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-32dp"
+        app:cardBackgroundColor="@color/button_left"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/logo_btn"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/logo_btn"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/close" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/data_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp1"
+            app:cardCornerRadius="@dimen/dp12"
+            app:cardElevation="@dimen/dp5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@string/add_coupon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text_size"
+                    android:textStyle="bold" />
+
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorBackground"
+                    android:dividerHeight="1px"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:text="@string/add_coupon"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:layout_marginTop="@dimen/dp10"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/continueBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp40"
+                        android:textAllCaps="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/dp80"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:layout_marginRight="@dimen/dp80"
+                        android:layout_marginBottom="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round_corners"
+                        android:padding="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp12"
+                        android:paddingRight="@dimen/dp12"
+                        android:text="@string/continuee"
+                        android:textColor="@color/blackApp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

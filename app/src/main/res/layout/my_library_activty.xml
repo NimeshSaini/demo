@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullto_referesh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:fitsSystemWindows="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp5"
+                        android:src="@drawable/arrow_back_black" />
+
+                    <TextView
+                        android:id="@+id/toolbarTitleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/image_back"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp16"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="My Library"
+                        android:textColor="@color/blackApp"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:id="@+id/serac_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/dp5"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/search"/>
+
+                    <RelativeLayout
+                        android:layout_toEndOf="@id/image_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp40"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/layout"
+                        android:visibility="gone"
+                        android:background="@drawable/border_workout_library">
+
+                        <androidx.appcompat.widget.SearchView
+                            android:id="@+id/sv_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/AppBaseTheme">
+                        </androidx.appcompat.widget.SearchView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/main_toolbar">
+
+                <RelativeLayout
+                    android:id="@+id/mainCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/tab_relative_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="#000000"
+                            app:tabIndicatorFullWidth="true"
+                            app:tabIndicatorHeight="3dp"
+                            app:tabMaxWidth="0dp"
+                            app:tabMode="fixed"
+                            app:tabPadding="0dp"
+                            app:tabSelectedTextColor="#000000"
+                            app:tabTextAppearance="@style/TabLayoutStyle"
+                            app:tabTextColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sort_by_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_below="@id/tab_relative_layout"
+                        android:background="#F4F4F6">
+
+                        <ImageView
+                            android:id="@+id/image_hide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dp16"
+                            android:src="@mipmap/clock"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp10"
+                            android:layout_toEndOf="@id/image_hide"
+                            android:fontFamily="@font/inter_regular"
+                            android:gravity="center_vertical"
+                            android:text="Sort Your Course"
+                            android:textColor="@color/blackApp"
+                            android:textSize="10sp" />
+
+
+                        <TextView
+                            android:id="@+id/sort_by"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/dp16"
+                            android:alpha=".4"
+                            android:background="@drawable/round_corner_sort"
+                            android:drawableRight="@drawable/arrow_down_grey"
+                            android:fontFamily="@font/inter_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp16"
+                            android:paddingRight="@dimen/dp10"
+                            android:text="Sort By"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/sp12" />
+                    </RelativeLayout>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sort_by_layout" />
+                </RelativeLayout>
+
+                <include layout="@layout/no_data_found" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/resultDeclaredLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingTop="@dimen/dp30"
+                    android:paddingBottom="@dimen/dp30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/scoreIV"
+                                android:layout_width="@dimen/dp60"
+                                android:layout_height="@dimen/dp60"
+                                android:src="@mipmap/score_result_screen"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dp60"
+                                android:layout_toEndOf="@id/scoreIV"
+                                android:layout_marginStart="@dimen/dp10"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dp30"
+                                    android:text="@string/score"
+                                    android:padding="@dimen/dp3"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/dp15"/>
+
+                                <TextView
+                                    android:id="@+id/resultScoreTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dp30"
+                                    android:text="Your Rank"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:padding="@dimen/dp3"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp18"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/resultNameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:padding="@dimen/dp3"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="Great work, Amar!"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/blackApp"
+                        android:textSize="@dimen/dp15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp3"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Let's see how you performed."
+                        android:textColor="@color/blackApp"
+                        android:textSize="@dimen/dp15" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/accuracy_LL"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/accuracy_result_screen" />
+
+                                <TextView
+                                    android:id="@+id/resultAccuracyTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp25"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/accuracy"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="@dimen/dp70"
+                                android:visibility="gone"
+                                android:background="#C8C8C8" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp70"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/guess_result_screen" />
+
+                                <TextView
+                                    android:id="@+id/resultGuessTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="6/20"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Guess"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/viewaccuracy"
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="@dimen/dp70"
+                                android:background="#C8C8C8" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/percentileLL"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/percentile_result_screen" />
+
+                                <TextView
+                                    android:id="@+id/resultPercentileTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp25"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/percentile"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/viewpercentile"
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="@dimen/dp70"
+                                android:background="#C8C8C8" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/attempted_result_screen" />
+
+                                <TextView
+                                    android:id="@+id/resultAttemptedTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp25"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/attempted"
+
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp2"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:background="#C8C8C8" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp6"
+                            android:layout_marginBottom="@dimen/dp6"
+                            android:padding="@dimen/dp5"
+                            android:text="@string/your_answers"
+                            android:fontFamily="@font/inter_semibold"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp60"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/resultCorrectTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@mipmap/correct_result_screen"
+                                    android:drawablePadding="@dimen/dp5"
+                                    android:paddingStart="@dimen/dp15"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="12/20"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"                                    android:textSize="@dimen/sp16"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="Correct"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/sp16" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="@dimen/dp60"
+                                android:background="#C8C8C8" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp60"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/resultIncorrectTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@mipmap/incorrect_result_screen"
+                                    android:drawablePadding="@dimen/dp5"
+                                    android:paddingStart="@dimen/dp15"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="12/20"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"                                    android:textSize="@dimen/sp16"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="Incorrect"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/sp16" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="@dimen/dp60"
+                                android:background="#C8C8C8" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp60"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/resultSkippedTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@mipmap/mark_for_review"
+                                    android:drawablePadding="@dimen/dp5"
+                                    android:paddingStart="@dimen/dp15"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="12/20"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp16"
+                                    />
+
+                                <TextView
+                                    android:visibility="gone"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="Review"
+                                    android:textSize="@dimen/sp16" />
+
+                                <TextView
+                                    android:id="@+id/resultAttemptTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/circle_sectionwise"
+                                    android:drawablePadding="@dimen/dp5"
+                                    android:paddingStart="@dimen/dp15"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="12/20"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"                                    android:textSize="@dimen/sp16"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="@string/attempted"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/sp16" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp2"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:background="#C8C8C8" />
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp60"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/resultUnAttemptTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/circle_unanswered_section"
+                                    android:drawablePadding="@dimen/dp5"
+                                    android:paddingStart="@dimen/dp15"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="12/20"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"                                    android:textSize="@dimen/sp16"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:text="Unanswered"
+                                    android:textSize="@dimen/sp16" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="@dimen/dp60"
+                                android:background="#C8C8C8" />
+
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp60"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/not_visited"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/circle_skip"
+                                    android:drawablePadding="@dimen/dp5"
+                                    android:paddingStart="@dimen/dp15"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="12/20"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"                                    android:textSize="@dimen/sp16"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="Not Visited"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/sp16" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="@dimen/dp60"
+                                android:background="#C8C8C8" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp60"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/resultBookmarkTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@mipmap/bookmark_selected"
+                                    android:drawablePadding="@dimen/dp5"
+                                    android:paddingStart="@dimen/dp15"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="0"
+                                    android:fontFamily="@font/inter_bold"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/sp16"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp3"
+                                    android:text="Bookmarked"
+                                    android:fontFamily="@font/inter_regular"
+                                    android:textColor="@color/blackApp"
+                                    android:textSize="@dimen/sp16" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp2"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:background="#C8C8C8" />
+
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/resultViewSolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:visibility="visible"
+                    android:layout_margin="@dimen/dp24"
+                    android:gravity="center"
+                    android:background="@drawable/bg_signup_btn"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/view_solution"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/sp12"
+                        android:fontFamily="@font/inter_semibold"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:textColor="@color/blackApp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

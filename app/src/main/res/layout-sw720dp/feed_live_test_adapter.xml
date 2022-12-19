@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="livetestdata"
+            type="com.utkarshnew.android.home.livetest.LiveTestData" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp5"
+    android:id="@+id/parent_layout">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/image_test"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/square_thumbnail"
+        app:linkimage="@{livetestdata.image}"
+        app:riv_corner_radius="@dimen/dp15"
+        app:riv_oval="false" />
+
+    <RelativeLayout
+        android:id="@+id/layout_test_info"
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_toEndOf="@id/image_test"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dp150"
+            android:text="@{livetestdata.course_name}"
+            android:fontFamily="@font/inter_bold"
+            android:maxLines="2"
+            android:textColor="#071E57"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/test_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course_name"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dp150"
+            android:fontFamily="@font/inter_medium"
+            android:maxLines="1"
+            android:text="@{livetestdata.testSeriesName}"
+            android:textColor="#405461"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_name"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/background_live_feed"
+            android:drawableLeft="@drawable/clock_feed"
+            android:drawablePadding="@dimen/dp4"
+            android:gravity="center"
+            android:fontFamily="@font/inter_medium"
+            android:padding="5dp"
+            app:time="@{livetestdata}"
+            android:text="10:00AM - 01:00PM"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dp6" />
+    </RelativeLayout>
+
+</RelativeLayout>
+</layout>

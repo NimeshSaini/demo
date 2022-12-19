@@ -1,0 +1,1851 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.utkarshnew.android"
+4    android:versionCode="145"
+5    android:versionName="4.4.39" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:6:5-68
+11-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:6:22-65
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:7:5-76
+12-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:7:22-73
+13    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+13-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:8:5-79
+13-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:9:5-81
+14-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:10:5-79
+15-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:10:22-76
+16    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+16-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:11:5-82
+16-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:11:22-79
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:12:5-80
+17-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:12:22-77
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:13:5-67
+18-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:13:22-64
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:14:5-65
+19-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:14:22-62
+20    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+20-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:15:5-84
+20-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:15:22-81
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:16:5-77
+21-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:16:22-74
+22    <uses-permission android:name="android.permission.GET_TASKS" />
+22-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:17:5-68
+22-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:17:22-65
+23
+24    <supports-screens
+24-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:19:5-25:40
+25        android:anyDensity="true"
+25-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:20:9-34
+26        android:largeScreens="true"
+26-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:21:9-36
+27        android:normalScreens="true"
+27-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:22:9-37
+28        android:resizeable="true"
+28-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:23:9-34
+29        android:smallScreens="true"
+29-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:24:9-36
+30        android:xlargeScreens="true" />
+30-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:25:9-37
+31
+32    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+32-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:12:5-81
+32-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:12:22-78
+33    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+33-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:13:5-75
+33-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:13:22-72
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:15:5-79
+34-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:15:22-76
+35    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- for android -->
+35-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:16:5-76
+35-->[PallyconWVMSDK.aar] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f8f7e1676a0fefd52a14f604f8b1f30b\jetified-PallyconWVMSDK\AndroidManifest.xml:16:22-73
+36    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+37    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+38    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+39    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+40    <!-- for Samsung -->
+41    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+41-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:19:5-86
+41-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:19:22-83
+42    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+42-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:20:5-87
+42-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:20:22-84
+43    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+43-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:23:5-81
+43-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:23:22-78
+44    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+44-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:24:5-83
+44-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:24:22-80
+45    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+45-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:27:5-88
+45-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:27:22-85
+46    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+46-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:28:5-92
+46-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:28:22-89
+47    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+47-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:31:5-84
+47-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:31:22-81
+48    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+48-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:34:5-83
+48-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:34:22-80
+49    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+49-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:37:5-91
+49-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:37:22-88
+50    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+50-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:38:5-92
+50-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:38:22-89
+51    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+51-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:39:5-93
+51-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:39:22-90
+52    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+52-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:42:5-73
+52-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:42:22-70
+53    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+53-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:45:5-82
+53-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:45:22-79
+54    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+54-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:46:5-83
+54-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:46:22-80
+55    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+55-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:49:5-88
+55-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:49:22-85
+56    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- Required permission to check licensing. -->
+56-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:50:5-89
+56-->[me.leolin:ShortcutBadger:1.1.18] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\453ea57b34292cbaa16003f4c3df3030\jetified-ShortcutBadger-1.1.18\AndroidManifest.xml:50:22-86
+57    <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+57-->[:lvl_library] D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\lvl_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-73
+57-->[:lvl_library] D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\lvl_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:22-70
+58    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+58-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:26:5-82
+58-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:26:22-79
+59
+60    <uses-feature
+60-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c3465bada57d2d802658277d1a2a30b6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+61        android:glEsVersion="0x00020000"
+61-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c3465bada57d2d802658277d1a2a30b6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+62        android:required="true" />
+62-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c3465bada57d2d802658277d1a2a30b6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+63
+64    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+64-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:5-110
+64-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:22-107
+65    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+65-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\44dd8f73d6efb2e7bdec7abff3a233ff\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:5-79
+65-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\44dd8f73d6efb2e7bdec7abff3a233ff\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:22-76
+66
+67    <application
+67-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:27:5-721:19
+68        android:name="com.utkarshnew.android.Utils.MakeMyExam"
+68-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:28:9-41
+69        android:allowBackup="false"
+69-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:29:9-36
+70        android:appComponentFactory="whateverString"
+70-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:30:9-53
+71        android:debuggable="true"
+72        android:extractNativeLibs="false"
+73        android:hardwareAccelerated="true"
+73-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:31:9-43
+74        android:icon="@mipmap/ic_launcher"
+74-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:32:9-43
+75        android:label="@string/app_name"
+75-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:33:9-41
+76        android:largeHeap="true"
+76-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:34:9-33
+77        android:requestLegacyExternalStorage="true"
+77-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:35:9-52
+78        android:roundIcon="@mipmap/ic_launcher_round"
+78-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:36:9-54
+79        android:supportsRtl="true"
+79-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:37:9-35
+80        android:testOnly="true"
+81        android:theme="@style/AppThemeOwn"
+81-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:38:9-43
+82        android:usesCleartextTraffic="true" >
+82-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:39:9-44
+83        <activity
+83-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:42:9-49:15
+84            android:name="com.utkarshnew.android.Login.Activity.LoginWithOtp"
+84-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:43:13-56
+85            android:exported="false"
+85-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:44:13-37
+86            android:screenOrientation="portrait"
+86-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:45:13-49
+87            android:theme="@style/customThemeForSigninActivity"
+87-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:46:13-64
+88            android:windowSoftInputMode="adjustResize" />
+88-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:47:13-55
+89        <activity
+89-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:51:9-56:52
+90            android:name="com.utkarshnew.android.feeds.activity.FeedDetails"
+90-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:52:13-55
+91            android:alwaysRetainTaskState="true"
+91-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:53:13-49
+92            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+92-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:54:13-122
+93            android:exported="false"
+93-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:55:13-37
+94            android:screenOrientation="portrait" />
+94-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:56:13-49
+95        <activity
+95-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:58:9-63:52
+96            android:name="com.utkarshnew.android.feeds.activity.PinnedPostActivity"
+96-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:59:13-62
+97            android:alwaysRetainTaskState="true"
+97-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:60:13-49
+98            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+98-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:61:13-122
+99            android:exported="false"
+99-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:62:13-37
+100            android:screenOrientation="portrait" />
+100-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:63:13-49
+101        <activity
+101-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:65:9-69:40
+102            android:name="com.utkarshnew.android.purchasehistory.PurchaseHistoryDetail"
+102-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:66:13-66
+103            android:alwaysRetainTaskState="true"
+103-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:67:13-49
+104            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+104-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:68:13-122
+105            android:exported="false" />
+105-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:69:13-37
+106        <activity
+106-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:71:9-76:52
+107            android:name="com.utkarshnew.android.feeds.activity.FeedVideoPlayer"
+107-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:72:13-59
+108            android:alwaysRetainTaskState="true"
+108-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:73:13-49
+109            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+109-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:74:13-122
+110            android:exported="false"
+110-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:75:13-37
+111            android:screenOrientation="portrait" />
+111-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:76:13-49
+112        <activity
+112-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:78:9-83:52
+113            android:name="com.utkarshnew.android.Intro.Activity.IntroActivity"
+113-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:79:13-57
+114            android:alwaysRetainTaskState="true"
+114-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:80:13-49
+115            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+115-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:81:13-122
+116            android:exported="false"
+116-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:82:13-37
+117            android:screenOrientation="portrait" />
+117-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:83:13-49
+118        <activity
+118-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:84:9-89:52
+119            android:name="com.utkarshnew.android.feeds.activity.FeedsActivity"
+119-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:85:13-57
+120            android:alwaysRetainTaskState="true"
+120-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:86:13-49
+121            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+121-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:87:13-122
+122            android:exported="false"
+122-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:88:13-37
+123            android:screenOrientation="portrait" />
+123-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:89:13-49
+124        <activity
+124-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:90:9-94:52
+125            android:name="com.utkarshnew.android.Coupon.Activity.CouponPurchaseActivity"
+125-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:91:13-67
+126            android:alwaysRetainTaskState="true"
+126-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:92:13-49
+127            android:exported="false"
+127-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:93:13-37
+128            android:screenOrientation="portrait" />
+128-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:94:13-49
+129        <activity
+129-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:95:9-99:52
+130            android:name="com.utkarshnew.android.Coupon.Activity.EligibleCoursesActivity"
+130-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:96:13-68
+131            android:alwaysRetainTaskState="true"
+131-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:97:13-49
+132            android:exported="false"
+132-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:98:13-37
+133            android:screenOrientation="portrait" />
+133-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:99:13-49
+134        <activity
+134-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:100:9-104:52
+135            android:name="com.utkarshnew.android.Coupon.Activity.CouponActivity"
+135-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:101:13-59
+136            android:alwaysRetainTaskState="true"
+136-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:102:13-49
+137            android:exported="false"
+137-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:103:13-37
+138            android:screenOrientation="portrait" />
+138-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:104:13-49
+139        <activity
+139-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:105:9-110:52
+140            android:name="com.utkarshnew.android.testmodule.activity.TestSubmissionActivity"
+140-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:106:13-71
+141            android:alwaysRetainTaskState="true"
+141-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:107:13-49
+142            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+142-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:108:13-96
+143            android:exported="false"
+143-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:109:13-37
+144            android:screenOrientation="portrait" />
+144-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:110:13-49
+145        <activity
+145-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:111:9-115:59
+146            android:name="com.utkarshnew.android.Player.CustommediaPlayerDialog"
+146-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:112:13-59
+147            android:exported="true"
+147-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:113:13-36
+148            android:screenOrientation="portrait"
+148-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:114:13-49
+149            android:theme="@android:style/Theme.Dialog" />
+149-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:115:13-56
+150        <activity
+150-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:116:9-119:52
+151            android:name="com.utkarshnew.android.Notification.NotificationDescription"
+151-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:117:13-65
+152            android:exported="false"
+152-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:118:13-37
+153            android:screenOrientation="portrait" /> <!-- <receiver android:name=".Utils.Service.MyFirebaseMessagingService$CancelNotification"/> -->
+153-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:119:13-49
+154        <activity
+154-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:120:9-149:20
+155            android:name="com.utkarshnew.android.Login.Activity.SplashScreen"
+155-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:121:13-56
+156            android:alwaysRetainTaskState="true"
+156-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:122:13-49
+157            android:exported="true"
+157-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:123:13-36
+158            android:screenOrientation="portrait"
+158-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:124:13-49
+159            android:theme="@style/AppTheme.SplashTheme" >
+159-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:125:13-56
+160            <intent-filter>
+160-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:127:13-131:29
+161                <action android:name="android.intent.action.MAIN" />
+161-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:128:17-69
+161-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:128:25-66
+162
+163                <category android:name="android.intent.category.LAUNCHER" />
+163-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:130:17-77
+163-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:130:27-74
+164            </intent-filter>
+165            <intent-filter>
+165-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:132:13-148:29
+166                <action android:name="android.intent.action.VIEW" />
+166-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:133:17-69
+166-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:133:25-66
+167
+168                <category android:name="android.intent.category.DEFAULT" />
+168-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+168-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+169                <category android:name="android.intent.category.BROWSABLE" />
+169-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:136:17-78
+169-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:136:27-75
+170
+171                <data
+171-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+172                    android:host="https://www.ibtindia.com"
+172-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:139:21-60
+173                    android:scheme="http" />
+173-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+174                <data
+174-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+175                    android:host="https://www.ibtindia.com"
+175-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:139:21-60
+176                    android:scheme="https" />
+176-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+177                <data
+177-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+178                    android:host="utkarshnew.page.link"
+178-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:139:21-60
+179                    android:pathPattern=".*"
+179-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:146:21-45
+180                    android:scheme="https" />
+180-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+181            </intent-filter>
+182        </activity>
+183
+184        <meta-data
+184-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:151:9-153:160
+185            android:name="fr.maxcom.libmedia.apiKey"
+185-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:152:13-53
+186            android:value="IlX1RejlHHObOLiBQ2NYVpYNWBB5gar78Tspqy1PA1JSSlAdXscBFmRxAmbZz2A9lDFcsi4K2PN0GQfwOlgKwmLZm7gAAAAA2w20tc0WsvrKEbH13RX3+tYGq/TRBg==" />
+186-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:153:13-157
+187
+188        <activity
+188-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:155:9-159:76
+189            android:name="com.utkarshnew.android.courses.Activity.Concept_newActivity"
+189-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:156:13-65
+190            android:configChanges="keyboardHidden|orientation|screenSize"
+190-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:157:13-74
+191            android:exported="false"
+191-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:158:13-37
+192            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+192-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:159:13-73
+193
+194        <meta-data
+194-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:162:9-164:36
+195            android:name="firebase_crashlytics_collection_enabled"
+195-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:163:13-67
+196            android:value="true" />
+196-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:164:13-33
+197
+198        <provider
+199            android:name="androidx.core.content.FileProvider"
+199-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:167:13-62
+200            android:authorities="com.utkarshnew.android.provider"
+200-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:168:13-60
+201            android:exported="false"
+201-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:169:13-37
+202            android:grantUriPermissions="true" >
+202-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:170:13-47
+203            <meta-data
+203-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:171:13-173:58
+204                android:name="android.support.FILE_PROVIDER_PATHS"
+204-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:172:17-67
+205                android:resource="@xml/provider_paths" />
+205-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:173:17-55
+206        </provider>
+207
+208        <service android:name="com.utkarshnew.android.Utils.TestService" />
+208-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:176:9-54
+208-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:176:18-51
+209
+210        <activity
+210-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:178:9-184:59
+211            android:name="com.utkarshnew.android.purchasehistory.PurchaseHistory"
+211-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:179:13-60
+212            android:alwaysRetainTaskState="true"
+212-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:180:13-49
+213            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+213-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:181:13-96
+214            android:exported="false"
+214-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:182:13-37
+215            android:screenOrientation="portrait"
+215-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:183:13-49
+216            android:windowSoftInputMode="adjustNothing" />
+216-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:184:13-56
+217        <activity
+217-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:185:9-190:60
+218            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+218-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:186:13-76
+219            android:alwaysRetainTaskState="true"
+219-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:187:13-49
+220            android:exported="false"
+220-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:188:13-37
+221            android:screenOrientation="portrait"
+221-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:189:13-49
+222            android:theme="@style/Theme.AppCompat.Light" />
+222-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:190:13-57
+223        <!--
+224 <activity
+225            android:alwaysRetainTaskState="true"
+226            android:name="com.utkarsh.android.Login.Activity.SplashScreen"
+227            android:launchMode="singleTask"
+228            android:screenOrientation="portrait"
+229            tools:ignore="LockedOrientationActivity">
+230            <intent-filter>
+231                <action android:name="android.intent.action.MAIN" />
+232
+233                <category android:name="android.intent.category.LAUNCHER" />
+234            </intent-filter>
+235        </activity>
+236        -->
+237        <meta-data
+237-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:205:9-207:55
+238            android:name="com.facebook.sdk.ApplicationId"
+238-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:206:13-58
+239            android:value="@string/facebook_app_id" />
+239-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:207:13-52
+240
+241        <activity
+241-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:209:9-213:52
+242            android:name="com.utkarshnew.android.home.Activity.LibrariesUsedActivity"
+242-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:210:13-64
+243            android:alwaysRetainTaskState="true"
+243-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:211:13-49
+244            android:exported="false"
+244-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:212:13-37
+245            android:screenOrientation="portrait" />
+245-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:213:13-49
+246        <activity
+246-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:214:9-218:52
+247            android:name="com.utkarshnew.android.home.Activity.SettingsActivity"
+247-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:215:13-59
+248            android:alwaysRetainTaskState="true"
+248-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:216:13-49
+249            android:exported="false"
+249-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:217:13-37
+250            android:screenOrientation="portrait" />
+250-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:218:13-49
+251        <activity
+251-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:219:9-223:52
+252            android:name="com.utkarshnew.android.home.Activity.ChatBotActvity"
+252-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:220:13-57
+253            android:alwaysRetainTaskState="true"
+253-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:221:13-49
+254            android:exported="true"
+254-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:222:13-36
+255            android:screenOrientation="portrait" />
+255-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:223:13-49
+256        <activity
+256-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:224:9-230:56
+257            android:name="com.utkarshnew.android.home.Activity.HomeActivity"
+257-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:225:13-55
+258            android:alwaysRetainTaskState="true"
+258-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:226:13-49
+259            android:exported="false"
+259-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:227:13-37
+260            android:screenOrientation="portrait"
+260-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:228:13-49
+261            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+261-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:229:13-73
+262        <activity
+262-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:231:9-236:56
+263            android:name="com.utkarshnew.android.Login.Activity.LoginCatActivity"
+263-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:232:13-60
+264            android:exported="false"
+264-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:233:13-37
+265            android:screenOrientation="portrait"
+265-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:234:13-49
+266            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+266-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:235:13-73
+267        <activity
+267-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:237:9-243:56
+268            android:name="com.utkarshnew.android.Login.Activity.SignInActivity"
+268-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:238:13-58
+269            android:exported="false"
+269-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:239:13-37
+270            android:screenOrientation="portrait"
+270-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:240:13-49
+271            android:theme="@style/customThemeForSigninActivity"
+271-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:241:13-64
+272            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+272-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:242:13-73
+273        <activity
+273-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:244:9-250:56
+274            android:name="com.utkarshnew.android.courses.Activity.CourseActivity"
+274-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:245:13-60
+275            android:alwaysRetainTaskState="true"
+275-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:246:13-49
+276            android:exported="false"
+276-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:247:13-37
+277            android:screenOrientation="portrait"
+277-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:248:13-49
+278            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+278-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:249:13-73
+279        <activity
+279-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:251:9-258:56
+280            android:name="com.utkarshnew.android.courses.Activity.QuizActivity"
+280-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:252:13-58
+281            android:alwaysRetainTaskState="true"
+281-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:253:13-49
+282            android:exported="false"
+282-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:255:13-37
+283            android:screenOrientation="portrait"
+283-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:256:13-49
+284            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+284-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:257:13-73
+285        <activity
+285-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:259:9-265:56
+286            android:name="com.utkarshnew.android.courses.Activity.SearchActivity"
+286-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:260:13-60
+287            android:alwaysRetainTaskState="true"
+287-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:261:13-49
+288            android:exported="false"
+288-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:262:13-37
+289            android:screenOrientation="portrait"
+289-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:263:13-49
+290            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+290-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:264:13-73
+291        <activity
+291-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:266:9-270:52
+292            android:name="com.utkarshnew.android.home.Activity.MyLibraryActivty"
+292-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:267:13-59
+293            android:alwaysRetainTaskState="true"
+293-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:268:13-49
+294            android:exported="false"
+294-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:269:13-37
+295            android:screenOrientation="portrait" />
+295-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:270:13-49
+296        <activity
+296-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:271:9-275:52
+297            android:name="com.utkarshnew.android.LiveTest.Activity.LivetestActivity"
+297-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:272:13-63
+298            android:alwaysRetainTaskState="true"
+298-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:273:13-49
+299            android:exported="false"
+299-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:274:13-37
+300            android:screenOrientation="portrait" />
+300-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:275:13-49
+301        <activity
+301-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:276:9-280:52
+302            android:name="com.utkarshnew.android.LiveClass.Activity.LiveClassActivity"
+302-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:277:13-65
+303            android:alwaysRetainTaskState="true"
+303-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:278:13-49
+304            android:exported="false"
+304-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:279:13-37
+305            android:screenOrientation="portrait" />
+305-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:280:13-49
+306        <activity
+306-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:281:9-285:52
+307            android:name="com.utkarshnew.android.Webview.SearchRevisionVideosActivity"
+307-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:282:13-65
+308            android:alwaysRetainTaskState="true"
+308-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:283:13-49
+309            android:exported="true"
+309-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:284:13-36
+310            android:screenOrientation="portrait" />
+310-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:285:13-49
+311        <activity
+311-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:286:9-291:76
+312            android:name="com.utkarshnew.android.Webview.RevisionActivity"
+312-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:287:13-53
+313            android:alwaysRetainTaskState="true"
+313-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:288:13-49
+314            android:exported="false"
+314-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:289:13-37
+315            android:screenOrientation="portrait"
+315-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:290:13-49
+316            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+316-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:291:13-73
+317        <activity
+317-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:292:9-296:52
+318            android:name="com.utkarshnew.android.Notification.Notification"
+318-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:293:13-54
+319            android:alwaysRetainTaskState="true"
+319-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:294:13-49
+320            android:exported="false"
+320-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:295:13-37
+321            android:screenOrientation="portrait" />
+321-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:296:13-49
+322        <activity
+322-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:297:9-303:56
+323            android:name="com.utkarshnew.android.CreateTest.Activity.CreateTestActivity"
+323-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:298:13-67
+324            android:alwaysRetainTaskState="true"
+324-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:299:13-49
+325            android:exported="false"
+325-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:300:13-37
+326            android:screenOrientation="portrait"
+326-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:301:13-49
+327            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+327-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:302:13-73
+328        <activity
+328-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:304:9-310:56
+329            android:name="com.utkarshnew.android.CourseTransfer.CourseTransferActivity"
+329-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:305:13-66
+330            android:alwaysRetainTaskState="true"
+330-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:306:13-49
+331            android:exported="false"
+331-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:307:13-37
+332            android:screenOrientation="portrait"
+332-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:308:13-49
+333            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+333-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:309:13-73
+334        <activity
+334-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:311:9-317:56
+335            android:name="com.utkarshnew.android.MigrateUser.MigrateUserActivity"
+335-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:312:13-60
+336            android:alwaysRetainTaskState="true"
+336-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:313:13-49
+337            android:exported="false"
+337-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:314:13-37
+338            android:screenOrientation="portrait"
+338-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:315:13-49
+339            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+339-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:316:13-73
+340        <activity
+340-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:318:9-324:59
+341            android:name="com.utkarshnew.android.testmodule.activity.VideoPlayActivity"
+341-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:319:13-66
+342            android:alwaysRetainTaskState="true"
+342-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:320:13-49
+343            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+343-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:321:13-96
+344            android:exported="true"
+344-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:322:13-36
+345            android:screenOrientation="portrait"
+345-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:323:13-49
+346            android:windowSoftInputMode="adjustNothing" />
+346-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:324:13-56
+347        <activity
+347-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:325:9-331:59
+348            android:name="com.utkarshnew.android.Webview.RevisionSolutionActivity"
+348-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:326:13-61
+349            android:alwaysRetainTaskState="true"
+349-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:327:13-49
+350            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+350-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:328:13-96
+351            android:exported="false"
+351-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:329:13-37
+352            android:screenOrientation="portrait"
+352-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:330:13-49
+353            android:windowSoftInputMode="adjustNothing" />
+353-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:331:13-56
+354        <activity
+354-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:332:9-338:59
+355            android:name="com.utkarshnew.android.CreateTest.Activity.CreateTestSolutionActivity"
+355-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:333:13-75
+356            android:alwaysRetainTaskState="true"
+356-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:334:13-49
+357            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+357-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:335:13-96
+358            android:exported="false"
+358-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:336:13-37
+359            android:screenOrientation="portrait"
+359-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:337:13-49
+360            android:windowSoftInputMode="adjustNothing" />
+360-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:338:13-56
+361        <activity
+361-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:339:9-345:59
+362            android:name="com.utkarshnew.android.Webview.RevisionTest"
+362-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:340:13-49
+363            android:alwaysRetainTaskState="true"
+363-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:341:13-49
+364            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+364-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:342:13-96
+365            android:exported="false"
+365-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:343:13-37
+366            android:screenOrientation="portrait"
+366-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:344:13-49
+367            android:windowSoftInputMode="adjustNothing" />
+367-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:345:13-56
+368        <activity
+368-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:346:9-352:59
+369            android:name="com.utkarshnew.android.Payment.PurchaseActivity"
+369-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:347:13-53
+370            android:alwaysRetainTaskState="true"
+370-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:348:13-49
+371            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+371-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:349:13-96
+372            android:exported="false"
+372-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:350:13-37
+373            android:screenOrientation="portrait"
+373-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:351:13-49
+374            android:windowSoftInputMode="adjustNothing" />
+374-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:352:13-56
+375        <activity
+375-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:353:9-359:59
+376            android:name="com.utkarshnew.android.Profile.ProfileActivity"
+376-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:354:13-52
+377            android:alwaysRetainTaskState="true"
+377-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:355:13-49
+378            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+378-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:356:13-96
+379            android:exported="false"
+379-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:357:13-37
+380            android:screenOrientation="portrait"
+380-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:358:13-49
+381            android:windowSoftInputMode="adjustNothing" />
+381-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:359:13-56
+382        <activity
+382-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:360:9-366:59
+383            android:name="com.utkarshnew.android.testmodule.activity.TestBaseActivity"
+383-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:361:13-65
+384            android:alwaysRetainTaskState="true"
+384-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:362:13-49
+385            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+385-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:363:13-96
+386            android:exported="false"
+386-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:364:13-37
+387            android:screenOrientation="portrait"
+387-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:365:13-49
+388            android:windowSoftInputMode="adjustNothing" />
+388-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:366:13-56
+389        <activity
+389-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:367:9-373:59
+390            android:name="com.utkarshnew.android.CreateTest.Activity.TestCreateActivity"
+390-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:368:13-67
+391            android:alwaysRetainTaskState="true"
+391-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:369:13-49
+392            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+392-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:370:13-96
+393            android:exported="false"
+393-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:371:13-37
+394            android:screenOrientation="portrait"
+394-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:372:13-49
+395            android:windowSoftInputMode="adjustNothing" />
+395-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:373:13-56
+396        <activity
+396-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:374:9-380:59
+397            android:name="com.utkarshnew.android.testmodule.activity.ViewSolutionActivity"
+397-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:375:13-69
+398            android:alwaysRetainTaskState="true"
+398-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:376:13-49
+399            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+399-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:377:13-96
+400            android:exported="false"
+400-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:378:13-37
+401            android:screenOrientation="portrait"
+401-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:379:13-49
+402            android:windowSoftInputMode="adjustNothing" />
+402-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:380:13-56
+403        <activity
+403-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:381:9-385:52
+404            android:name="com.utkarshnew.android.Webview.FlashcardActivity"
+404-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:382:13-54
+405            android:alwaysRetainTaskState="true"
+405-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:383:13-49
+406            android:exported="false"
+406-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:384:13-37
+407            android:screenOrientation="portrait" />
+407-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:385:13-49
+408        <activity
+408-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:386:9-391:76
+409            android:name="com.utkarshnew.android.courses.Activity.PdfDetailScreen"
+409-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:387:13-61
+410            android:alwaysRetainTaskState="true"
+410-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:388:13-49
+411            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+411-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:389:13-122
+412            android:exported="false"
+412-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:390:13-37
+413            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+413-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:391:13-73
+414        <activity
+414-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:392:9-417:20
+415            android:name="com.utkarshnew.android.Player.CustomMediaPlayer"
+415-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:393:13-53
+416            android:alwaysRetainTaskState="true"
+416-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:394:13-49
+417            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+417-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:395:13-122
+418            android:exported="true"
+418-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:396:13-36
+419            android:label="@string/app_name"
+419-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:397:13-45
+420            android:launchMode="singleTop"
+420-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:398:13-43
+421            android:theme="@style/PlayerTheme"
+421-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:399:13-47
+422            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+422-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:400:13-73
+423            <intent-filter>
+423-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:401:13-411:29
+424                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+424-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:17-88
+424-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:25-85
+425
+426                <category android:name="android.intent.category.DEFAULT" />
+426-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+426-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+427
+428                <data android:scheme="http" />
+428-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+428-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+429                <data android:scheme="https" />
+429-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+429-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+430                <data android:scheme="content" />
+430-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+430-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+431                <data android:scheme="asset" />
+431-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+431-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+432                <data android:scheme="file" />
+432-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+432-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+433            </intent-filter>
+434            <intent-filter>
+434-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:412:13-416:29
+435                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+435-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:17-93
+435-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:25-90
+436
+437                <category android:name="android.intent.category.DEFAULT" />
+437-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+437-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+438            </intent-filter>
+439        </activity>
+440        <activity
+440-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:418:9-422:52
+441            android:name="com.utkarshnew.android.Download.DownloadActivity"
+441-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:419:13-54
+442            android:alwaysRetainTaskState="true"
+442-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:420:13-49
+443            android:exported="false"
+443-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:421:13-37
+444            android:screenOrientation="portrait" />
+444-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:422:13-49
+445        <activity
+445-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:423:9-427:52
+446            android:name="com.utkarshnew.android.Webview.WebViewActivty"
+446-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:424:13-51
+447            android:alwaysRetainTaskState="true"
+447-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:425:13-49
+448            android:exported="false"
+448-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:426:13-37
+449            android:screenOrientation="portrait" />
+449-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:427:13-49
+450        <activity
+450-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:428:9-432:52
+451            android:name="com.utkarshnew.android.Webview.PdfHtmlAcivity"
+451-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:429:13-51
+452            android:alwaysRetainTaskState="true"
+452-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:430:13-49
+453            android:exported="false"
+453-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:431:13-37
+454            android:screenOrientation="portrait" />
+454-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:432:13-49
+455        <activity
+455-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:433:9-458:20
+456            android:name="com.utkarshnew.android.Download.DownloadVideoPlayer"
+456-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:434:13-57
+457            android:alwaysRetainTaskState="true"
+457-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:435:13-49
+458            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+458-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:436:13-122
+459            android:exported="true"
+459-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:437:13-36
+460            android:label="@string/app_name"
+460-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:438:13-45
+461            android:launchMode="singleTop"
+461-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:439:13-43
+462            android:theme="@style/PlayerTheme"
+462-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:440:13-47
+463            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+463-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:441:13-73
+464            <intent-filter>
+464-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:401:13-411:29
+465                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+465-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:17-88
+465-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:25-85
+466
+467                <category android:name="android.intent.category.DEFAULT" />
+467-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+467-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+468
+469                <data android:scheme="http" />
+469-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+469-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+470                <data android:scheme="https" />
+470-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+470-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+471                <data android:scheme="content" />
+471-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+471-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+472                <data android:scheme="asset" />
+472-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+472-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+473                <data android:scheme="file" />
+473-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+473-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+474            </intent-filter>
+475            <intent-filter>
+475-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:412:13-416:29
+476                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+476-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:17-93
+476-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:25-90
+477
+478                <category android:name="android.intent.category.DEFAULT" />
+478-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+478-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+479            </intent-filter>
+480        </activity>
+481        <activity
+481-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:459:9-464:52
+482            android:name="com.utkarshnew.android.UserHistory.UserHistoryActivity"
+482-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:460:13-60
+483            android:alwaysRetainTaskState="true"
+483-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:461:13-49
+484            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+484-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:462:13-122
+485            android:exported="false"
+485-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:463:13-37
+486            android:screenOrientation="portrait" />
+486-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:464:13-49
+487        <activity
+487-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:465:9-471:56
+488            android:name="com.utkarshnew.android.courses.Activity.ConceptScreen"
+488-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:466:13-59
+489            android:alwaysRetainTaskState="true"
+489-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:467:13-49
+490            android:exported="false"
+490-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:468:13-37
+491            android:screenOrientation="portrait"
+491-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:469:13-49
+492            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+492-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:470:13-73
+493        <activity
+493-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:472:9-478:56
+494            android:name="com.utkarshnew.android.courses.Activity.WebFragActivity"
+494-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:473:13-61
+495            android:alwaysRetainTaskState="true"
+495-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:474:13-49
+496            android:exported="false"
+496-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:475:13-37
+497            android:screenOrientation="portrait"
+497-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:476:13-49
+498            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+498-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:477:13-73
+499        <activity
+499-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:479:9-485:56
+500            android:name="com.utkarshnew.android.helpChat.HelpSupportActivity"
+500-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:480:13-57
+501            android:alwaysRetainTaskState="true"
+501-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:481:13-49
+502            android:exported="false"
+502-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:482:13-37
+503            android:screenOrientation="portrait"
+503-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:483:13-49
+504            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+504-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:484:13-73
+505        <activity
+505-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:486:9-492:56
+506            android:name="com.utkarshnew.android.helpChat.HelpChatActivity"
+506-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:487:13-54
+507            android:alwaysRetainTaskState="true"
+507-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:488:13-49
+508            android:exported="false"
+508-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:489:13-37
+509            android:screenOrientation="portrait"
+509-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:490:13-49
+510            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+510-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:491:13-73
+511        <activity
+511-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:493:9-499:56
+512            android:name="com.utkarshnew.android.helpChat.HelpQueryActivity"
+512-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:494:13-55
+513            android:alwaysRetainTaskState="true"
+513-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:495:13-49
+514            android:exported="false"
+514-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:496:13-37
+515            android:screenOrientation="portrait"
+515-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:497:13-49
+516            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+516-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:498:13-73
+517        <activity
+517-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:500:9-506:56
+518            android:name="com.utkarshnew.android.courses.Activity.MyNotesActivity"
+518-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:501:13-61
+519            android:alwaysRetainTaskState="true"
+519-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:502:13-49
+520            android:exported="false"
+520-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:503:13-37
+521            android:screenOrientation="portrait"
+521-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:504:13-49
+522            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+522-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:505:13-73
+523        <activity
+523-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:507:9-513:56
+524            android:name="com.utkarshnew.android.courses.Activity.MyNotesSelectionActivity"
+524-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:508:13-70
+525            android:alwaysRetainTaskState="true"
+525-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:509:13-49
+526            android:exported="false"
+526-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:510:13-37
+527            android:screenOrientation="portrait"
+527-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:511:13-49
+528            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+528-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:512:13-73
+529        <activity
+529-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:514:9-520:56
+530            android:name="com.utkarshnew.android.Login.Activity.PermissionSettingActivity"
+530-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:515:13-69
+531            android:alwaysRetainTaskState="true"
+531-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:516:13-49
+532            android:exported="false"
+532-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:517:13-37
+533            android:screenOrientation="portrait"
+533-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:518:13-49
+534            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+534-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:519:13-73
+535        <activity
+535-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:521:9-546:20
+536            android:name="com.utkarshnew.android.Player.Liveawsactivity"
+536-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:522:13-51
+537            android:alwaysRetainTaskState="true"
+537-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:523:13-49
+538            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+538-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:524:13-122
+539            android:exported="true"
+539-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:525:13-36
+540            android:label="@string/app_name"
+540-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:526:13-45
+541            android:launchMode="singleTop"
+541-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:527:13-43
+542            android:theme="@style/PlayerTheme"
+542-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:528:13-47
+543            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+543-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:529:13-73
+544            <intent-filter>
+544-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:401:13-411:29
+545                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+545-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:17-88
+545-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:25-85
+546
+547                <category android:name="android.intent.category.DEFAULT" />
+547-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+547-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+548
+549                <data android:scheme="http" />
+549-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+549-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+550                <data android:scheme="https" />
+550-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+550-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+551                <data android:scheme="content" />
+551-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+551-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+552                <data android:scheme="asset" />
+552-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+552-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+553                <data android:scheme="file" />
+553-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+553-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+554            </intent-filter>
+555            <intent-filter>
+555-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:412:13-416:29
+556                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+556-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:17-93
+556-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:25-90
+557
+558                <category android:name="android.intent.category.DEFAULT" />
+558-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+558-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+559            </intent-filter>
+560        </activity>
+561        <activity
+561-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:548:9-573:20
+562            android:name="com.utkarshnew.android.Player.DrmVideoPlayerActivity"
+562-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:549:13-58
+563            android:alwaysRetainTaskState="true"
+563-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:550:13-49
+564            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+564-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:551:13-122
+565            android:exported="true"
+565-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:552:13-36
+566            android:label="@string/app_name"
+566-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:553:13-45
+567            android:launchMode="singleTop"
+567-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:554:13-43
+568            android:theme="@style/PlayerTheme"
+568-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:555:13-47
+569            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+569-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:556:13-73
+570            <intent-filter>
+570-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:401:13-411:29
+571                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+571-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:17-88
+571-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:25-85
+572
+573                <category android:name="android.intent.category.DEFAULT" />
+573-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+573-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+574
+575                <data android:scheme="http" />
+575-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+575-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+576                <data android:scheme="https" />
+576-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+576-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+577                <data android:scheme="content" />
+577-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+577-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+578                <data android:scheme="asset" />
+578-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+578-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+579                <data android:scheme="file" />
+579-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+579-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+580            </intent-filter>
+581            <intent-filter>
+581-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:412:13-416:29
+582                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+582-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:17-93
+582-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:25-90
+583
+584                <category android:name="android.intent.category.DEFAULT" />
+584-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+584-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+585            </intent-filter>
+586        </activity>
+587        <activity
+587-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:574:9-578:39
+588            android:name="com.utkarshnew.android.NotificationActivity"
+588-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:575:13-49
+589            android:excludeFromRecents="true"
+589-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:576:13-46
+590            android:exported="false"
+590-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:577:13-37
+591            android:taskAffinity="" />
+591-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:578:13-36
+592        <activity
+592-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:579:9-623:20
+593            android:name="com.utkarshnew.android.JWextractor.JWVideoPlayer"
+593-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:580:13-54
+594            android:alwaysRetainTaskState="true"
+594-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:581:13-49
+595            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+595-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:582:13-122
+596            android:exported="true"
+596-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:583:13-36
+597            android:label="@string/app_name"
+597-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:584:13-45
+598            android:launchMode="singleTop"
+598-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:585:13-43
+599            android:theme="@style/PlayerTheme"
+599-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:586:13-47
+600            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+600-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:587:13-73
+601            <intent-filter>
+601-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:588:13-599:29
+602                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+602-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:17-88
+602-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:25-85
+603
+604                <category android:name="android.intent.category.DEFAULT" />
+604-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+604-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+605
+606                <data android:scheme="http" />
+606-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+606-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+607                <data android:scheme="https" />
+607-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+607-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+608                <data android:scheme="content" />
+608-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+608-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+609                <data android:scheme="asset" />
+609-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+609-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+610                <data android:scheme="file" />
+610-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+610-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+611                <data android:scheme="ssai" />
+611-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+611-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+612            </intent-filter>
+613            <intent-filter>
+613-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:412:13-416:29
+614                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+614-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:17-93
+614-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:25-90
+615
+616                <category android:name="android.intent.category.DEFAULT" />
+616-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+616-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+617            </intent-filter>
+618            <!--
+619            <intent-filter>
+620                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+621
+622                <category android:name="android.intent.category.DEFAULT" />
+623
+624                <data android:scheme="http" />
+625                <data android:scheme="https" />
+626                <data android:scheme="content" />
+627                <data android:scheme="asset" />
+628                <data android:scheme="file" />
+629            </intent-filter>
+630            <intent-filter>
+631                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+632
+633                <category android:name="android.intent.category.DEFAULT" />
+634            </intent-filter>
+635            -->
+636        </activity>
+637        <activity
+637-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:624:9-650:20
+638            android:name="com.utkarshnew.android.Download.AudioPlayerActivty"
+638-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:625:13-56
+639            android:alwaysRetainTaskState="true"
+639-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:626:13-49
+640            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+640-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:627:13-122
+641            android:exported="true"
+641-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:628:13-36
+642            android:label="@string/app_name"
+642-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:629:13-45
+643            android:launchMode="singleTop"
+643-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:630:13-43
+644            android:screenOrientation="portrait"
+644-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:631:13-49
+645            android:theme="@style/PlayerTheme"
+645-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:632:13-47
+646            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+646-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:633:13-73
+647            <intent-filter>
+647-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:401:13-411:29
+648                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+648-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:17-88
+648-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:402:25-85
+649
+650                <category android:name="android.intent.category.DEFAULT" />
+650-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+650-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+651
+652                <data android:scheme="http" />
+652-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+652-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+653                <data android:scheme="https" />
+653-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+653-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+654                <data android:scheme="content" />
+654-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+654-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+655                <data android:scheme="asset" />
+655-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+655-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+656                <data android:scheme="file" />
+656-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+656-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+657            </intent-filter>
+658            <intent-filter>
+658-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:412:13-416:29
+659                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+659-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:17-93
+659-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:413:25-90
+660
+661                <category android:name="android.intent.category.DEFAULT" />
+661-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+661-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+662            </intent-filter>
+663        </activity>
+664
+665        <uses-library
+665-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:652:9-654:40
+666            android:name="org.apache.http.legacy"
+666-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:653:13-50
+667            android:required="false" />
+667-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:654:13-37
+668
+669        <service
+669-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:656:9-658:39
+670            android:name="com.utkarshnew.android.DownloadServices.VideoDownloadService"
+670-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:657:13-66
+671            android:exported="true" />
+671-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:658:13-36
+672        <service
+672-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:659:9-664:19
+673            android:name="com.utkarshnew.android.Download.Audio.AudioPlayerService"
+673-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:660:13-62
+674            android:exported="true"
+674-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:661:13-36
+675            android:foregroundServiceType="mediaPlayback" >
+675-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:662:13-58
+676        </service>
+677        <service
+677-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:666:9-672:19
+678            android:name="com.utkarshnew.android.Utils.Service.MyFirebaseMessagingService"
+678-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:667:13-69
+679            android:exported="true" >
+679-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:668:13-36
+680            <intent-filter>
+680-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:669:13-671:29
+681                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+681-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:670:17-78
+681-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:670:25-75
+682            </intent-filter>
+683        </service>
+684        <service
+684-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:673:9-679:19
+685            android:name="com.utkarshnew.android.Utils.Service.MyFirebaseInstanceIDService"
+685-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:674:13-70
+686            android:exported="true" >
+686-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:675:13-36
+687            <intent-filter>
+687-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:676:13-678:29
+688                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+688-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:677:17-80
+688-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:677:25-77
+689            </intent-filter>
+690        </service>
+691
+692        <meta-data
+692-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:681:9-683:54
+693            android:name="com.google.firebase.messaging.default_notification_color"
+693-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:682:13-84
+694            android:resource="@color/colorPrimary" />
+694-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:683:13-51
+695
+696        <!--
+697                 <receiver
+698                 android:name=".Sms.SmsReceiver"
+699                 android:exported="true">
+700                 <intent-filter>
+701                     <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+702                 </intent-filter>
+703             </receiver>
+704        -->
+705        <activity
+705-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:693:9-699:56
+706            android:name="com.utkarshnew.android.CourseTransfer.OtpActivity"
+706-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:694:13-55
+707            android:alwaysRetainTaskState="true"
+707-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:695:13-49
+708            android:exported="false"
+708-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:696:13-37
+709            android:screenOrientation="portrait"
+709-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:697:13-49
+710            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+710-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:698:13-73
+711
+712        <receiver
+712-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:701:9-707:20
+713            android:name="com.razorpay.RzpTokenReceiver"
+713-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:702:13-57
+714            android:exported="false" >
+714-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:703:13-37
+715            <intent-filter>
+715-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:704:13-706:29
+716                <action android:name="rzp.device_token.share" />
+716-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:705:17-65
+716-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:705:25-62
+717            </intent-filter>
+718        </receiver>
+719
+720        <activity
+720-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:709:9-720:20
+721            android:name="com.razorpay.CheckoutActivity"
+721-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:710:13-57
+722            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+722-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:711:13-83
+723            android:exported="true"
+723-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:712:13-36
+724            android:theme="@style/CheckoutTheme" >
+724-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:713:13-49
+725            <intent-filter>
+725-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:714:13-719:29
+726                <action android:name="android.intent.action.MAIN" />
+726-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:128:17-69
+726-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:128:25-66
+727
+728                <data
+728-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+729                    android:host="rzp.io"
+729-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:139:21-60
+730                    android:scheme="io.rzp" />
+730-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+731            </intent-filter>
+732        </activity>
+733
+734        <provider
+734-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:12:9-16:40
+735            android:name="com.balsikandar.crashreporter.CrashReporterInitProvider"
+735-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:13:13-83
+736            android:authorities="com.utkarshnew.android.CrashReporterInitProvider"
+736-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:14:13-77
+737            android:enabled="true"
+737-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:15:13-35
+738            android:exported="false" />
+738-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:16:13-37
+739
+740        <activity
+740-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:18:9-22:58
+741            android:name="com.balsikandar.crashreporter.ui.CrashReporterActivity"
+741-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:19:13-82
+742            android:launchMode="singleTask"
+742-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:20:13-44
+743            android:taskAffinity="com.balsikandar.android.task"
+743-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:21:13-64
+744            android:theme="@style/CrashReporter.Theme" />
+744-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:22:13-55
+745        <activity
+745-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:23:9-26:58
+746            android:name="com.balsikandar.crashreporter.ui.LogMessageActivity"
+746-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:24:13-79
+747            android:parentActivityName="com.balsikandar.crashreporter.ui.CrashReporterActivity"
+747-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:25:13-96
+748            android:theme="@style/CrashReporter.Theme" />
+748-->[com.balsikandar.android:crashreporter:1.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\188e9643386d779c2022c899f9b6f103\jetified-crashreporter-1.1.0\AndroidManifest.xml:26:13-55
+749        <activity
+749-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
+750            android:name="com.facebook.FacebookActivity"
+750-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:31:13-57
+751            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+751-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:32:13-96
+752            android:theme="@style/com_facebook_activity_theme" />
+752-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
+753        <activity android:name="com.facebook.CustomTabMainActivity" />
+753-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:9-71
+753-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:19-68
+754        <activity
+754-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
+755            android:name="com.facebook.CustomTabActivity"
+755-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:36:13-58
+756            android:exported="true" >
+756-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:37:13-36
+757            <intent-filter>
+757-->[com.facebook.android:facebook-common:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cd8b3751e1a8356ea067d76c4a5b0406\jetified-facebook-common-5.15.3\AndroidManifest.xml:39:13-48:29
+758                <action android:name="android.intent.action.VIEW" />
+758-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:133:17-69
+758-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:133:25-66
+759
+760                <category android:name="android.intent.category.DEFAULT" />
+760-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+760-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+761                <category android:name="android.intent.category.BROWSABLE" />
+761-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:136:17-78
+761-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:136:27-75
+762
+763                <data
+763-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:138:17-140:45
+764                    android:host="cct.com.utkarshnew.android"
+764-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:139:21-60
+765                    android:scheme="fbconnect" />
+765-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:140:21-42
+766            </intent-filter>
+767        </activity>
+768        <activity
+768-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+769            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+769-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+770            android:excludeFromRecents="true"
+770-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+771            android:exported="true"
+771-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+772            android:launchMode="singleTask"
+772-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+773            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+773-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+774            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+774-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+775
+776        <service
+776-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+777            android:name="com.google.firebase.components.ComponentDiscoveryService"
+777-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+778            android:directBootAware="true"
+778-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0ff0bc58ea253949cb4810eac4119dfd\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+779            android:exported="false" >
+779-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+780            <meta-data
+780-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+781                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+781-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+782                android:value="com.google.firebase.components.ComponentRegistrar" />
+782-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\34edbe218adb5158f542acb71063e11f\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+783            <meta-data
+783-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\02f6135da57d0a90d66979c7d95d02b8\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:39:13-41:85
+784                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+784-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\02f6135da57d0a90d66979c7d95d02b8\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:40:17-119
+785                android:value="com.google.firebase.components.ComponentRegistrar" />
+785-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\02f6135da57d0a90d66979c7d95d02b8\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:41:17-82
+786            <meta-data
+786-->[com.google.firebase:firebase-crashlytics:17.4.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\9cbc798ef2d032d7ac9535fdbcf12f8e\jetified-firebase-crashlytics-17.4.0\AndroidManifest.xml:18:13-20:85
+787                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+787-->[com.google.firebase:firebase-crashlytics:17.4.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\9cbc798ef2d032d7ac9535fdbcf12f8e\jetified-firebase-crashlytics-17.4.0\AndroidManifest.xml:19:17-115
+788                android:value="com.google.firebase.components.ComponentRegistrar" />
+788-->[com.google.firebase:firebase-crashlytics:17.4.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\9cbc798ef2d032d7ac9535fdbcf12f8e\jetified-firebase-crashlytics-17.4.0\AndroidManifest.xml:20:17-82
+789            <meta-data
+789-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cfbe9e4ad9c256475ef05d3307991eb0\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:11:13-13:85
+790                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+790-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cfbe9e4ad9c256475ef05d3307991eb0\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:12:17-133
+791                android:value="com.google.firebase.components.ComponentRegistrar" />
+791-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\cfbe9e4ad9c256475ef05d3307991eb0\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:13:17-82
+792            <meta-data
+792-->[com.google.firebase:firebase-database:19.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\1e60940f484bba5b6a32fa05194d6465\jetified-firebase-database-19.1.0\AndroidManifest.xml:32:13-34:85
+793                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+793-->[com.google.firebase:firebase-database:19.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\1e60940f484bba5b6a32fa05194d6465\jetified-firebase-database-19.1.0\AndroidManifest.xml:33:17-109
+794                android:value="com.google.firebase.components.ComponentRegistrar" />
+794-->[com.google.firebase:firebase-database:19.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\1e60940f484bba5b6a32fa05194d6465\jetified-firebase-database-19.1.0\AndroidManifest.xml:34:17-82
+795            <meta-data
+795-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\448576dc4628f08d7a1d90c234502fb1\jetified-firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
+796                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+796-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\448576dc4628f08d7a1d90c234502fb1\jetified-firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
+797                android:value="com.google.firebase.components.ComponentRegistrar" />
+797-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\448576dc4628f08d7a1d90c234502fb1\jetified-firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
+798            <meta-data
+798-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:32:13-34:85
+799                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+799-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:33:17-96
+800                android:value="com.google.firebase.components.ComponentRegistrar" />
+800-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:34:17-82
+801            <meta-data
+801-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\44dd8f73d6efb2e7bdec7abff3a233ff\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:31:13-33:85
+802                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+802-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\44dd8f73d6efb2e7bdec7abff3a233ff\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:32:17-139
+803                android:value="com.google.firebase.components.ComponentRegistrar" />
+803-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\44dd8f73d6efb2e7bdec7abff3a233ff\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:33:17-82
+804            <meta-data
+804-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\fe9c9eb1b3e7b5a9a6ce11cfe2bd72ca\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+805                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+805-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\fe9c9eb1b3e7b5a9a6ce11cfe2bd72ca\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+806                android:value="com.google.firebase.components.ComponentRegistrar" />
+806-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\fe9c9eb1b3e7b5a9a6ce11cfe2bd72ca\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+807            <meta-data
+807-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\e76eb3639e26512c801725785dd03da6\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+808                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+808-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\e76eb3639e26512c801725785dd03da6\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+809                android:value="com.google.firebase.components.ComponentRegistrar" />
+809-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\e76eb3639e26512c801725785dd03da6\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+810        </service>
+811
+812        <activity
+812-->[com.google.android.gms:play-services-appinvite:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\207f725a96af478b3be29583422d9a88\jetified-play-services-appinvite-17.0.0\AndroidManifest.xml:25:9-34:20
+813            android:name="com.google.android.gms.appinvite.PreviewActivity"
+813-->[com.google.android.gms:play-services-appinvite:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\207f725a96af478b3be29583422d9a88\jetified-play-services-appinvite-17.0.0\AndroidManifest.xml:26:13-76
+814            android:exported="true"
+814-->[com.google.android.gms:play-services-appinvite:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\207f725a96af478b3be29583422d9a88\jetified-play-services-appinvite-17.0.0\AndroidManifest.xml:27:13-36
+815            android:theme="@style/Theme.AppInvite.Preview" >
+815-->[com.google.android.gms:play-services-appinvite:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\207f725a96af478b3be29583422d9a88\jetified-play-services-appinvite-17.0.0\AndroidManifest.xml:28:13-59
+816            <intent-filter>
+816-->[com.google.android.gms:play-services-appinvite:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\207f725a96af478b3be29583422d9a88\jetified-play-services-appinvite-17.0.0\AndroidManifest.xml:29:13-33:29
+817                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+817-->[com.google.android.gms:play-services-appinvite:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\207f725a96af478b3be29583422d9a88\jetified-play-services-appinvite-17.0.0\AndroidManifest.xml:30:17-90
+817-->[com.google.android.gms:play-services-appinvite:17.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\207f725a96af478b3be29583422d9a88\jetified-play-services-appinvite-17.0.0\AndroidManifest.xml:30:25-87
+818
+819                <category android:name="android.intent.category.DEFAULT" />
+819-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:17-76
+819-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:135:27-73
+820            </intent-filter>
+821        </activity>
+822        <!--
+823             FirebaseMessagingService performs security checks at runtime,
+824             but set to not exported to explicitly avoid allowing another app to call it.
+825        -->
+826        <service
+826-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\02f6135da57d0a90d66979c7d95d02b8\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:28:9-35:19
+827            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+827-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\02f6135da57d0a90d66979c7d95d02b8\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:29:13-82
+828            android:directBootAware="true"
+828-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\02f6135da57d0a90d66979c7d95d02b8\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:30:13-43
+829            android:exported="false" >
+829-->[com.google.firebase:firebase-messaging:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\02f6135da57d0a90d66979c7d95d02b8\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:31:13-37
+830            <intent-filter android:priority="-500" >
+830-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:669:13-671:29
+831                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+831-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:670:17-78
+831-->D:\AndroidProjects\svn projects\utkarsh test\utkarsh_test\app\src\main\AndroidManifest.xml:670:25-75
+832            </intent-filter>
+833        </service>
+834
+835        <provider
+835-->[com.squareup.picasso:picasso:2.71828] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\242459ecb6dbda0971b21320f7b3acd7\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+836            android:name="com.squareup.picasso.PicassoProvider"
+836-->[com.squareup.picasso:picasso:2.71828] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\242459ecb6dbda0971b21320f7b3acd7\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+837            android:authorities="com.utkarshnew.android.com.squareup.picasso"
+837-->[com.squareup.picasso:picasso:2.71828] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\242459ecb6dbda0971b21320f7b3acd7\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+838            android:exported="false" />
+838-->[com.squareup.picasso:picasso:2.71828] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\242459ecb6dbda0971b21320f7b3acd7\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+839
+840        <meta-data
+840-->[com.razorpay:checkout:1.6.12] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\a84ea74bebee4b958bdc5208fa554ca6\jetified-checkout-1.6.12\AndroidManifest.xml:31:9-33:58
+841            android:name="com.razorpay.plugin.googlepay_all"
+841-->[com.razorpay:checkout:1.6.12] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\a84ea74bebee4b958bdc5208fa554ca6\jetified-checkout-1.6.12\AndroidManifest.xml:32:13-61
+842            android:value="com.razorpay.RzpGpayMerged" />
+842-->[com.razorpay:checkout:1.6.12] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\a84ea74bebee4b958bdc5208fa554ca6\jetified-checkout-1.6.12\AndroidManifest.xml:33:13-55
+843
+844        <activity
+844-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
+845            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+845-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
+846            android:excludeFromRecents="true"
+846-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
+847            android:exported="false"
+847-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
+848            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+848-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
+849        <!--
+850            Service handling Google Sign-In user revocation. For apps that do not integrate with
+851            Google Sign-In, this service will never be started.
+852        -->
+853        <service
+853-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
+854            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+854-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
+855            android:exported="true"
+855-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
+856            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+856-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
+857            android:visibleToInstantApps="true" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+857-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\6eee5911c0fe735fc5139346b63c168d\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
+858        <activity
+858-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:12:5-271
+859            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+859-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:12:15-102
+860            android:enabled="false"
+860-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:12:103-126
+861            android:exported="false"
+861-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:12:127-151
+862            android:launchMode="singleInstance"
+862-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:12:204-239
+863            android:process=":playcore_missing_splits_activity"
+863-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:12:152-203
+864            android:stateNotNeeded="true" />
+864-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:12:240-269
+865        <activity
+865-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:13:5-226
+866            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+866-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:13:15-95
+867            android:enabled="false"
+867-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:13:96-119
+868            android:exported="false"
+868-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:13:120-144
+869            android:stateNotNeeded="true"
+869-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:13:145-174
+870            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+870-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:13:175-224
+871        <service
+871-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:16:5-145
+872            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+872-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:16:14-95
+873            android:enabled="false"
+873-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:16:96-119
+874            android:exported="true" />
+874-->[com.google.android.play:core:1.8.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5f0cd656be77a9f1c370adee23b74f6c\jetified-core-1.8.0\AndroidManifest.xml:16:120-143
+875
+876        <receiver
+876-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:37:9-44:20
+877            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+877-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:38:13-78
+878            android:exported="true"
+878-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:39:13-36
+879            android:permission="com.google.android.c2dm.permission.SEND" >
+879-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:40:13-73
+880            <intent-filter>
+880-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:41:13-43:29
+881                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+881-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:42:17-81
+881-->[com.google.firebase:firebase-iid:20.3.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\895f8b91cfa46ec55eb5faee87548786\jetified-firebase-iid-20.3.0\AndroidManifest.xml:42:25-78
+882            </intent-filter>
+883        </receiver>
+884
+885        <activity
+885-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\b95aaf7c5a733fdc5839d890daa261ae\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+886            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+886-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\b95aaf7c5a733fdc5839d890daa261ae\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+887            android:exported="false"
+887-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\b95aaf7c5a733fdc5839d890daa261ae\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+888            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+888-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\b95aaf7c5a733fdc5839d890daa261ae\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+889
+890        <receiver
+890-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:29:9-33:20
+891            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+891-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:30:13-85
+892            android:enabled="true"
+892-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:31:13-35
+893            android:exported="false" >
+893-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:32:13-37
+894        </receiver>
+895
+896        <service
+896-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:35:9-38:40
+897            android:name="com.google.android.gms.measurement.AppMeasurementService"
+897-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:36:13-84
+898            android:enabled="true"
+898-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:37:13-35
+899            android:exported="false" />
+899-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:38:13-37
+900        <service
+900-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:39:9-43:72
+901            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+901-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:40:13-87
+902            android:enabled="true"
+902-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:41:13-35
+903            android:exported="false"
+903-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:42:13-37
+904            android:permission="android.permission.BIND_JOB_SERVICE" />
+904-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\c96d6a0a2cae174b3eb13b8fb5ccfe20\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:43:13-69
+905
+906        <provider
+906-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0ff0bc58ea253949cb4810eac4119dfd\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+907            android:name="com.google.firebase.provider.FirebaseInitProvider"
+907-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0ff0bc58ea253949cb4810eac4119dfd\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+908            android:authorities="com.utkarshnew.android.firebaseinitprovider"
+908-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0ff0bc58ea253949cb4810eac4119dfd\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+909            android:directBootAware="true"
+909-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0ff0bc58ea253949cb4810eac4119dfd\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+910            android:exported="false"
+910-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0ff0bc58ea253949cb4810eac4119dfd\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+911            android:initOrder="100" />
+911-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0ff0bc58ea253949cb4810eac4119dfd\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+912
+913        <meta-data
+913-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\71910651feba7c21bd3d072a23283fd2\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+914            android:name="com.google.android.gms.version"
+914-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\71910651feba7c21bd3d072a23283fd2\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+915            android:value="@integer/google_play_services_version" />
+915-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\71910651feba7c21bd3d072a23283fd2\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+916
+917        <provider
+917-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0718169ddb65e7f0ac56285b107261e3\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+918            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+918-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0718169ddb65e7f0ac56285b107261e3\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+919            android:authorities="com.utkarshnew.android.lifecycle-process"
+919-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0718169ddb65e7f0ac56285b107261e3\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+920            android:exported="false"
+920-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0718169ddb65e7f0ac56285b107261e3\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+921            android:multiprocess="true" />
+921-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\0718169ddb65e7f0ac56285b107261e3\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+922        <!--
+923         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+924         with the application context. This config is merged in with the host app's manifest,
+925         but there can only be one provider with the same authority activated at any given
+926         point; so if the end user has two or more different apps that use Facebook SDK, only the
+927         first one will be able to use the provider. To work around this problem, we use the
+928         following placeholder in the authority to identify each host application as if it was
+929         a completely different provider.
+930        -->
+931        <provider
+931-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:39:9-42:40
+932            android:name="com.facebook.internal.FacebookInitProvider"
+932-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:40:13-70
+933            android:authorities="com.utkarshnew.android.FacebookInitProvider"
+933-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:41:13-72
+934            android:exported="false" />
+934-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:42:13-37
+935
+936        <receiver
+936-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:44:9-50:20
+937            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+937-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:45:13-86
+938            android:exported="false" >
+938-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:46:13-37
+939            <intent-filter>
+939-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:47:13-49:29
+940                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+940-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:17-95
+940-->[com.facebook.android:facebook-core:5.15.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\f1ced1eb2d1ddd3970d28a9bc8e87504\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:25-92
+941            </intent-filter>
+942        </receiver>
+943
+944        <service
+944-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\bd6e1f7e4fbe54159920471845f0e3a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+945            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+945-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\bd6e1f7e4fbe54159920471845f0e3a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+946            android:exported="false" >
+946-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\bd6e1f7e4fbe54159920471845f0e3a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+947            <meta-data
+947-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\bd6e1f7e4fbe54159920471845f0e3a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+948                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+948-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\bd6e1f7e4fbe54159920471845f0e3a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+949                android:value="cct" />
+949-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\bd6e1f7e4fbe54159920471845f0e3a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+950        </service>
+951        <service
+951-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5c9920b9d57755f4ce630f0319483f9f\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+952            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+952-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5c9920b9d57755f4ce630f0319483f9f\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+953            android:exported="false"
+953-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5c9920b9d57755f4ce630f0319483f9f\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+954            android:permission="android.permission.BIND_JOB_SERVICE" >
+954-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5c9920b9d57755f4ce630f0319483f9f\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+955        </service>
+956
+957        <receiver
+957-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5c9920b9d57755f4ce630f0319483f9f\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+958            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+958-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5c9920b9d57755f4ce630f0319483f9f\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+959            android:exported="false" />
+959-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\AppSquadz\.gradle\caches\transforms-2\files-2.1\5c9920b9d57755f4ce630f0319483f9f\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+960    </application>
+961
+962</manifest>

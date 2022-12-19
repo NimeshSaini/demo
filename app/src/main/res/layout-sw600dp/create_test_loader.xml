@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginTop="@dimen/dp40"
+        android:layout_marginBottom="@dimen/dp40"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/wait_timer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@+id/image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/verifyTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="@font/inter_bold"
+            android:text="Please Wait "
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="@font/inter_regular"
+            android:text="We are going to generate your test"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

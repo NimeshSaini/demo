@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimaryDark">#16A0BA</color>
+    <color name="colorPrimary">#33BED3</color>-->
+    <!--<color name="colorPrimaryDark">#C2C0D1</color>
+
+    <color name="colorPrimary">#dbd8ec</color>-->
+
+    <color name="landtitle">#071E57</color>
+    <color name="colorPrimaryDark">#F1F1F1</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="lightColorPrimary">#20ffffff</color>
+    <color name="darkColorPrimary">#70ffffff</color>
+    <color name="background_bottom_nav">#50ffffff</color>
+    <color name="headersColor">#B5ffffff</color>
+
+
+    <color name="colorPrimaryDark4">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="whatsapp_green">#31B946</color>
+    <color name="blackApp">#000000</color>
+    <color name="commonblack">#333333</color>
+    <color name="off_white">#ECECEC</color>
+    <color name="greayrefcode_light">#F6F6F6</color>
+    <color name="greayrefcode_dark">#D7D7D7</color>
+
+    <color name="gray_dark2">#838383</color>
+
+    <color name="green">#38FD38</color>
+    <color name="red">#FA475C</color>
+    <color name="notification_red">#CC0000</color>
+
+    <!--<color name="blue">#33A2D9</color>old-->
+    <color name="blue">#1da1f2</color>
+    <color name="darkestblue">#003156</color>
+    <color name="light_blue">#6cd2ff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_lite">#66000000</color>
+    <color name="light_black_font">#4B4B4B</color>
+
+    <color name="dullBlack">#161616</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="rewards_color">#ff8b00</color>
+
+    <color name="intro1">#00afef</color>
+    <color name="intro2">#f28ab8</color>
+    <color name="intro3">#f19c70</color>
+    <color name="intro4">#3db5ad</color>
+
+    <color name="ibt_green">#30e162</color>
+    <color name="ibt_red">#f36459</color>
+
+    <color name="dark_quiz_grey">#a9a9a9</color>
+    <color name="test_grey">#C9C9C9</color>
+    <color name="light_quiz_grey">#eeeeee</color>
+    //colors for MsgInput
+    <color name="shadowMsgInput">#828286</color>
+
+    <color name="warm_grey_three">#8b8b8b</color>
+
+    <color name="text_blue">#7f7f7f</color>
+    <color name="bottom_panel_text">#7f7f7f</color>
+    <color name="swip_refresh_color1">#32316B</color>
+    <color name="post_time_color">#9A9A9A</color>
+    <color name="profile_text_color">#222222</color>
+    <color name="color_background">#FAFAFA</color>
+
+    <color name="gradient_light_blue_color">@color/colorPrimary</color>
+
+    <color name="background_all">#F8F8F8</color>
+    <color name="black_white">#BA686363</color>
+    <color name="black_white_text">#1A1919</color>
+    <color name="theme_text_color">#ffffff</color>
+
+    <color name="colorBackground">#d9d9d9</color>
+
+    <!--<color name="green">#4fb331</color>
+    <color name="green_lite">#20bf55</color>
+    <color name="red">#F78F8F</color>
+    <color name="yellow">#ecad0e</color>-->
+
+    <color name="red_met">#D36464</color>
+    <color name="green_met">#5ECA5E</color>
+    <color name="colorGray2">#cccccc</color>
+    <color name="color_circle">#cbcbcb</color>
+    <color name="colorGray">#f6f5f5</color>
+    <color name="secondary_text_color">#8b8b8b</color>
+    <color name="colorGray3">#808080</color>
+
+    <color name="blue_dark">#008dff</color>
+    <color name="skipped">#b7b7b7</color>
+    <color name="correct">#00a651</color>
+    <color name="color_expert_bg">#f6f7fb</color>
+
+    <color name="whie">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dot_white">#ffffff</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="menu_left_background">#FFFFFF</color>
+    <color name="background_all_Lite">#FFFFFF</color>
+    <color name="overlay_light_90">#E6FFFFFF</color>
+
+    <!--<color name="button_left">#ff5353</color>
+    <color name="button_right">#dd4c76</color>-->
+    <color name="button_left">@color/colorPrimaryDark</color>
+    <color name="button_right">@color/colorPrimaryDark</color>
+    <color name="tile_inactive">#5F5F5F</color>
+
+</resources>

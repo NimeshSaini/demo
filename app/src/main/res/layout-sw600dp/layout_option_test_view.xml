@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:padding="@dimen/dp4"
+        android:background="@drawable/background_mcq"
+        android:minHeight="@dimen/dp70"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/optionIconTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/radioRB"
+            android:background="@drawable/bg_question"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:textColor="@drawable/color_selector"
+            android:text="A"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textAllCaps="true"
+            android:textSize="@dimen/sp14" />
+
+
+        <TextView
+            android:id="@+id/optionTextTV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp5"
+            android:clickable="false"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/blackApp"
+            android:textSize="@dimen/sp13"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp5"
+            android:visibility="gone"
+            android:textAllCaps="false" />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/optionTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp5"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp5"
+            android:textAllCaps="true"
+            android:textSize="@dimen/sp13" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgOption"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <com.white.progressview.HorizontalProgressView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp7"
+        android:layout_marginRight="@dimen/dp7"
+        android:layout_marginTop="@dimen/dp3"
+        android:background="@drawable/bg_transparent_btn"
+        android:visibility="gone"
+        app:progressNormalColor="@color/white"
+        app:progressNormalSize="@dimen/dp15"
+        app:progressReachColor="@color/colorPrimary"
+        app:progressReachSize="@dimen/dp15"
+        app:progressTextColor="@color/black"
+        app:progressTextPosition="CENTER"
+        app:progressTextSize="@dimen/post_text_size"
+        app:progressTextVisible="true" />
+</LinearLayout>

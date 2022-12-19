@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="coursedata"
+            type="com.utkarshnew.android.feeds.dataclass.Data" />
+
+    </data>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp6"
+
+    >
+
+    <TextView
+        android:id="@+id/new_course_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:fontFamily="@font/inter_bold"
+        android:text="New Courses"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:fontFamily="@font/inter_regular"
+        android:padding="2dp"
+        android:text="View All"
+        android:visibility="gone"
+        android:textColor="#FAA833"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_course_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_course_txt"
+        android:layout_marginTop="@dimen/dp15"
+        android:orientation="horizontal"
+        app:coursedata="@{coursedata.newCourseData}"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@id/new_course_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/dp5"
+
+        android:background="@color/gray_dark2" />
+</RelativeLayout>
+</layout>

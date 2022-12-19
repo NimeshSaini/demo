@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MathView">
+        <attr name="text" format="string"/>
+        <attr name="engine" format="enum">
+            <enum name="KaTeX" value="0"/>
+            <enum name="MathJax" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="fontTxt">
+        <attr name="txt_font" format="enum">
+            <enum name="black" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="extraBold" value="2"/>
+            <enum name="extraLight" value="3"/>
+            <enum name="light" value="4"/>
+            <enum name="regular" value="5"/>
+            <enum name="semiBold" value="6"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="AutoGridLayout">
+        <attr name="columnWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stickyFooter" format="reference" />
+        <attr name="stickyHeader" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCheckBox">
+        <attr name="duration" format="integer" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_tick" format="color" />
+        <attr name="color_checked" format="color" />
+        <attr name="color_unchecked" format="color" />
+        <attr name="color_unchecked_stroke" format="color" />
+        <attr name="small_tick" format="boolean" />
+    </declare-styleable>
+</resources>

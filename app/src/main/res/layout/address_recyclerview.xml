@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/layout_address"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/dp100">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="Select Address"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#071E57"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp2"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_below="@id/address"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/address_reyccler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonLow"
+        android:layout_below="@id/layout_address"
+        android:background="#F5F9FC"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <RelativeLayout
+        android:id="@+id/buttonLow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:visibility="visible">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp1"
+            android:paddingRight="@dimen/dp1"
+            android:paddingBottom="@dimen/dp1">
+
+
+
+            <Button
+                android:id="@+id/addaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_corners_button"
+                android:fontFamily="@font/inter_bold"
+                android:padding="@dimen/dp8"
+                android:text="Add Address"
+                android:textAllCaps="false"
+                android:textColor="@color/profile_text_color"
+                android:textSize="@dimen/post_text_size_x" />
+
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_corners_button"
+                android:fontFamily="@font/inter_bold"
+                android:padding="@dimen/dp8"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                android:textColor="@color/profile_text_color"
+                android:textSize="@dimen/post_text_size_x" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

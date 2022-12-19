@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_select"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/topup_default"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingBottom="@dimen/dp10"
+            android:text="Rs 500  "
+            android:textColor="#99000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/price"
+            android:fontFamily="@font/inter_regular"
+            android:paddingBottom="@dimen/dp10"
+            android:text="Rs 500  "
+            android:textColor="#99000000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/select_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/radio_deselct_plan"
+            android:buttonTint="@color/black"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

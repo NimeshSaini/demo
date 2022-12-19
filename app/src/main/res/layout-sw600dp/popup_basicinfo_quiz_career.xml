@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basicInfoDialogLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/startQuizBtn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/quizImageIV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:scaleType="fitXY"
+                android:src="@mipmap/square_placeholder"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/quizTitleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="@dimen/dp7"
+                android:text="English Misc. Quiz:"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/heading_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp15"
+                android:background="@color/greayrefcode_dark" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/number_of_questions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/numQuesValueTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:ellipsize="end"
+
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/time_in_minutes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/quizTimeValueTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/total_marks"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/marksTextValueTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/no_of_sections"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/sectionValueTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="Marks for Correct Answer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/marksCorrectValueTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="Penalty for Wrong Answer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/marksWrongValueTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dp5"
+                android:weightSum="14">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/secNameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/section_nname"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/small_text_size2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/totQuesTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_nquestions"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/option_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/option_count_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Max.Attempt Question"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/negMarkPerQuesTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/neg_marks_nper_ques"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/small_text_size2" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/maxMarksTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/total_nmarks"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/markPerQuesTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/marks_nper_ques"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/section_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/totTimeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/total_ntime"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size2" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="vertical"
+                android:id="@+id/sectionListLL"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="vertical"
+                android:padding="@dimen/dp5"
+                android:id="@+id/general_layout"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:id="@+id/gerneral_txt"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/generalInstr"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text_size" />
+
+                <TextView
+                    android:id="@+id/generalInstrValueTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:ellipsize="end"
+
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:textColor="@color/dullBlack"
+                    android:textSize="@dimen/small_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/language"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/post_text_size" />
+
+                <TextView
+                    android:id="@+id/languageSpinnerTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_refcode_et"
+                    android:drawableRight="@drawable/ibt_down_grey"
+                    android:ellipsize="end"
+
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/dp7"
+                    android:text="@string/english"
+                    android:textColor="@color/dullBlack"
+                    android:textSize="@dimen/small_text_size" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/check_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:paddingLeft="@dimen/dp5"
+                android:checked="true"
+                android:paddingRight="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="@string/optingAttemptcheck"/>
+
+            <TextView
+                android:id="@+id/remarksTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:ellipsize="end"
+
+                android:gravity="start|center_horizontal"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:text="@string/optingAttempt"
+                android:textColor="@color/red"
+                android:textSize="@dimen/extrasmall_text_size_10"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/startQuizBtn"
+        style="@style/round_corner_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/start_test"
+        android:textAllCaps="true" />
+
+</RelativeLayout>
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/basicInfoDialogLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/startQuizBtn"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/quizImageIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/thumbnail_placeholder"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/quizTitleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/dp7"
+                    android:text="English Misc. Quiz:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/heading_text_size" />
+
+                <View
+                    android:id="@+id/line_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dp15"
+                    android:background="@color/greayrefcode_dark" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/numQuesTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="Number of Questions"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/numQuesValueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:ellipsize="end"
+
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/quizTimeTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="Time (in Minutes)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/quizTimeValueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/marksTextTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="Total Marks"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/marksTextValueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/sectionTextTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="No. of Sections"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/sectionValueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/marksCorrectTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="Marks for Correct Answer"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/marksCorrectValueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/marksWrongTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="Penalty for Wrong Answer"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/marksWrongValueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/generalInstructionsTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="@string/generalInstr"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_text_size" />
+
+                    <TextView
+                        android:id="@+id/generalInstrValueTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:ellipsize="end"
+
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="@string/generalInstrValue"
+                        android:textColor="@color/dullBlack"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/languageTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/language"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/post_text_size" />
+
+                    <TextView
+                        android:id="@+id/languageSpinnerTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_refcode_et"
+                        android:drawableRight="@drawable/ibt_down_grey"
+                        android:ellipsize="end"
+
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/dp7"
+                        android:text="@string/english"
+                        android:textColor="@color/dullBlack"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/remarksTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:ellipsize="end"
+
+                    android:gravity="start|center_horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/optingAttempt"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/extrasmall_text_size_10"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/startQuizBtn"
+            style="@style/round_corner_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_button_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="Start Test"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>-->

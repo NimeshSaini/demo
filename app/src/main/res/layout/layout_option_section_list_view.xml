@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    android:weightSum="14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/secNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/totQuesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/option_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/negMarkPerQuesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/maxMarksTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/markPerQuesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:layout_weight="2"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/totTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="feedbind"
+            type="com.utkarshnew.android.feeds.viewmodel.FeedViewModel" />
+
+    </data>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F6"
+    tools:context=".feeds.activity.FeedsActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/feeds_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ToolbarDarkOverflow"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/arrow_back_black" />
+
+
+                <RelativeLayout
+                    android:id="@+id/titleinnerRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_toEndOf="@id/image_back"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_toStartOf="@id/pined_post">
+
+                    <TextView
+                        android:id="@+id/toolbartitleTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp20"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:paddingLeft="@dimen/dp0"
+                        android:paddingRight="@dimen/dp5"
+                        android:singleLine="true"
+                        android:textColor="@color/blackApp"
+                        android:textSize="@dimen/sub_heading_text_size"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+<!--
+                <ImageView
+                    android:id="@+id/downarrowIV"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_toEndOf="@id/titleinnerRL"
+                    android:src="@drawable/ibt_drop_down"
+                    android:tint="@color/black"
+                    tools:ignore="UseAppTint" />-->
+
+                <ImageView
+                    android:id="@+id/pined_post"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp20"
+                    android:layout_toStartOf="@id/filter"
+                    android:padding="@dimen/dp3"
+                    android:src="@drawable/pinned" />
+
+                <ImageView
+                    android:id="@+id/filter"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp20"
+                    android:padding="@dimen/dp3"
+                    android:src="@drawable/filter_icon" />
+            </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullto_referesh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/feeds_toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toBottomOf="@id/feeds_toolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/feed_recyerlview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feed_recyerlview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:feedadapter="@{feedbindadapter}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </RelativeLayout>-->
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+     />
+    <include layout="@layout/no_data_found" />
+
+</RelativeLayout>
+</layout>

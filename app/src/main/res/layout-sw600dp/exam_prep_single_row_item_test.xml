@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ibt_single_sub_vd_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp8"
+        android:outlineAmbientShadowColor="@color/gray_dark2"
+        android:outlineSpotShadowColor="@color/gray_dark2"
+        android:padding="@dimen/dp3"
+        app:cardBackgroundColor="@color/background_all_Lite"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="@dimen/dp4">
+
+        <RelativeLayout
+            android:id="@+id/study_single_itemLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/imageRL"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:padding="@dimen/dp5">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="@dimen/dp10"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/course_placeholder" />
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@id/imageRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/attemptLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:background="@drawable/border_test_attampt"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="@string/attempt_now"
+                        android:textColor="@color/blackApp"
+                        android:textSize="@dimen/small_text_size2" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/learn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_toEndOf="@id/attemptLL"
+                    android:background="@drawable/border_test_attampt"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="LEARN"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/small_text_size2"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/practice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_toEndOf="@id/learn"
+                    android:background="@drawable/border_test_attampt"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="PRACTICE"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/small_text_size2"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:background="@drawable/border_test_attampt"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="SHARE"
+                    android:textColor="@color/blackApp"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imageRL">
+
+                <TextView
+                    android:id="@+id/examPrepTitleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_bold"
+                    android:maxLines="2"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/subItemRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackApp"
+                    android:layout_below="@+id/examPrepTitleTV"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="@dimen/extrasmall_text_size_12" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lockRL"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/dp10"
+                android:paddingEnd="@dimen/dp10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:src="@mipmap/gray_lock" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--<TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:minHeight="@dimen/dp200"
+        android:text="No Data found"
+        android:textColor="@color/black"
+        android:visibility="gone" />-->
+
+    <include layout="@layout/no_data_found" />
+
+</RelativeLayout>

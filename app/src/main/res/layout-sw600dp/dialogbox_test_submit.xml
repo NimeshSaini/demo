@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp10"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialogbox"
+    android:padding="@dimen/dp10"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_test"
+        android:textSize="@dimen/sp18"
+        android:fontFamily="@font/inter_bold"
+        android:textAlignment="center"
+        android:textColor="@color/blackApp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:textColor="@color/blackApp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/do_you_want_to_submit_the_test"
+        android:textSize="@dimen/dp15"
+        android:textAlignment="center"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <!--  <TextView
+              android:layout_width="0dp"
+              android:layout_height="@dimen/dp35"
+              android:layout_weight="1"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              
+              android:textSize="@dimen/sp13"
+              android:textAlignment="center"
+              android:text="Test"/>
+
+          <View
+              android:layout_width="@dimen/dp1"
+              android:layout_height="@dimen/dp35"
+              android:background="@color/colorGray2"/>-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_bold"            android:gravity="center"
+            android:layout_gravity="center"
+            
+            android:textSize="@dimen/sp10"
+            android:textAlignment="center"
+            android:text="@string/attempted"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="8sp"
+            android:textAlignment="center"
+            android:text="@string/unattempted"/>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <TextView
+            android:id="@+id/marked1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="8sp"
+            android:text="@string/marked"/>
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <TextView
+            android:id="@+id/save_marked1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="8sp"
+            android:textAlignment="center"
+            android:text="@string/save_ans_marked_for_review"/>
+
+        <View
+            android:id="@+id/markedView1"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <TextView
+            android:id="@+id/not_visited"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp10"
+            android:textAlignment="center"
+            android:text="@string/notvisited"/>
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+        <!--
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sp13"
+                    android:textAlignment="center"
+                    android:text="-"/>
+
+                <View
+                    android:layout_width="@dimen/dp1"
+                    android:layout_height="@dimen/dp35"
+                    android:background="@color/colorGray2"/>-->
+
+        <TextView
+            android:id="@+id/answeredTV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_medium"            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp13"
+            android:textAlignment="center"
+            android:text="Answered"/>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <TextView
+            android:id="@+id/unansweredTV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp13"
+            android:textAlignment="center"
+            android:text="Unanswered"/>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <TextView
+            android:id="@+id/markedTV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_medium"            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp13"
+            android:textAlignment="center"
+            android:text="Marked"/>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+
+
+        <TextView
+            android:id="@+id/save_markedTV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_medium"            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp13"
+            android:textAlignment="center"
+            android:text="Save &amp; Marked"/>
+
+        <View
+            android:id="@+id/markedView2"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+        <TextView
+            android:id="@+id/not_visted_value"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp13"
+            android:textAlignment="center"
+            android:text="@string/notvisited"/>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/colorGray2"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray2"/>
+
+
+    <TextView
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:id="@+id/tv_unattempt_question"
+        android:visibility="gone"
+        android:text="You have 300 unattempted questions"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp15"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray2"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp15"
+        android:weightSum="2"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp4"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_bold"
+            android:background="@drawable/bg_btn_testpause"
+            android:textSize="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_height="@dimen/dp40"
+            android:id="@+id/btn_cancel"
+            android:textAllCaps="false"
+            android:layout_width="@dimen/dp150"
+            android:text="@string/cancel"
+
+            />
+
+        <Button
+            android:layout_marginRight="@dimen/dp10"
+            android:textSize="@dimen/dp15"
+            android:textColor="@color/blackApp"
+            android:fontFamily="@font/inter_bold"
+            android:id="@+id/btn_submit"
+            android:background="@drawable/bg_btn_testpause"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textAllCaps="false"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp40"
+            android:text="@string/submit"
+            />
+    </LinearLayout>
+</LinearLayout>

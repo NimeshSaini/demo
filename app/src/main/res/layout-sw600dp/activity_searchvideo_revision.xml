@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/webresourceviewlayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/webresourcetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:theme="@style/LoginActionBarStyle"
+        android:elevation="4dp"/>
+
+
+
+    <WebView
+        android:id="@+id/webresourcewebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/webresourcetoolbar"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"/>
+
+
+
+    <ProgressBar
+        android:id="@+id/webresourceloader"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:theme="@style/ProgressBarTheme"
+        android:visibility="visible" />
+
+
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:arcColor="@color/colorPrimary"
+        app:arcWidth="5dp"
+        app:circleSize="normal"
+        app:finalIcon="@drawable/ic_done_white"
+        app:roundedStroke="true"
+        app:reusable="true"
+        android:visibility="gone">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_weblink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_add_content"
+            app:fab_size="normal"
+            app:fab_showShadow="true"
+            app:fab_colorNormal="@color/colorPrimary" />
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnPartA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:background="@drawable/result_part_bg_active"
+        android:text="Part A"
+        android:padding="@dimen/dp8"
+        android:fontFamily="@font/inter_medium"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dp12"
+        android:textColor="@color/blackApp" />
+
+</RelativeLayout>

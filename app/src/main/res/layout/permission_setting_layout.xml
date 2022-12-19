@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="32dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingRight="32dp">
+
+        <TextView
+            android:id="@+id/grant_perm_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/grantpermtext"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/blackApp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grant_perm_text"
+            android:text="@string/grantpermdesctext"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_above="@id/grantpermbottomToolbar"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/grantpermbottomToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="#20aa66"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:elevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/settingsbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/blackApp"
+                android:textSize="14sp"
+                android:text="@string/Settings"
+                android:gravity="center"
+                android:drawablePadding="18dp"
+                android:paddingTop="17dp"
+                android:paddingBottom="16dp"
+                android:paddingStart="44dp"
+                android:paddingLeft="44dp"
+                android:paddingRight="25dp"
+                android:paddingEnd="25dp"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/grantpermbottomToolbar"
+        app:srcCompat="@drawable/img_askforpermission"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

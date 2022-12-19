@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/arrow_back_black" />
+
+            <TextView
+                android:id="@+id/toolbarTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_toEndOf="@id/image_back"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:text="Flash Card"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/heading_text_size" />
+
+
+            <CheckBox
+                android:id="@+id/select_all_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:buttonTint="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_vertical"
+                android:text="Select"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:drawableLeft="@drawable/delete"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_vertical"
+                android:text="Delete"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/progess_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        android:layout_below="@id/main_toolbar"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10">
+
+        <ProgressBar
+            android:id="@+id/progress_value"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:progressDrawable="@drawable/progress_drawable_flash" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/setProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progess_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp5"
+        android:fontFamily="@font/inter_regular"
+        android:text="1 of 1"
+        android:textColor="@color/black_405461"
+        android:textSize="16sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager_Banner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <com.rd.PageIndicatorView-->
+    <!--        android:id="@+id/pageIndicatorView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/banner_frame"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="@dimen/dp10"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:piv_animationType="scale"-->
+    <!--        app:piv_dynamicCount="true"-->
+    <!--        app:piv_interactiveAnimation="true"-->
+    <!--        app:piv_selectedColor="@color/black"-->
+    <!--        app:piv_unselectedColor="#CFCFCF"-->
+    <!--        app:piv_viewPager="@id/viewPager_Banner"-->
+    <!--        attrs:piv_padding="12dp"-->
+    <!--        attrs:piv_radius="8dp" />-->
+
+    <!--     android:layout_below="@id/pageIndicatorView"-->
+    <ImageView
+        android:id="@+id/back_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp20"
+        android:padding="8dp"
+        android:src="@drawable/arrow_back_black"
+        android:visibility="gone" />
+
+    <!--   android:layout_below="@id/pageIndicatorView"-->
+    <ImageView
+        android:id="@+id/move_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp40"
+        android:padding="8dp"
+        android:src="@drawable/ic_arrow_forward"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alpha=".8"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="Tap the card to flip"
+        android:textColor="@color/black_405461"
+        android:textSize="@dimen/sp16" />
+
+
+</RelativeLayout>

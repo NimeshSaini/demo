@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nestedSV"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/light_quiz_grey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ahmadnemati.clickablewebview.ClickableWebView
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp8"
+                android:paddingRight="@dimen/dp16"
+                android:paddingLeft="@dimen/dp16"
+                android:id="@+id/tv_question_fib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:padding="@dimen/dp5"
+                android:textColor="#D82D2D2D"
+                android:textSize="@dimen/sp15"
+                android:background="@color/transparent"
+                android:layout_toLeftOf="@+id/img_bookmark"
+                android:nestedScrollingEnabled="true"
+                android:visibility="visible"/>
+            <RelativeLayout
+                android:id="@+id/questionsol_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_margin="@dimen/dp10">
+
+                <com.ahmadnemati.clickablewebview.ClickableWebView
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_bookmark"
+                    android:background="@color/transparent"
+                    android:nestedScrollingEnabled="true"
+                    android:padding="@dimen/dp10"
+                    android:scrollbars="none"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sp16" />
+
+                <ImageView
+                    android:id="@+id/img_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:padding="@dimen/dp5"
+                    android:src="@mipmap/bookmark_test"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mcqoptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LLmatchinquestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp5"
+            android:visibility="gone"
+            android:paddingRight="@dimen/dp5">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvmatchinquestion1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvmatchinquestion2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/videosolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Video Solution"
+                android:textSize="@dimen/sp15"
+                android:drawableStart="@drawable/video_solution"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Answer:"
+                android:textSize="@dimen/sp15"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/blackApp"/>
+
+            <TextView
+                android:id="@+id/your_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Answer:"
+                android:textSize="@dimen/sp15"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/question_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="@dimen/sp15"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On Screen:"
+                android:textSize="@dimen/sp15"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+
+                android:textColor="@color/black"/>
+
+
+
+            <TextView
+                android:id="@+id/onscreen_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textSize="@dimen/sp15"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/explanationLL"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explanation:"
+                android:textSize="@dimen/sp15"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+
+                android:textColor="@color/black"/>
+
+            <com.ahmadnemati.clickablewebview.ClickableWebView
+                android:id="@+id/explanationTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:padding="@dimen/dp10"
+                android:textColor="#2D2D2D"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp16"
+                android:background="@color/transparent"
+                android:layout_toLeftOf="@+id/img_bookmark"
+                android:nestedScrollingEnabled="true"/>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/explanationLL"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explanation:"
+                android:textSize="@dimen/sp15"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/blackApp"/>
+
+            <com.ahmadnemati.clickablewebview.ClickableWebView
+                android:id="@+id/explanationTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/blackApp"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp16"
+                android:background="@color/transparent"
+                android:layout_toLeftOf="@+id/img_bookmark"
+                android:nestedScrollingEnabled="true"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/post_text_size"
+            android:drawablePadding="@dimen/dp5"
+            android:text="eMedicocoz QUID 297666"/>
+
+        <TextView
+            android:id="@+id/userEmailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:visibility="gone"
+            android:textSize="@dimen/sp15"/>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

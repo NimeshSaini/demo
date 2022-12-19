@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ibt_single_sub_vd_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp8"
+        android:outlineAmbientShadowColor="@color/gray_dark2"
+        android:outlineSpotShadowColor="@color/gray_dark2"
+        android:padding="@dimen/dp3"
+        app:cardBackgroundColor="@color/background_all_Lite"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="@dimen/dp4">
+
+        <RelativeLayout
+            android:id="@+id/study_single_itemLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/imageRL"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp80"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pdf" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginLeft="@dimen/dp6"
+                android:layout_marginRight="@dimen/dp6"
+                android:layout_toRightOf="@+id/imageRL"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/examPrepTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/dp6"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:fontFamily="@font/inter_bold"
+                    android:hint="@string/my_exam_selection"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/read_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_below="@id/examPrepTitleTV"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:background="@drawable/border_test_attampt"
+                    android:clickable="true"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="READ"
+                    android:textColor="@color/blackApp"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_below="@id/examPrepTitleTV"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toStartOf="@id/arrowIV"
+                    android:background="@drawable/border_test_attampt"
+                    android:clickable="true"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="SHARE"
+                    android:textColor="@color/blackApp"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/arrowIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:src="@mipmap/forward_arrow"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/liveIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/lockRL"
+                android:src="@mipmap/live"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/lockRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/dp10"
+                android:paddingEnd="@dimen/dp10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/gray_lock" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--<TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:minHeight="@dimen/dp200"
+        android:text="No Data found"
+        android:textColor="@color/black"
+        android:visibility="gone" />-->
+
+    <include layout="@layout/no_data_found" />
+
+</RelativeLayout>

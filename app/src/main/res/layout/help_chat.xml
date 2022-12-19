@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="@dimen/dp2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myProgress_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/searchSV">
+
+                <TextView
+                    android:id="@+id/toolbartitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/inter_bold"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/help_supports"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sp18" />
+
+                <ImageView
+                    android:id="@+id/imageIV"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp12"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/queryTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp8"
+            android:background="@drawable/button_background_admin"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp8"
+            android:paddingTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:paddingBottom="@dimen/dp4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/post_text_size"
+            android:textStyle="bold"
+            tools:text="Hii" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_marginRight="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp4"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sending_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_card_bottom_corner"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/help_chat_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="left|center"
+            android:hint="Type Here..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp8" />
+
+        <ImageView
+            android:id="@+id/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp8"
+            android:src="@drawable/ic_send_black_24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

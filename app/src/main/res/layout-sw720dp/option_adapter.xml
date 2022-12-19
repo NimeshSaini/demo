@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_option"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:background="@color/white"
+    android:minHeight="@dimen/dp50"
+    android:gravity="center"
+    android:padding="@dimen/dp4">
+
+    <RelativeLayout
+        android:id="@+id/option_percentage"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp15"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/percentage_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="100%"
+            android:layout_marginTop="@dimen/dp5"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/option_a"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_toEndOf="@id/percentage_txt"
+            android:src="@drawable/defaultholo"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/option_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_toEndOf="@id/option_percentage"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_bold"
+        android:maxLines="3"
+        android:layout_marginTop="@dimen/dp2"
+        android:textColor="#405461"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/activeProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/option_txt"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_toEndOf="@id/option_percentage" />
+
+    <ImageView
+        android:id="@+id/my_ans"
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
+        android:layout_below="@id/option_txt"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_toStartOf="@id/activeProgress"
+        android:src="@drawable/myans"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+    <!--
+        <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_option"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp10">
+
+
+    <ProgressBar
+        android:id="@+id/progress_value"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:minHeight="@dimen/dp45"
+        android:progressDrawable="@drawable/option_progress_drawable" />
+
+    <TextView
+        android:id="@+id/option_a"
+        android:layout_width="@dimen/dp22"
+        android:layout_height="@dimen/dp22"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:background="@drawable/bg_question"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center_vertical|center"
+        android:textAllCaps="true"
+        android:textColor="@color/color_8A000000"
+        android:textSize="@dimen/sp14" />
+
+
+    <TextView
+        android:id="@+id/option_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_toStartOf="@id/percentage_txt"
+        android:layout_toEndOf="@id/option_a"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center_vertical"
+        android:maxLines="3"
+        android:padding="@dimen/dp5"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/percentage_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp22"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp15"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+
+    </RelativeLayout>-->

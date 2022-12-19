@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp1"
+        app:cardCornerRadius="@dimen/dp5"
+        app:cardElevation="@dimen/dp5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp12">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/track_selection_dialog_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/track_selection_dialog_tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabGravity="fill"
+                        app:tabMode="fixed"/>
+
+                </androidx.viewpager.widget.ViewPager>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/track_selection_dialog_cancel_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_speed_spinner"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:textColor="@color/blackApp"
+                            android:text="Cancel"
+                            android:fontFamily="@font/inter_bold"
+
+                            android:textAllCaps="false"
+                            style="?android:attr/borderlessButtonStyle"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/track_selection_dialog_ok_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:text="OK"
+                            android:fontFamily="@font/inter_bold"
+                            android:textAllCaps="false"
+                            android:background="@drawable/bg_speed_spinner"
+                            android:textColor="@color/blackApp"
+                            style="?android:attr/borderlessButtonStyle"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                  <Button
+                      android:id="@+id/track_selection_dialog_cancel_button"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_speed_spinner"
+                      android:textColor="@color/white"
+                      android:text="@android:string/cancel"
+                      style="?android:attr/borderlessButtonStyle"/>
+
+                  <Button
+                      android:id="@+id/track_selection_dialog_ok_button"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@android:string/ok"
+                      android:background="@drawable/bg_speed_spinner"
+                      android:textColor="@color/white"
+                      style="?android:attr/borderlessButtonStyle"/>
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+    <!--
+    <?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp1"
+            app:cardCornerRadius="@dimen/dp5"
+            app:cardElevation="@dimen/dp5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layoput"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp12">
+
+                    <LinearLayout
+                        android:id="@+id/qulaity_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="@dimen/dp15"
+                                android:fontFamily="@font/inter_bold"
+                                android:text="@string/quality"
+                                android:textColor="@color/black" />
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/track_selection_dialog_view_pager"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </androidx.viewpager.widget.ViewPager>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/speed_section"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="@dimen/dp15"
+                                android:fontFamily="@font/inter_bold"
+                                android:text="@string/speed"
+                                android:textColor="@color/black" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/speedo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp6"
+                                android:orientation="vertical"
+                                android:scrollbars="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/speed_control_layout" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/cross"
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:padding="1dp"
+                    android:src="@drawable/crossfeed"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoput"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp3"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/track_selection_dialog_cancel_button"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_speed_spinner"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Cancel"
+
+                            android:textAllCaps="false"
+                            android:textColor="@color/blackApp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/track_selection_dialog_ok_button"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_speed_spinner"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="OK"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blackApp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    -->

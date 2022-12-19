@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:padding="@dimen/dp8"
+                android:src="@drawable/arrow_back_black" />
+
+            <TextView
+                android:id="@+id/pdf_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@id/download_pdf"
+                android:layout_toEndOf="@id/back"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sub_heading_text_size" />
+
+            <ImageView
+                android:id="@+id/download_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp8"
+                android:padding="@dimen/dp8"
+                android:src="@drawable/ic_menu_download"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <!--    <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>-->
+
+           <com.pdfview.PDFView
+               android:id="@+id/pdfViewPager"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+        <ProgressBar
+            android:id="@+id/progressbar_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:theme="@style/progressBarBlue"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

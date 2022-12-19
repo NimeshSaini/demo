@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mycourse_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_mycourse"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginBottom="@dimen/dp10">
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp5"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/videoplayerRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ibt_single_vd_iv"
+                android:layout_width="54dp"
+                android:layout_height="@dimen/dp70"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:scaleType="fitXY"
+                android:src="@mipmap/course_placeholder"
+                android:visibility="visible"
+                app:riv_corner_radius="10dp"
+                app:riv_oval="false" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/liveIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="11dp"
+                android:src="@mipmap/live"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_titiel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_toEndOf="@id/videoplayerRL">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toStartOf="@id/arrow_forward"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/course_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/delete"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:paddingStart="@dimen/dp10"
+                        android:paddingEnd="@dimen/dp10"
+                        android:textColor="#071E57"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/dp5"
+                        android:src="@drawable/delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/days_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:hint="220 Days"
+                        android:paddingStart="@dimen/dp10"
+                        android:textColor="#D6000000"
+                        android:textSize="@dimen/sp12"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/progrees_value_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="0% Done"
+                        android:textColor="#8A000000"
+                        android:textSize="@dimen/sp11"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/arrow_forward"
+                android:layout_width="@dimen/dp15"
+                android:visibility="gone"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/forward_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_titiel"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:drawableEnd="@drawable/copy"
+            android:layout_marginBottom="@dimen/dp10"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Order Id:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp11"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/progess_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp20"
+            android:layout_below="@id/order_id"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_marginEnd="@dimen/dp10">
+
+            <ProgressBar
+                android:id="@+id/progress_value"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:progressDrawable="@drawable/progress_drawable" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/course__validty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progess_layout"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/total_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Purchased on: 2 Months from "
+                android:textColor="#8A000000"
+                android:textSize="@dimen/sp11" />
+
+            <TextView
+                android:id="@+id/progrees_value_texta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/inter_medium"
+                android:text="0% Done"
+                android:textColor="#8A000000"
+                android:textSize="@dimen/sp11"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/remaing_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_medium"
+                android:text="Remaning days:90"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/sp11" />
+
+
+            <TextView
+                android:id="@+id/extend_validy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp30"
+                android:layout_below="@id/remaing_days"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/btn_back_with_ripple"
+                android:clickable="true"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp10"
+                android:paddingEnd="@dimen/dp10"
+                android:text="Extend Validity"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/alert_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_days"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_toStartOf="@id/extend_validy"
+                android:drawableLeft="@mipmap/alert"
+                android:drawablePadding="@dimen/dp4"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="start"
+                android:paddingEnd="@dimen/dp5"
+                android:visibility="gone"
+                android:text="Before expiry date you can extend your course validity anytime"
+                android:textColor="#071E57"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

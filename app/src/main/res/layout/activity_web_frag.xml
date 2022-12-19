@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="@dimen/dp2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myProgress_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/searchSV">
+
+                <TextView
+                    android:id="@+id/toolbartitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/my_progress"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sub_heading_text_size" />
+
+                <ImageView
+                    android:id="@+id/imageIV"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp12"
+                    android:src="@drawable/ic_refresh_black_24dp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/app_bar_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <WebView
+            android:layout_margin="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webframe"
+            android:background="#80292c33"
+            android:visibility="visible">
+
+            <!--<com.beardedhen.androidbootstrap.BootstrapProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                app:animated="true"
+                app:bootstrapBrand="primary"
+                android:id="@+id/progressBar"
+                app:bootstrapProgress="5"
+                app:striped="true" />-->
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/testLoader"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/colorPrimaryDark"
+                app:indicatorName="BallBeatIndicator" />
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

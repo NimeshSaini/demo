@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calcpagerl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp10"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ibt_single_vd_iv"
+        android:layout_width="54dp"
+        android:layout_height="@dimen/dp70"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp60"
+        android:scaleType="fitXY"
+        android:src="@mipmap/course_placeholder"
+        android:visibility="visible"
+        app:riv_corner_radius="6dp"
+        app:riv_oval="false" />
+
+
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp80"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_toEndOf="@id/ibt_single_vd_iv"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="start"
+        android:maxLines="2"
+        android:text="Civil Engineering -  Civil Construction and Interior &amp; Exterior"
+        android:textColor="#071E57"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibt_single_vd_iv"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Extend Your Course Validity"
+        android:textColor="#222222"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_marginStart="@dimen/dp10"
+        android:fontFamily="@font/inter_regular"
+        android:text="Increase your course validity"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view3"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/background_rectangle_course_content_stream"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:paddingBottom="@dimen/dp20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_validy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layoutManager="LinearLayoutManager" />
+
+            <TextView
+                android:id="@+id/buy_now"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp50"
+                android:layout_below="@id/recycler_view_validy"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/continue_btn"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingTop="@dimen/dp10"
+                android:paddingEnd="@dimen/dp20"
+                android:paddingBottom="10dp"
+                android:text="Continue"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

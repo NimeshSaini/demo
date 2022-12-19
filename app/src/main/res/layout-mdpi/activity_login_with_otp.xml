@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/reverse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/skip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stories"
+            >
+
+            <ImageView
+                android:id="@+id/backgroundimage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp100"
+                 />
+
+
+            <TextView
+                android:layout_below="@+id/backgroundimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Competitive Exams"
+                android:textColor="#222222"
+                android:textSize="@dimen/dp18"
+                android:fontFamily="@font/inter_bold"
+                android:id="@+id/header_txt"
+                android:layout_marginTop="@dimen/dp10"
+                />
+
+            <TextView
+                android:id="@+id/textdesc"
+                android:layout_below="@+id/header_txt"
+                android:layout_marginTop="@dimen/dp3"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp14"
+                android:text="Top of the line faculty having an  enriched
+experience of years will teach you in an organized way for effective and effecient understanding
+"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:ems="20"
+                android:textAlignment="center"
+                android:textColor="#071E57
+"
+                />
+
+        </RelativeLayout>
+
+
+        <jp.shts.android.storiesprogressview.StoriesProgressView
+            android:id="@+id/stories"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/video_round_corner"
+            android:layout_alignParentBottom="true"
+            >
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                android:id="@+id/logintxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp20"
+                android:fontFamily="@font/inter_bold"
+                />
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp5"
+                android:id="@+id/Enter_mobile_number_to_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter mobile number to continue"
+                android:textColor="#071E57"
+                android:textSize="@dimen/dp14"
+                android:textStyle="bold"
+                android:layout_below="@+id/logintxt"
+                />
+
+
+            <RelativeLayout
+                android:layout_below="@+id/Enter_mobile_number_to_continue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/round_corner_border_login_signup"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:id="@+id/mobile_layout"
+                >
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imagestate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:padding="1dp"
+                    android:src="@mipmap/flag" />
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/imagestate"
+                    android:fontFamily="@font/inter_bold"
+                    android:padding="@dimen/dp1"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/tv_code"
+                    android:background="@null"
+                    android:fontFamily="@font/inter_medium"
+                    android:hint="@string/mobile_no"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:textSize="@dimen/sp14" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile_layout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@drawable/bg_login"
+                android:elevation="@dimen/dp5"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingLeft="@dimen/dp30"
+                android:paddingRight="@dimen/dp30"
+                android:text="@string/continuee"
+                android:textAllCaps="false"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/post_text_size" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

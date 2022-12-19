@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+es+419\\values-b+es+419.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\AppSquadz\\.gradle\\caches\\transforms-2\\files-2.1\\24dafba24fb0639abe5b98a72cef4631\\jetified-play-services-wallet-18.1.3\\res\\values-b+es+419\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "208",
+                        "endColumns": "73",
+                        "endOffsets": "281"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "77",
+                        "endOffsets": "128"
+                    }
+                }
+            ]
+        }
+    ]
+}

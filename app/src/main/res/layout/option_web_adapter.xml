@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_option"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:background="@color/white"
+    android:gravity="center"
+    android:minHeight="@dimen/dp50"
+    android:padding="@dimen/dp4">
+
+
+
+    <RelativeLayout
+        android:id="@+id/question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/option_a"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:src="@drawable/defaultholo" />
+
+        <TextView
+            android:id="@+id/optionTextTV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_toEndOf="@id/option_a"
+            android:clickable="false"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center_vertical"
+            android:maxLines="5"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp13"
+            android:visibility="gone" />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/optionTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_toEndOf="@id/option_a"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp5"
+            android:textAllCaps="true"
+            android:textSize="@dimen/sp13"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_below="@id/question_layout"
+        android:id="@+id/activeProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/progress_wrong"
+        android:progress="0" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp5"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notifi_unselected_color"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/medium_image_size"
+            android:layout_height="@dimen/medium_image_size"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@mipmap/both" />
+
+        <LinearLayout
+            android:id="@+id/notificationLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_toRightOf="@id/profileImage"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_weight="9"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:paddingRight="@dimen/dp6"
+                android:text="Attend live session at 23-10-2021 4:30 PM Indian History(L-2) By Bhawani Sir"
+                android:textColor="@color/black_405461"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/removeNoti"
+                android:paddingLeft="@dimen/dp2"
+                android:paddingRight="@dimen/dp2"
+                android:src="@drawable/delete"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descriptionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationLL"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:layout_toRightOf="@id/profileImage"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:text="Indian History(L-2) By Bhawani Sir"
+            android:textSize="@dimen/sp12" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/descriptionTVfull"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationLL"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:layout_toRightOf="@id/profileImage"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:text="Indian History(L-2) By Bhawani Sir"
+            android:textSize="@dimen/sp12" />
+
+
+        <TextView
+            android:id="@+id/descTv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionTV"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@id/profileImage"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:text="भक्ति आंदोलन"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/descPartTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descTv2"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@id/profileImage"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:text="Part-18 || भारत के उद्योग || 23-October"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/seemore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionTV"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:padding="@dimen/dp6"
+            android:text="See more"
+            android:textColor="#344356"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/seeless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionTVfull"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:padding="@dimen/dp6"
+            android:text="See less"
+            android:textColor="#344356"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seemore"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:padding="@dimen/dp6"
+            android:text="23-10-2021  04.47 pm"
+            android:textColor="#344356"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/date2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seeless"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:padding="@dimen/dp6"
+            android:text="23-10-2021  04.47 pm"
+            android:textColor="#344356"
+            android:textSize="@dimen/sp10" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

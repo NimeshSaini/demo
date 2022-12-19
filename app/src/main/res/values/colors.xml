@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimaryDark">#16A0BA</color>
+    <color name="colorPrimary">#33BED3</color>-->
+    <!--<color name="colorPrimaryDark">#C2C0D1</color>
+    <color name="colorPrimary">#dbd8ec</color>-->
+    <color name="com_facebook_button_border_color_focused">#3C5A99</color>
+    <color name="gray_light">#C8C8C8</color>
+
+    <color name="selected_color">#10FEC600</color>
+    <color name="unselected_color">#F6F9FF</color>
+    <color name="grey_80">#37474F</color>
+    <color name="orange_lite">#BCEACF96</color>
+    <color name="red_500">#F44336</color>
+    <color name="yellow_lite">#8AFFF8DF</color>
+    <color name="colorPrimaryDark">#FED500</color>
+    <color name="colorPrimaryDarkTrans">#48FED500</color>
+    <color name="colorActionBarText">#444444</color>
+    <color name="new_ui_yellow">#FFD601</color>
+    <color name="colorPrimary">#FED500</color>
+    <color name="signin">#FEEC00</color>
+    <color name="color_8A000000">#8A000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="lightColorPrimary">#20FED500</color>
+    <color name="darkColorPrimary">#70FED500</color>
+    <color name="colorBlackTrans">#1f000000</color>
+    <color name="background_bottom_nav">#50FED500</color>
+    <color name="headersColor">#B5FED500</color>
+    <color name="app_bg">#F7941E</color>
+    <color name="app_grey">#F4F4F6</color>
+    <color name="app_eye_color">#292828</color>
+
+
+
+    <color name="colorPrimaryDark4">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="black_071E57">#071E57</color>
+    <color name="splash">#1C0B23</color>
+    <color name="black_405461">#405461</color>
+    <color name="whatsapp_green">#31B946</color>
+    <color name="blackApp">#000000</color>
+    <color name="commonblack">#333333</color>
+    <color name="off_white">#ECECEC</color>
+    <color name="greayrefcode_light">#F6F6F6</color>
+    <color name="greayrefcode_dark">#D7D7D7</color>
+
+    <color name="gray_dark2">#838383</color>
+    <color name="gray">#B8C0C5</color>
+
+    <color name="green">#38FD38</color>
+    <color name="red">#FA475C</color>
+    <color name="notification_red">#CC0000</color>
+    <color name="live_video_red">#FF0000</color>
+
+    <!--<color name="blue">#33A2D9</color>old-->
+    <color name="blue">#1da1f2</color>
+    <color name="darkestblue">#003156</color>
+    <color name="light_blue">#6cd2ff</color>
+    <color name="link_color">#086BE0</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_lite">#66000000</color>
+    <color name="light_black_font">#4B4B4B</color>
+    <color name="color_071E57">#071E57</color>
+    <color name="dullBlack">#161616</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="rewards_color">#ff8b00</color>
+
+    <color name="intro1">#00afef</color>
+    <color name="intro2">#f28ab8</color>
+    <color name="intro3">#f19c70</color>
+    <color name="intro4">#3db5ad</color>
+
+    <color name="ibt_green">#30e162</color>
+    <color name="ibt_red">#f36459</color>
+
+    <color name="dark_quiz_grey">#a9a9a9</color>
+    <color name="test_grey">#C9C9C9</color>
+    <color name="light_quiz_grey">#eeeeee</color>
+    //colors for MsgInput
+    <color name="shadowMsgInput">#828286</color>
+
+    <color name="warm_grey_three">#8b8b8b</color>
+    <color name="landtitle">#071E57</color>
+    <color name="text_blue">#7f7f7f</color>
+    <color name="bottom_panel_text">#7f7f7f</color>
+    <color name="swip_refresh_color1">#32316B</color>
+    <color name="post_time_color">#9A9A9A</color>
+    <color name="profile_text_color">#222222</color>
+    <color name="color_background">#FAFAFA</color>
+
+    <color name="gradient_light_blue_color">@color/colorPrimary</color>
+
+    <color name="background_all">#F8F8F8</color>
+    <color name="black_white">#BA686363</color>
+    <color name="black_white_text">#1A1919</color>
+    <color name="theme_text_color">#FED500</color>
+
+    <color name="colorBackground">#d9d9d9</color>
+
+    <color name="courseBox">#ffe68b</color>
+
+    <!--<color name="green">#4fb331</color>
+    <color name="green_lite">#20bf55</color>
+    <color name="red">#F78F8F</color>
+    <color name="yellow">#ecad0e</color>-->
+
+    <color name="red_met">#D36464</color>
+    <color name="pending_verification">#FF7F50</color>
+    <color name="green_met">#5ECA5E</color>
+    <color name="colorGray2">#cccccc</color>
+    <color name="color_circle">#cbcbcb</color>
+    <color name="colorGray">#f6f5f5</color>
+    <color name="secondary_text_color">#8b8b8b</color>
+    <color name="colorGray3">#808080</color>
+
+    <color name="blue_dark">#008dff</color>
+    <color name="skipped">#b7b7b7</color>
+    <color name="correct">#00a651</color>
+    <color name="color_expert_bg">#f6f7fb</color>
+
+    <color name="whie">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_overlay_84">#d6000000</color>
+
+    <color name="dot_white">#ffffff</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="menu_left_background">#FFFFFF</color>
+    <color name="background_all_Lite">#FFFFFF</color>
+    <color name="overlay_light_90">#E6FFFFFF</color>
+
+    <!--<color name="button_left">#ff5353</color>
+    <color name="button_right">#dd4c76</color>-->
+    <color name="button_left">@color/colorPrimary</color>
+    <color name="button_right">@color/colorPrimary</color>
+    <color name="tile_inactive">#5F5F5F</color>
+    <color name="colorPrimaryShimmer">#6DFED500</color>
+    <color name="app_grey_dark">#BABABC</color>
+
+    <array name="mdcolor_random">
+        <item type="color">#e91e63</item>
+        <item type="color">#fdf501</item>
+        <item type="color">#673ab7</item>
+        <item type="color">#38FD38</item>
+
+        <item type="color">#5677fc</item>
+        <item type="color">#689F38</item>
+        <item type="color">#03a9f4</item>
+
+        <item type="color">#ff5722</item>
+        <item type="color">#795548</item>
+        <item type="color">#607d8b</item>
+        <item type="color">#ff9800</item>
+
+    </array>
+    <color name="transparent_background">#80000000</color>
+    <color name="ic_launcher_background">#231F20</color>
+</resources>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.utkarshnew.android.R"/>
+
+        <import type="android.view.View"/>
+        <variable
+            name="questionbind"
+            type="com.utkarshnew.android.feeds.dataclass.Data" />
+
+        <variable
+            name="optionadapter"
+            type="com.utkarshnew.android.feeds.adapters.OptionAdapter" />
+
+        <variable
+            name="optionwebadapter"
+            type="com.utkarshnew.android.feeds.adapters.OptionWebAdapter" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp6"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        app:imageUrl="@{questionbind.profile_picture}"
+        android:src="@mipmap/square_placeholder"
+        app:civ_border_color="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp6"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_toStartOf="@id/pinIV"
+        android:layout_toEndOf="@id/profileImage"
+        android:fontFamily="@font/inter_bold"
+        android:text="@{questionbind.name}"
+        android:textColor="#071E57"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/pinIV"
+        android:layout_width="@dimen/dp18"
+        android:layout_height="@dimen/dp18"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp10"
+        app:imageResource="@{questionbind.my_pinned.equals(`1`) ? R.drawable.pinned : R.drawable.unpinned}" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_toEndOf="@id/profileImage"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_medium"
+            app:date="@{questionbind.created}"
+            android:textColor="#8A000000"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_skip" />
+
+
+        <TextView
+            android:id="@+id/post_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_medium"
+            android:text="Mathematics"
+            android:visibility="gone"
+            android:textColor="#8A000000"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <com.ahmadnemati.clickablewebview.ClickableWebView
+        android:id="@+id/question_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:padding="@dimen/dp4"
+        android:textColor="#405461"
+        android:visibility="@{questionbind.meta_url.empty ? View.GONE :View.VISIBLE }"
+        app:setwebview="@{questionbind.meta_url}" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_txt"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginEnd="@dimen/dp10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyercler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:optionadapter="@{optionadapter}"
+            tools:listitem="@layout/option_adapter">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyercler_view_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:optionwebadapter="@{optionwebadapter}"
+            tools:listitem="@layout/option_adapter">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/like_comment_count_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constraint"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/post_attempt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_regular"
+            app:attempts="@{questionbind.json.total_attempt}"
+            android:textColor="#8A000000"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp4"
+            android:background="@drawable/circle_skip" />
+
+
+        <TextView
+            android:id="@+id/post_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_regular"
+
+            app:like="@{questionbind.total_likes}"
+            android:textColor="#8A000000"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp4"
+            android:background="@drawable/circle_skip" />
+
+
+        <TextView
+            android:id="@+id/post_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:fontFamily="@font/inter_regular"
+            android:text="@{questionbind.total_comments +` Comment`}"
+            android:textColor="#8A000000"
+            android:visibility="invisible"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/like_comment_count_layout"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/off_white"/>
+    <LinearLayout
+        android:id="@+id/like_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/view"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp6"
+            android:layout_marginEnd="@dimen/dp20"
+            android:drawableLeft="@drawable/favorite_border"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text="Like"
+            android:textColor="#8A000000"
+            android:textSize="15sp"
+            app:likeview="@{questionbind.my_like}" />
+
+
+        <TextView
+            android:id="@+id/post_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp6"
+            android:drawableLeft="@mipmap/comment"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text="Comment"
+            android:visibility="invisible"
+
+            android:layout_marginEnd="20dp"
+            android:textColor="#8A000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/postShare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp6"
+            android:drawableLeft="@drawable/share"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text="Share"
+            android:textColor="#8A000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@id/like_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_dark2" />
+
+</RelativeLayout>
+</layout>

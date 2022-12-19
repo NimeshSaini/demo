@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp4"
+    android:layout_marginBottom="@dimen/dp4"
+    android:layout_marginRight="@dimen/dp24"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_background_admin">
+
+        <TextView
+            android:id="@+id/sender_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp8"
+            android:paddingTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:textColor="@color/black"
+            android:textSize="@dimen/post_text_size_x"
+            android:textStyle="normal"
+            tools:text="Hii" />
+
+        <TextView
+            android:id="@+id/sender_chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sender_chat"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp8"
+            android:paddingTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:paddingBottom="@dimen/dp4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_10"
+            android:textStyle="bold"
+            tools:text="Hii" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

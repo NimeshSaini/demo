@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="addressadapter"
+            type="com.utkarshnew.android.address.model.Data" />
+
+    </data>
+<RelativeLayout
+    android:id="@+id/address_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dp80"
+    android:layout_marginEnd="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp10"
+    android:layout_marginStart="@dimen/dp10"
+    android:paddingLeft="@dimen/dp10"
+    android:background="@drawable/round_gray_address">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/edit"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/dp10"
+        android:fontFamily="@font/inter_bold"
+        android:maxLines="1"
+        android:text="@{addressadapter.address.name}"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toStartOf="@id/edit"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_bold"
+        android:maxLines="2"
+        android:text="@{addressadapter.address.addressOne + ` `+addressadapter.address.addressTwo}"
+        android:textColor="#2D2D2D"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_toStartOf="@id/edit"
+        android:layout_marginBottom="@dimen/dp10"
+        android:fontFamily="@font/inter_bold"
+        android:text="@{`Phone: ` + addressadapter.address.phone}"
+        android:textColor="#2D2D2D"
+        android:textSize="11sp" />
+
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/delete"
+        android:layout_marginEnd="2dp"
+        android:padding="@dimen/dp5"
+        android:src="@mipmap/edit" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="9dp"
+        android:padding="@dimen/dp5"
+        android:src="@mipmap/cancel" />
+
+
+</RelativeLayout>
+</layout>

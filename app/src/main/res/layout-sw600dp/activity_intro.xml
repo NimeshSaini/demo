@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp10"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:background="@mipmap/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:fontFamily="@font/inter_bold"
+            android:text="Step 1/2"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    <ProgressBar
+        android:layout_below="@id/step"
+        android:layout_marginTop="@dimen/dp5"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp3"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_alignParentLeft="true"
+        android:indeterminate="false"
+        android:max="2"
+        android:visibility="gone"
+        android:progress="1" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_parent"
+        android:layout_below="@id/header_layout"
+        android:layout_marginTop="@dimen/dp5" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_parent"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/next_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:background="@drawable/round_yello"
+            android:textColor="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:text="Update Preference"
+                android:gravity="center"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/next_back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/sp13"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/sp13"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:textColor="@android:color/white">
+
+            <TextView
+                android:id="@+id/back_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Back"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/dp10"
+                android:background="@drawable/border_gray_intro"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/next_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Next"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/dp10"
+                android:textSize="20sp"
+                android:background="@drawable/round_yello_10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

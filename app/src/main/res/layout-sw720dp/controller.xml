@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calcpagerl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_rectangle_course_content_stream"
+    android:minHeight="350dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/qulaity"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/dp3"
+        android:fontFamily="@font/inter_bold"
+        android:text="Quality &amp; speed"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:layout_alignParentEnd="true"
+        android:padding="1dp"
+        android:src="@drawable/crossfeed"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_below="@id/qulaity"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/qualityrecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/speed_control_layout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sppedrecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/speed_control_layout" />
+
+    </LinearLayout>
+
+
+    <!-- <androidx.core.widget.NestedScrollView
+         android:id="@+id/nested"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/qulaity"
+         android:fillViewport="true"
+         android:fitsSystemWindows="true">
+
+     </androidx.core.widget.NestedScrollView>
+ -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/layput"
+        android:layout_marginStart="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp30">
+
+        <Button
+            android:id="@+id/track_selection_dialog_cancel_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_speed_spinner"
+            android:fontFamily="@font/inter_bold"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/blackApp" />
+
+        <Button
+            android:id="@+id/track_selection_dialog_ok_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/bg_speed_spinner"
+            android:fontFamily="@font/inter_bold"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textColor="@color/blackApp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

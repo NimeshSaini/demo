@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_lite"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingTop="@dimen/dp6"
+        android:paddingRight="@dimen/dp12"
+        android:paddingBottom="@dimen/dp6">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="start"
+            android:text="Select single or multiple Courses(S)"
+            android:textColor="@color/blackApp"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+
+        <TextView
+            android:id="@+id/maxCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="end"
+            android:text="(Max)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extrasmall_text_size_12" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/createTestRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/spinnerLL"
+        android:layout_below="@+id/llnote"
+        android:overScrollMode="never"
+        android:padding="@dimen/dp5" />
+
+    <RelativeLayout
+        android:layout_above="@+id/btnpcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerLL"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp8"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/State"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/round_corner_border_login_signup"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp16">
+
+            <TextView
+                android:id="@+id/typeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="top"
+                android:layout_toLeftOf="@+id/downarrowIV"
+                android:fontFamily="@font/inter_medium"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:text="Language Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <ImageView
+                android:id="@+id/downarrowIV"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/arrow_down" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--<TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llnote"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:minHeight="@dimen/dp200"
+        android:text="No Data found"
+        android:textColor="@color/black"
+        android:visibility="gone" />-->
+
+    <include layout="@layout/no_data_found" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnpcd"
+        android:background="@color/white"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/buttonProceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginEnd="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp12"
+            android:background="@drawable/bg_round_corners_button_fade"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/profile_text_color"
+            android:textSize="@dimen/post_text_size_x"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/currentAffairRL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp6"
+    android:paddingRight="@dimen/dp6"
+    android:paddingTop="@dimen/dp12"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_CV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/background_all"
+        app:cardCornerRadius="@dimen/dp12"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/videoplayerRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ibt_single_vd_iv"
+                    android:layout_width="@dimen/dp170"
+                    android:layout_height="@dimen/dp240"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/book_placeholder" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/liveIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/live"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp4"
+        android:layout_marginRight="@dimen/dp4"
+        android:layout_marginBottom="@dimen/dp10"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp3">
+
+        <TextView
+            android:id="@+id/ibt_current_affair_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_bold"
+            android:maxLines="1"
+            android:text="Class XII Commerce"
+            android:textColor="@color/black_405461"
+            android:textSize="@dimen/small_text_size2"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/validityTextTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ibt_current_affair_title"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp1"
+            android:text="Validity: 365 Days"
+            android:textColor="@color/black_405461"
+            android:textSize="@dimen/sp10" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/mrpCutTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp2"
+                android:paddingRight="@dimen/dp1"
+                android:text="1750.00"
+                android:textAlignment="textStart"
+                android:textColor="@color/black_white"
+                android:textSize="@dimen/sp10" />
+
+            <TextView
+                android:id="@+id/priceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_semibold"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp2"
+                android:text="3000.00"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black_white_text"
+                android:textSize="@dimen/extrasmall_text_size_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

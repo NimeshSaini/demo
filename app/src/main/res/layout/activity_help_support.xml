@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="@dimen/dp2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myProgress_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/searchSV">
+
+                <TextView
+                    android:id="@+id/toolbartitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="@string/help_supports"
+                    android:textColor="@color/blackApp"
+                    android:textSize="@dimen/sp18" />
+
+                <ImageView
+                    android:id="@+id/imageIV"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp12"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnpcd"
+        android:layout_below="@id/app_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:id="@+id/courseRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp8"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/orderLabelTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Course Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sub_heading_text_size"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/courseIdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/orderLabelTxt"
+                    android:layout_marginStart="@dimen/dp8"
+                    android:layout_marginEnd="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Stuff Selection Commission"
+                    android:textSize="@dimen/post_text_size"
+                    android:typeface="serif" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:background="@drawable/round_corner_border_login_signup"
+                    android:fontFamily="@font/inter_medium"
+                    android:hint="Title"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp16"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp16"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_white_text"
+                    android:textSize="@dimen/extrasmall_text_size_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:background="@drawable/round_corner_border_login_signup"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/feedtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Type"
+                        android:padding="@dimen/dp8"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/post_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Comment"
+                        android:textAlignment="center"
+                        android:textColor="@color/black_white_text"
+                        android:textSize="@dimen/extrasmall_text_size_12" />
+
+                    <EditText
+                        android:id="@+id/comment_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner_border_login_signup"
+                        android:cursorVisible="true"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:minLines="7"
+                        android:padding="@dimen/dp8"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/post_text_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/btnpcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginEnd="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp12"
+            android:background="@drawable/bg_round_corners_button"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/profile_text_color"
+            android:textSize="@dimen/post_text_size_x"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

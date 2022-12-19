@@ -1,0 +1,408 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <item name="questions" type="id" />
+    <string name="internet_connection_offline_text_short">No internet available.</string>
+    <string name="customer_support_message">Call with customer support is available from 6 AM to 12 Midnight. For now, you can leave a mail or have a chat with customer support.</string>
+    <string name="customer_support_select_title">Select a number</string>
+
+    <string name="support_call1" translatable="false">9829213213</string>
+    <string name="create">Create</string>
+    <string name="justnow">Just Now</string>
+    <string name="activity_live_class">Live Class</string>
+
+    <string name="view_rank">VIEW RESULT</string>
+
+    <string name="support_call2" translatable="false">9116691119</string>
+    <string name="support_email" translatable="false">support@utkarsh.com</string>
+    <string name="invitestring">I recommend you to learn from next-gen Smart courses. Uncover a whole new way of learning with Utkarsh.
+        Learn, practice &amp; create custom tests and much more.
+Download http://bit.ly/2K27grQ and start learning now!!</string>
+
+    <!--<string name="api_key">AIzaSyAxMc-ZD6vJhBbMP2NXeSWAwRZUNoDM9fU</string>-->
+    <string name="app_version" translatable="false">App Version</string>
+    <string name="makebettertext">We collect crash reports and other diagnostic data to make the app better</string>
+    <string name="settings_activity">Settings</string>
+
+    <string name="screen_mirror_dialog_msg">1. List of Google approved Android <a href="https://www.android.com/intl/en_in/tv/">TVs that support screen mirroring</a>\n\n2. If your TV is not on the list then with the help of Google Chrome Cast, screen mirroring can be done. Please see the below link,\n<a href="https://support.google.com/chromecast/answer/6006232?hl=en-IN">How to connect google Chromecast</a>\n\n3. Download Videos will not come while screen mirroring</string>
+    <string name="libraries_used">Libraries Used</string>
+    <string name="libusedtext">The following is a list of third party software that has been used in portions of the Wonderslate product.</string>
+    <string name="open_source_library_activity">Open Source Libraries</string>
+
+    <string name="logout_text">Logout</string>
+    <string name="copyrighttext">© 2021 Utkarsh Classes and Edutech Pvt. Ltd.\nAll rights reserved.</string>
+
+    <string name="about_us_text">About</string>
+
+    <string name="other"><u>Other</u></string>
+
+    <string name="privacy_policy_text">Privacy Policy</string>
+    <string name="term_of_service_text">Terms of Service</string>
+    <string name="open_source_libraries_text">Open Source Libraries</string>
+    <string name="built_by_wonderslate_text">Built by Utkarsh</string>
+    <string name="leave_us_a_review_text">Leave us a Review.</string>
+    <string name="help_wonderslate_text">Help make Utkarsh better</string>
+
+
+    <style name="AppTheme.Dialog" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize">
+        <!-- removing the dialog's action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Opaque" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <string name="error_generic">Playback failed</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_no_decoder">This device does not provide a decoder for %1$s</string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for %1$s</string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_instantiating_decoder">Unable to instantiate decoder %1$s</string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+
+    <!-- FACEBOOK APP ID -->
+    <item name="optionsAns" type="id" />
+    <!--<string name="app_name">Utkarsh</string>-->
+    <string name="app_name">Utkarsh</string>
+    <string name="allcourses">All Courses</string>
+    <string name="mycourse">My Courses</string>
+    <string name="specialities">Specialities</string>
+    <string name="savedNotes">Saved Notes</string>
+    <string name="course">Courses</string>
+    <string name="feedback">Feedback</string>
+
+    <!--Feed Preferences Strings-->
+
+
+<!--
+   <string name="facebook_app_id">324792852891087</string>
+-->
+    <string name="facebook_app_id">3269478913096833</string>
+    <string name="fb_login_protocol_scheme">fb3269478913096833</string>
+
+
+    <string name="video">Videos</string>
+
+    <string name="appSettings">App Settings</string>
+    <string name="Settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="finishQuiz">Are you sure you want to submit this test?\nyou can\'t edit once you submit. </string>
+    <string name="pauseQuiz">Are you sure you want to pause this test?</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="submit">Submit</string>
+    <string name="verfiy">Verify &amp; Continue</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="login_sml">Login</string>
+
+    <string name="changepassowrd_new_password">Enter a new Password</string>
+    <string name="changepassowrd_retype_password">Confirm Password</string>
+
+    <string name="add_note_message">Add your selected text to saved on notes</string>
+
+    <string name="save">SAVE</string>
+    <string name="cancel">Cancel</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+
+    <string name="no_storage_card">No storage card</string>
+
+    <string name="not_enough_space">Not enough space</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="next">Next</string>
+    <string name="notification">Notification</string>
+    <string name="change_password">Change Password</string>
+    <string name="forget_password">Forgot Password</string>
+
+    <string name="pin_content_desc">PIN input field</string>
+    <string name="jsonparsing_error_message">Something went wrong with server</string>
+    <string name="internet_error_message">No internet connection found.\n Check your Connection</string>
+    <string name="exception_api_error_message">Something went wrong kindly try again</string>
+    <string name="no_data_found">No Data Found!</string>
+    <string name="pdf_extension">.pdf</string>
+    <string name="doc_extension">.doc</string>
+    <string name="xls_extension">.xls</string>
+    <string name="file_format_error">This file format is not supported</string>
+    <string name="logout_confirmation_message">Are you sure you want to logout?</string>
+    <string name="logout_title">Logout</string>
+    <string name="description">Description</string>
+    <string name="verify_your_one_time_otp">Verify your OTP number</string>
+    <string name="enter_code_sent">Enter the 6 digit code we just sent you to verify your account.</string>
+    <string name="update_app_dialog_title">Update App</string>
+    <string name="maintain_app_dialog_title">On Maintenance</string>
+    <string name="update_app_dialog_message">You are using older version of app.\n Kindly update it from PlayStore</string>
+    <string name="maintain_app_dialog_message">App is now on Maintenance so please close your app.</string>
+
+    <!--JWPlayer-->
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="seeAll">See All</string>
+    <string name="faq_title">FAQ\'s</string>
+    <string name="submit_rev">Submit</string>
+    <string name="prev">Previous</string>
+
+    <string name="leaderboard">My Scorecard</string>
+
+    <string name="retry">Retry</string>
+    <string name="chatbot">Chat Support</string>
+    <string name="rewardpoints">Reward Points</string>
+    <string name="press_again_to_exit">Press once again to Exit</string>
+    <string name="optingAttempt">Please Note : Re-attempt will not affect your Current Rank</string>
+    <string name="proceed">Proceed</string>
+    <string name="finish">Finish</string>
+
+    <string name="rs">\u20B9</string>
+
+    <string name="blackdot">\u25CF</string>
+
+    <string name="purchased">Purchased</string>
+
+    <string name="yourrank">Your Rank</string>
+
+    <string name="totalUser">Total User</string>
+
+    // to set rs. symbol
+    <!--<string name="rs">\u20A8</string>-->
+    <!--<string name="blackdot">\u2022</string>-->
+    <string name="try_again">Try Again</string>
+    <string name="Invoice">Course Invoice</string>
+    <string name="attempted">Attempted</string>
+    <string name="notattempted">Not Attempted</string>
+    <string name="choose_language">Choose Your Preferred Language</string>
+    <!--<string name="mcqNote">Mark your answer for this survey.</string>-->
+    <string name="hindi">Hindi</string>
+    <string name="english">English</string>
+    <string name="continuee">Continue</string>
+
+
+    <!--ibt-->
+
+    <string name="by_signing_up">By Signup you agree to our</string>
+    <string name="get_your_doubts_resolved">Get your Doubts Resolved</string>
+    <string name="bank_exam">Bank Exams</string>
+    <string name="india_trusted_app"> Don’t worry ! Just fill in your registered mobile number and we’ll send you a OTP to reset your password. </string>
+    <string name="signin">Login</string>
+    <string name="get_tips">Get Tips and Preparation strategy\</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="checkout_now">CONTINUE TO PAY</string>
+    <string name="home">Home</string>
+    <string name="my_notes">My Notes</string>
+    <string name="my_exam_selection">My Exam Selection</string>
+    <string name="total_test">Total Number of Tests</string>
+    <!--<string name="tag_line">“Dreams are like stars. you may never touch them, but if you follow them, they will lead you to your destiny.” ― Liam James</string>-->
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="coins">Coins</string>
+    <string name="free">Free for Students</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="can_change_lang">Please select your language</string>
+    <string name="skip">Skip</string>
+
+    <string name="welcome_to_mme">Welcome to Utkarsh</string>
+
+    <string name="interactive_video_leactures">Interactive Video Lectures</string>
+    <string name="simple_covering_videos">Simple and Effective videos covering all concepts</string>
+
+    <string name="unlimited_quiz"><![CDATA[Unlimited Quiz & Practice]]></string>
+    <string name="wide_range_of"><![CDATA[Wide range of topicwise quiz & practice test]]></string>
+    <string name="all_india_test_series">All India Test Series</string>
+    <string name="attempt_test">Attempt Test to compete at National Level</string>
+    <string name="loading">Loading</string>
+
+
+    <string name="congratulation">Congratulations !</string>
+    <string name="attempt_now">ATTEMPT NOW</string>
+
+    <string name="channel_description">This Notification Channel manages all the basic notifications of the Utkarsh App</string>
+    <string name="channel_name">Utkarsh App Notification</string>
+
+    <string name="language">Language</string>
+    <string name="read_all">Read All</string>
+    <string name="validity">Validity</string>
+    <string name="month">month</string>
+    <string name="months">months</string>
+    <string name="coupon_applied">Apply Coupon</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="have_a_coupon"><u>Have a coupon?</u></string>
+    <string name="apply_a_coupon"><u>Apply coupon?</u></string>
+    <string name="alert">Alert</string>
+    <string name="alert_guest">Alert!!</string>
+    <string name="reGrantPermissionMsg">You have denied the required permission. Please grant to proceed further.</string>
+    <string name="resume">Resume</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="forgot_your_password">Forgot password?</string>
+    <string name="course_not_found">Course not found.</string>
+    <string name="profile_image_error">Failed to Upload Please Try Again Later</string>
+    <string name="click_here">click here</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="add_coupon">Add Promo</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_and_condition_underline"><u>Terms and Conditions</u></string>
+    <string name="term_and_condition">Terms and Conditions</string>
+    <!--<string name="we_are_best">We Are Best</string>-->
+    <string name="my_progress">My Progress</string>
+
+
+    <string name="help_supports">Help And Support</string>
+
+    <!--<string name="call_text">You can also contact us %1$s for any query.</string>-->
+
+    <string name="Retry_with_Internet_connection">Retry with Internet connection</string>
+    <string name="guest_login_toast">Please Login!</string>
+
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="your_gps_seems_disabled">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="update">Update</string>
+    <string name="submits">Submit</string>
+    <string name="pause">Pause</string>
+    <string name="quitQuiz">Are you sure you want to quit the Quiz?</string>
+    <string name="close">Close</string>
+    <string name="screen_capturing_msg">Please uninstall screen capturing apps first on our device.</string>
+    <string name="physical_device_msg">You cannot run this app on a rooted device. Please unroot or contact admin.</string>
+    <!--<string name="YOUTUBE_API_KEY">AIzaSyC-L5YQcdbFMwNZiUw-YIF95POcYFg24yk</string>-->
+
+    <string name="generalInstr"><u>General Instructions</u></string>
+    <string name="start_test">Start Test</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="remove_from_cart">GO TO CART</string>
+    <string name="mycart">My Cart</string>
+    <string name="score">SCORE</string>
+    <string name="alert_guest_msg">To buy this course, please login</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="expire_on">Expire on</string>
+    <string name="unattempted">Unattempted</string>
+
+    <!--  Text To PDF -Set Page Size-->
+    <string name="please_wait">Please Wait...</string>
+    <string name="time">time</string>
+    <string name="download">Downloads</string>
+    <string name="track_selection_title">Select tracks</string>
+    <string name="payment_complete">Payment Complete</string>
+    <string name="next_payment">Next Payment</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="ok">OK</string>
+    <string name="filter_one_text">UP Board (Hindi)</string>
+    <string name="filter_two_text">12</string>
+    <string name="my_library">My\nLibrary</string>
+    <string name="live_classes">Live\nClasses</string>
+    <string name="live_tests">Live\nTests</string>
+    <string name="create_test">Create Test</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="complete_profile">Complete Your Profile</string>
+    <string name="change_pass_txt">Your new password must be different from previous used password</string>
+    <string name="change_password_txt_hint">*Both password  must match</string>
+    <string name="congratulation_msg">you have successfully changed  your password</string>
+    <string name="go_back_login">Go Back To Login</string>
+    <string name="na">n/a</string>
+    <string name="include_gst">(GST Included)</string>
+    <string name="price">Price:</string>
+    <string name="open_in_my_lib">Add To My Library</string>
+    <string name="resendotp"><b><u>Resend OTP</u></b></string>
+    <string name="order_id_payment_history">ORDER ID</string>
+    <string name="payment_id_payment_history">PAYMENT ID</string>
+    <string name="total_paid_payment_history">TOTAL PAID</string>
+
+
+    <string-array name="dialog_choose_language_array">
+        <item>@string/english</item> <!--1 for English-->
+        <item>@string/hindi</item>  <!--2 for Hindi-->
+    </string-array>
+
+
+    <string-array name="video_playback_speed">
+        <item>0.25</item>
+        <item>0.5</item>
+        <item>0.75</item>
+        <item>NORMAL</item>
+        <item>1.25</item>
+        <item>1.5</item>
+        <item>1.75</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string name="number_of_questions">Number of Questions</string>
+    <string name="time_in_minutes">Time (in Minutes)</string>
+    <string name="total_marks">Total Marks</string>
+    <string name="no_of_sections">No. of Sections</string>
+    <string name="section_nname">Section Name</string>
+    <string name="total_nquestions">Total Questions</string>
+    <string name="total_ntime">Total Time</string>
+    <string name="total_nmarks">Total Marks</string>
+    <string name="marks_nper_ques">Marks Per Ques</string>
+    <string name="neg_marks_nper_ques">Neg Marks per Ques</string>
+    <string name="my_time_duration">Test Duration</string>
+    <string name="boomark">Question is Bookmark</string>
+    <string name="unboomark">Question is Unbookmark</string>
+    <string name="timetaken">Time Taken</string>
+    <string name="save_ans_marked_for_review"><![CDATA[Ans & Marked for Review]]></string>
+    <string name="Qclear">Clear</string>
+    <string name="do_you_want_to_submit_the_test">Do you want to submit the test ?</string>
+    <string name="optingAttemptcheck">I have read and understood the instructions.I agree that in case of not adhering to the exam instructions,i will be disqualified.</string>
+    <string name="time_over_message">Your test time is over. Click \'OK\' for submit.</string>
+
+    <string name="grid_view">Grid View</string>
+    <string name="list_view">List View</string>
+    <string name="view_solution">View Solution</string>
+    <string name="vsol">Video Solution1</string>
+    <string name="vsol2">Video Solution2</string>
+    <string name="your_rank">Your Rank</string>
+    <string name="notvisited">Not Visited</string>
+    <string name="unmark_for_review">Unmark For Review</string>
+    <string name="marked">Marked for Review</string>
+    <string name="mark_for_review">Mark For Review</string>
+    <string name="submit_test">Submit Test</string>
+    <string name="time_out">Time out!</string>
+
+    <string name="save_amp_mark_for_review"><![CDATA[Save & Mark For Review]]></string>
+    <string name="remove_amp_mark_for_review"><![CDATA[Remove & Mark For Review]]></string>
+    <string name="test_information">Test Information</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="percentile">Percentage</string>
+    <string name="your_answers">Your Answers</string>
+
+    <string name="best_score">Best Score</string>
+    <string name="thisfieldrequired">This field is required</string>
+    <string name="average_score">Average Score</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="go_back">Go Back</string>
+    <string name="downloadInvoice">Download Invoice</string>
+    <string name="switching_section_is_not_allowed">Switching Section is not allowed</string>
+
+    <string name="help_book_history">Help</string>
+    <string name="grantpermtext">Grant Access</string>
+    <string name="grantpermdesctext">Change permissions in your device’s app settings.
+        Giving Utkarsh access to Storage will enable us to access your storage,
+        allowing you to read and practice hassle free.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quality">Quality</string>
+    <string name="speed">Speed</string>
+    <string name="old_password">Enter your old password</string>
+</resources>

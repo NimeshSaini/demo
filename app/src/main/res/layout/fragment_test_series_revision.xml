@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nestedSV"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/light_quiz_grey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp8"
+                android:paddingRight="@dimen/dp16"
+                android:paddingLeft="@dimen/dp16"
+                android:id="@+id/tv_question_fib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:padding="@dimen/dp5"
+                android:textColor="#D82D2D2D"
+                android:textSize="@dimen/sp15"
+                android:background="@color/transparent"
+                android:layout_toLeftOf="@+id/img_bookmark"
+                android:nestedScrollingEnabled="true"
+                android:visibility="visible"/>
+            <RelativeLayout
+                android:id="@+id/question_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_margin="@dimen/dp10">
+                <com.ahmadnemati.clickablewebview.ClickableWebView
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/blackApp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp16"
+                    android:background="@color/transparent"
+                    android:layout_toLeftOf="@+id/img_bookmark"
+                    android:nestedScrollingEnabled="true"/>
+
+                <ImageView
+                    android:id="@+id/img_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="visible"
+                    android:padding="@dimen/dp5"
+                    android:src="@mipmap/bookmark_unselected"/>
+
+            </RelativeLayout>
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:gravity="end"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/maxmarks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Max marks:"
+                                android:textSize="@dimen/sp15"
+                                android:gravity="center"
+
+                                android:textColor="@color/green"/>
+
+                            <TextView
+                                android:id="@+id/minmarks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Min Marks"
+                                android:textSize="@dimen/sp15"
+                                android:gravity="center"
+
+                                android:textColor="@color/red_500"/>
+                        </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/mcqoptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5" />
+            <LinearLayout
+                android:id="@+id/LLFIBquestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp5"
+                android:visibility="gone"
+                android:paddingRight="@dimen/dp5">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvfibquestion1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LLmatchinquestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp5"
+                android:visibility="gone"
+                android:paddingRight="@dimen/dp5">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvmatchinquestion1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvmatchinquestion2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_testlayot">
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_above="@+id/ll_bottom">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/explanationLL"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Explanation:"
+                                android:textSize="@dimen/dp15"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/explanationTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Explanation:"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:textSize="@dimen/dp15"
+                                android:padding="@dimen/dp5"/>
+
+                        </LinearLayout>
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Guessing Answer"
+                            android:visibility="gone"
+                            android:layout_below="@id/explanationLL"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/mark_for_review"
+                            android:gravity="center"
+                            android:id="@+id/mark_for_review"
+                            android:layout_below="@+id/checkBox"
+                            android:layout_weight="1"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:fontFamily="@font/inter_bold"
+                            android:textColor="@color/blackApp"
+                            android:background="@drawable/background_bg_next"
+                            android:padding="@dimen/dp5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/unmark_for_review"
+                            android:gravity="center"
+                            android:id="@+id/unmark_for_review"
+                            android:layout_below="@+id/checkBox"
+                            android:layout_weight="1"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:fontFamily="@font/inter_bold"
+                            android:textColor="@color/blackApp"
+                            android:background="@drawable/background_bg_next"
+                            android:padding="@dimen/dp5"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/save_amp_mark_for_review"
+                            android:gravity="center"
+                            android:id="@+id/save_mark_for_review"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:textColor="@color/white"
+                            android:background="@drawable/background_bg_next"
+                            android:padding="@dimen/dp5"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/remove_amp_mark_for_review"
+                            android:gravity="center"
+                            android:id="@+id/remove_mark_for_review"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:textColor="@color/white"
+                            android:background="@drawable/background_bg_next"
+                            android:padding="@dimen/dp5"
+                            />
+                        <TextView
+                            android:id="@+id/tv_uid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_below="@+id/unmark_for_review"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:textSize="@dimen/post_text_size"
+                            android:drawablePadding="@dimen/dp5"
+                            android:text="eMedicocoz QUID 297666"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_uid"
+                            android:id="@+id/tv_email"
+                            android:gravity="center|start"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:visibility="gone"
+                            android:textSize="@dimen/post_text_size"
+                            android:text="surya singh@gmail.com"/>
+                        <TextView
+                            android:id="@+id/tv_report_error"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_email"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:drawableLeft="@mipmap/error_test"
+                            android:textColor="#f3333a"
+                            android:visibility="gone"
+                            android:gravity="center|start"
+                            android:drawablePadding="@dimen/dp5"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text="Report Error"
+                            android:padding="@dimen/dp5"
+                            android:textSize="@dimen/post_text_size"
+                            />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".testModule.fragment.SC_TestSeriesFragment">
+
+            &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root_layout"
+                android:orientation="vertical"
+                android:background="@color/light_quiz_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_margin="@dimen/dp10">
+                    <TextView
+                        android:id="@+id/tv_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:padding="@dimen/dp5"
+                        android:textSize="@dimen/sp16"
+                        android:background="@color/transparent"
+                        android:layout_toLeftOf="@+id/img_bookmark"
+                        android:nestedScrollingEnabled="true"/>
+
+                    <ImageView
+                        android:id="@+id/img_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/dp5"
+                        android:src="@mipmap/bookmark_test"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mcqoptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/bg_testlayot">
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_above="@+id/ll_bottom">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Guessing Answer"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="Mark For Review"
+                                android:gravity="center"
+                                android:id="@+id/mark_for_review"
+                                android:layout_below="@+id/checkBox"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:textColor="@color/white"
+                                android:background="@drawable/background_bg_next"
+                                android:padding="@dimen/dp5"
+                                />
+                            <TextView
+                                android:id="@+id/tv_uid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mark_for_review"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:textSize="@dimen/post_text_size"
+                                android:drawablePadding="@dimen/dp5"
+                                android:text="eMedicocoz QUID 297666"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_uid"
+                                android:id="@+id/tv_email"
+                                android:gravity="center|start"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:textSize="@dimen/post_text_size"
+                                android:text="surya singh@gmail.com"/>
+                            <TextView
+                                android:id="@+id/tv_report_error"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_email"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:drawableLeft="@mipmap/error_test"
+                                android:textColor="#f3333a"
+                                android:gravity="center|start"
+                                android:drawablePadding="@dimen/dp5"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:text="Report Error"
+                                android:padding="@dimen/dp5"
+                                android:textSize="@dimen/post_text_size"
+                                />
+                        </RelativeLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    -->

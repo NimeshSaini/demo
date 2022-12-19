@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/readchaptertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ReadActionBarStyle"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/blackApp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/toolbarTitleTV"
+                android:layout_toStartOf="@id/action_text_formate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:titleMarginStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                android:textColor="@color/blackApp"
+                android:textSize="@dimen/sp18" />
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_toStartOf="@id/notesIV"
+                android:src="@drawable/ic_refresh_black_24dp"/>
+
+
+            <ImageView
+                android:id="@+id/action_text_formate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_toStartOf="@id/refresh"
+                android:src="@drawable/ic_format_size_white"/>
+
+            <ImageView
+                android:id="@+id/notesIV"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp5"
+                android:visibility="visible"
+                android:src="@drawable/notes" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/readchaptertoolbar"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/read_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.utkarshnew.android.courses.Activity.ObservableWebView
+                android:id="@+id/chapter_content_webview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp" />
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:background="@color/colorActionBarText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="This ad helps us to keep the awseome content free"
+                android:textColor="@color/colorActionBarText"
+                android:textSize="14sp"
+                android:typeface="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="GO AD FREE WITH WS+ ›"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/nextChapterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/normal_selectable_foreground"
+            android:clickable="true"
+            android:background="@color/white">
+
+            <View
+                android:id="@+id/borderView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/top_elevation_shadow"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/borderView">
+
+                <TextView
+                    android:id="@+id/nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/chapterNameTxt"
+                    android:layout_alignParentTop="true"
+                    android:textColor="#8A444444"
+                    android:typeface="normal"
+                    android:layout_alignRight="@+id/chapterNameTxt"
+                    android:text="next_section_read"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chapterNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#CC444444"
+                    android:typeface="serif"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginStart="8dp"
+                    android:layout_toLeftOf="@+id/nextImageView"
+                    android:layout_toStartOf="@+id/nextImageView"
+                    android:text="Topic name"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/nextImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:rotation="180"
+                    android:src="@drawable/arrow_back_black"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/text_formatter_dialog_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallBeatIndicator" />
+
+    <androidx.appcompat.widget.AlertDialogLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:clickable="false"
+        android:background="#74000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="24dp"
+                android:layout_marginStart="35dp"
+                android:orientation="vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:paddingTop="19dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_marginLeft="35dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorActionBarText"
+                    android:textSize="20sp"
+                    android:lines="3"
+                    android:ellipsize="end"
+                    android:layout_marginEnd="50dp"
+                    android:typeface="serif"
+                    android:layout_marginRight="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="0.3"
+                        android:paddingBottom="2dp"
+                        android:progressDrawable="@drawable/custom_progress"
+                        android:max="100" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textColor="@color/colorActionBarText"
+                        android:textSize="12sp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.AlertDialogLayout>
+
+    <WebView
+        android:visibility="gone"
+        android:layout_below="@id/readchaptertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/readchaptertoolbar"
+        android:visibility="gone" />
+
+</RelativeLayout>

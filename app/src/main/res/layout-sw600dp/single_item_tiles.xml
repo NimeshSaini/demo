@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp2"
+    android:layout_marginRight="@dimen/dp2"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:id="@+id/parentBottom">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/tour_ll">
+
+        <TextView
+            android:id="@+id/tilesTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_medium"
+            android:maxLines="1"
+            android:text="Concepts"
+            android:textColor="@color/tile_inactive"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textSize="@dimen/post_text_size_x"
+            android:visibility="visible" />
+
+        <!--<View
+            android:id="@+id/tilesView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp2"
+            android:layout_below="@+id/tilesTextTv"
+            android:layout_alignLeft="@+id/tilesTextTv"
+            android:layout_alignRight="@+id/tilesTextTv"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp7"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp7"
+            android:background="@color/white"
+            android:visibility="gone" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

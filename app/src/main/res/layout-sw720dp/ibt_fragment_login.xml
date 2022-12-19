@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:background="@drawable/round_corner_border_login_signup"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+
+                   >
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/imagestate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:padding="1dp"
+                            android:src="@mipmap/flag" />
+
+                        <TextView
+                            android:id="@+id/tv_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/imagestate"
+                            android:fontFamily="@font/inter_bold"
+                            android:padding="@dimen/dp1"
+                            android:text="+91"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp14" />
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/tv_code"
+                            android:background="@null"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="@string/mobile_no"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10"
+                            android:textSize="@dimen/sp14" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/app_eye_color">
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_corner_border_login_signup"
+                            android:drawableStart="@mipmap/lock"
+                            android:drawablePadding="@dimen/dp15"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingTop="@dimen/dp16"
+                            android:paddingRight="@dimen/dp10"
+                            android:paddingBottom="@dimen/dp16"
+                            android:textSize="@dimen/sp14" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/forgetpasswordTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center_vertical|center"
+                    android:paddingStart="@dimen/dp10"
+                    android:text="@string/forgot_your_password"
+                    android:textColor="#8A405461"
+                    android:textSize="@dimen/sp12"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.7" />
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/bg_round_corners_button"
+                    android:fontFamily="@font/inter_medium"
+                    android:includeFontPadding="false"
+                    android:text="@string/login_sml"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

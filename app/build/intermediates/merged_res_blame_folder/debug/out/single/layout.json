@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\banner_adapter_imageview.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\banner_adapter_imageview.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\link_view.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\link_view.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\new_testresult_vm.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\new_testresult_vm.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\feed_live_test_adapter.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\feed_live_test_adapter.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\live_class_vm.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\live_class_vm.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\article_vm.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\article_vm.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\comment_adapter.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\comment_adapter.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_purchase_history_detail.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\activity_purchase_history_detail.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\notes_type_adapter.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\notes_type_adapter.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\live_test_vm.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\live_test_vm.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_feeds.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\activity_feeds.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\feed_live_class_adapter.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\feed_live_class_adapter.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\audio_post.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\audio_post.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\banner_view.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\banner_view.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_feed_details.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\activity_feed_details.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\new_course_vm.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\new_course_vm.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\post_image.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\post_image.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\video_post.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\video_post.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\address_adapter.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\address_adapter.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\question_view.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\question_view.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\quiz_view.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\quiz_view.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\new_test_result_adapter.xml",
+        "source": "D:\\AndroidProjects\\svn projects\\utkarsh test\\utkarsh_test\\app\\src\\main\\res\\layout\\new_test_result_adapter.xml"
+    }
+]

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utkarsh"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="16sp"
+        android:textColor="@color/blackApp"
+        android:padding="5dp"
+        android:gravity="start" />
+
+    <View
+        android:id="@+id/view0"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorActionBarText"
+        android:layout_alignStart="@id/title"
+        android:layout_alignEnd="@id/title"/>
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view0"
+        android:drawableStart="@drawable/tv"
+        android:drawablePadding="20dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/colorActionBarText"
+        android:typeface="serif"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/negativeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:fontFamily="@font/inter_bold"
+            android:background="#FFD601"
+            android:textSize="13sp"
+            android:layout_marginEnd="10dp"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/positiveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Retry"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="13sp"
+            android:background="#0091ea"
+            android:layout_marginStart="10dp"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

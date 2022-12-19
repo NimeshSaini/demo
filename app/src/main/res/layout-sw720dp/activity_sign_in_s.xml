@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryShimmer"
+                android:layout_width="@dimen/dp160"
+                android:layout_height="@dimen/dp160"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@drawable/round_top_corners"
+            android:id="@+id/signLL"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/signInUpLayout"
+                android:padding="1dp"
+                android:background="@color/colorPrimaryShimmer"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/signInTextView"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryShimmer"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                </View>
+
+                <View
+                    android:id="@+id/signUpTextView"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryShimmer"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.3" />
+
+
+                <View
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryShimmer"
+                    android:paddingBottom="@dimen/dp20"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8" />
+
+                <View
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryShimmer"
+                    android:paddingBottom="@dimen/dp20" />
+
+                <View
+                    android:id="@+id/forgetpasswordTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingStart="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp10"
+                    android:background="@color/colorPrimaryShimmer"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.7" />
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:fontFamily="@font/inter_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp100"
+                    android:layout_marginRight="@dimen/dp100"
+                    android:layout_marginBottom="4dp"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimaryShimmer" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.6" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

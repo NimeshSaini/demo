@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="#F8F8F8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/txt_qno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blackApp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/questionmarksll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/right_marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="max 1"
+                        android:textColor="#1dc700"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/blackApp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/inter_bold"/>
+
+                    <TextView
+                        android:id="@+id/wrong_marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="min 0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/inter_regular"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+
+            <LinearLayout
+                android:id="@+id/layout_questiontxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ahmadnemati.clickablewebview.ClickableWebView
+                    android:id="@+id/essaywebview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.ahmadnemati.clickablewebview.ClickableWebView
+                    android:id="@+id/questionwebview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@id/layout_questiontxt"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_options"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/view_divider">
+
+                <RelativeLayout
+                    android:id="@+id/ll_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="A"
+                        android:background="@drawable/bg_question"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option1_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/txt_serialnoA"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="B"
+                        android:background="@drawable/bg_question"
+
+                        android:gravity="center"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option2_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/txt_serialnoB"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="C"
+                        android:background="@drawable/bg_question"
+
+                        android:gravity="center"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option3_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/txt_serialnoC"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="D"
+                        android:background="@drawable/bg_question"
+
+                        android:gravity="center"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option4_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/txt_serialnoD"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_option5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="E"
+                        android:background="@drawable/bg_question"
+                        android:gravity="center"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option5_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/txt_serialnoE"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_option6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F"
+                        android:gravity="center"
+                        android:background="@drawable/bg_question"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option6_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/txt_serialnoF"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_option7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="G"
+                        android:gravity="center"
+                        android:background="@drawable/bg_question"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option7_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/txt_serialnoG"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_option8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_serialnoH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="H"
+                        android:gravity="center"
+                        android:background="@drawable/bg_question"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/option8_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/txt_serialnoH"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

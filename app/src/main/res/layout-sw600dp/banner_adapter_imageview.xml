@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="bannerdata"
+            type="com.utkarshnew.android.feeds.dataclass.BannerData" />
+        <variable
+            name="bannerviewadapter"
+            type="com.utkarshnew.android.feeds.adapters.Banner_ViewPager" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imge_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="@{(v) -> bannerviewadapter.clickBanner(bannerdata.target_meta)}"
+            app:layout_constraintDimensionRatio="H,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:linkimage="@{bannerdata.url}"
+            app:riv_corner_radius="10dp"
+            app:riv_oval="false"
+            app:src="@mipmap/course_placeholder" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

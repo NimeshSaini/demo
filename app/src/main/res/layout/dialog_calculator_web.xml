@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calcpagerl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/inset_dialog"
+    android:minWidth="500dp">
+
+    <WebView
+        android:id="@+id/calcwebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layerType="software"
+        android:background="@android:color/transparent"
+        android:layout_above="@id/btn_close"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Close"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

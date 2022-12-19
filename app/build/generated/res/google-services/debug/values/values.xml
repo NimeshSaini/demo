@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">614433407345-d2ptcgdsj5oe40ibdr7palnmtlkj7b7n.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://utkarsh-window-app-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">614433407345</string>
+    <string name="google_api_key" translatable="false">AIzaSyBWFSdTkDSXP3RlF_GMWGEOMwn2XmbgzPw</string>
+    <string name="google_app_id" translatable="false">1:614433407345:android:35dfa242380aef6ebb76d0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBWFSdTkDSXP3RlF_GMWGEOMwn2XmbgzPw</string>
+    <string name="google_storage_bucket" translatable="false">utkarsh-window-app.appspot.com</string>
+    <string name="project_id" translatable="false">utkarsh-window-app</string>
+</resources>

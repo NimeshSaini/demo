@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/parentLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp8">
+
+        <LinearLayout
+            android:id="@+id/lltop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp24"
+            android:background="@drawable/bg_round_corners_test_create_three"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalquestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp16"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Total Questions"
+                android:textAlignment="center"
+                android:textColor="@color/black_071E57"
+                android:textSize="@dimen/post_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp16"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_test_create_three_inside"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp8"
+                    android:paddingBottom="@dimen/dp12">
+
+                    <TextView
+                        android:id="@+id/lowTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+
+                        android:textSize="@dimen/post_text_size_x"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/low"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:background="@color/yellow_lite" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_test_create_three_inside"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp8"
+                    android:paddingBottom="@dimen/dp12">
+
+                    <TextView
+                        android:id="@+id/mediumTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/post_text_size_x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/medium"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:background="@color/yellow_lite" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_test_create_three_inside"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp8"
+                    android:paddingBottom="@dimen/dp12">
+
+                    <TextView
+                        android:id="@+id/highTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/post_text_size_x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/high"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lltop"
+            android:layout_marginBottom="@dimen/dp100"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginBottom="@dimen/dp16"
+                android:fontFamily="@font/inter_regular"
+                android:text="Enter Number of Questions you want to attempt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_tertiary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                android:id="@+id/spinnerLL"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:background="@drawable/round_corner_border_login_signup"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp16">
+
+                    <TextView
+                        android:id="@+id/typeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="top"
+                        android:layout_toLeftOf="@+id/downarrowIV"
+                        android:fontFamily="@font/inter_medium"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:text="Type"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <ImageView
+                        android:id="@+id/downarrowIV"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:padding="@dimen/dp4"
+                        android:src="@drawable/arrow_down" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_corner_border_login_signup"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Enter Number of Questions"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:maxLength="3"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp16"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp16"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/maxTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp32"
+                android:text="*Maximum"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_tertiary" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:elevation="10dp">
+
+            <Button
+                android:id="@+id/buttonProceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp12"
+                android:layout_marginEnd="@dimen/dp12"
+                android:layout_marginBottom="@dimen/dp12"
+                android:background="@drawable/bg_round_corners_button"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/create"
+                android:textAllCaps="false"
+                android:textColor="@color/profile_text_color"
+                android:textSize="@dimen/post_text_size_x"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

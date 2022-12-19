@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp24"
+        android:fontFamily="@font/inter_bold"
+        android:text="Advance Filters"
+        android:textColor="@color/black_405461"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Subject"
+        android:textColor="@color/black_405461"
+        android:textSize="@dimen/sp16" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/round_corner_border_advacefilter"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp16">
+
+
+            <TextView
+                android:id="@+id/subjectspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toLeftOf="@+id/spinnerIV"
+                android:fontFamily="@font/inter_medium"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp5"
+                android:text="Select Subject"
+                android:textSize="@dimen/post_text_size_x" />
+
+            <ImageView
+                android:id="@+id/spinnerIV"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/arrow_down" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp17"
+        android:fontFamily="@font/inter_medium"
+        android:text="Language"
+        android:textColor="@color/black_405461"
+        android:textSize="@dimen/sp16" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/launguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/round_corner_border_advacefilter"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp16">
+
+
+            <TextView
+                android:id="@+id/launguagespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toLeftOf="@+id/launguageIV"
+                android:fontFamily="@font/inter_medium"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp5"
+                android:text="Select  Language"
+                android:textSize="@dimen/post_text_size_x" />
+
+            <ImageView
+                android:id="@+id/launguageIV"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/arrow_down" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl2"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp17"
+        android:fontFamily="@font/inter_medium"
+        android:text="Course Type"
+        android:textColor="@color/black_405461"
+        android:textSize="@dimen/sp16" />
+
+
+    <LinearLayout
+        android:id="@+id/free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/bg_tile_unselected"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/freeTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Free"
+            android:textColor="@color/tile_inactive"
+            android:textSize="@dimen/sub_heading_text_size"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paid_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_toRightOf="@+id/free"
+        android:background="@drawable/bg_tile_unselected"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/paidTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Paid"
+            android:textColor="@color/tile_inactive"
+            android:textSize="@dimen/sub_heading_text_size"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/both_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/bg_tile_unselected"
+        android:layout_toRightOf="@+id/paid_ll"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bothTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Both"
+            android:textColor="@color/tile_inactive"
+            android:textSize="@dimen/sub_heading_text_size"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paid_ll"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@color/off_white"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/filterdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/bg_round_corners_button"
+                android:fontFamily="@font/inter_medium"
+                android:text="Apply Filter"
+                android:textAllCaps="false"
+                android:textColor="@color/profile_text_color"
+                android:textSize="@dimen/sp16" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

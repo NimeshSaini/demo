@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/chose_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inter_bold"
+        android:text="Select Category"
+        android:textColor="#122F97"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/select_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chose_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Based on Your Section \n we will Provide You Courses"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sub_cat_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chose_txt"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/category_item_adapter" />
+
+
+    <!--
+
+        <LinearLayout
+            android:id="@+id/course_layouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_txt"
+            android:layout_marginTop="@dimen/dp50"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/course1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginStart="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/round_pink"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/course1_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@id/tick_course1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/tick_course1"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/round_gray"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tick_svg" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/course2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_below="@id/course1"
+                android:layout_marginStart="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/round_blue">
+
+                <TextView
+                    android:id="@+id/course2_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/tick_course2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:singleLine="true"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/tick_course2"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/round_gray"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tick_svg" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/course3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginStart="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/round_yello">
+
+                <TextView
+                    android:id="@+id/course3_txt"
+                    android:singleLine="true"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/tick_course3"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:ellipsize="end"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/tick_course3"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/round_gray"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tick_svg" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/course4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_below="@id/course3"
+                android:layout_marginStart="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/round_green">
+
+                <TextView
+                    android:id="@+id/course4_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/tick_course4"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/tick_course4"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/round_gray"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tick_svg" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/other_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course_layouts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:padding="@dimen/dp4"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/other"
+            android:textColor="#B3070707"
+            android:textSize="20sp" />
+    -->
+
+
+
+
+
+</RelativeLayout>

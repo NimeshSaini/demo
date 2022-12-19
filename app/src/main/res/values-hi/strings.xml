@@ -1,0 +1,204 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name"></string>
+  <string name="internet_connection_offline_text_short">इंटरनेट उपलब्ध नहीं है।</string>
+
+  <string name="customer_support_select_title" >एक नंबर चुनें</string>
+
+  <string name="screen_mirror_dialog_msg" >1.गूगल द्वारा स्वीकृत एंड्रॉयड <a href="https://www.android.com/intl/en_in/tv/"> टीवी की सूची जो स्क्रीन मिररिंग का समर्थन करते हैं</a>\n\n2. अगर आपका टीवी लिस्ट में नहीं है तो गूगल क्रोम कास्ट की मदद से स्क्रीन मिररिंग की जा सकती है।कृपया नीचे दिए गए लिंक को देखें, \n<a href="https://support.google.com/chromecast/answer/6006232?hl=en-IN">गूगल क्रोमकास्ट कैसे कनेक्ट करें</a>\n\n3. डाउनलोड वीडियो स्क्रीन मिररिंग के दौरान नहीं आएंगे</string>
+
+  <string name="invitestring">मैं आपको अगली जेन स्मार्ट ईबुक से सीखने की सलाह देता हूं। Utkarsh के साथ सीखने का एक नया तरीका खोलें।
+जानें, अभ्यास करें और कस्टम परीक्षा बनाएं और बहुत कुछ।
+http://bit.ly/2K27grQ डाउनलोड करें और अभी सीखना शुरू करें!!</string>
+  <string name="customer_support_message">ग्राहक सहायता के साथ कॉल सुबह 6 बजे से दोपहर 12 बजे तक उपलब्ध है। अभी के लिए, आप एक मेल छोड़ सकते हैं या ग्राहक सहायता के साथ चैट कर सकते हैं।</string>
+  <!--<string name="api_key">AIzaSyAxMc-ZD6vJhBbMP2NXeSWAwRZUNoDM9fU</string>-->
+    <string name="logout_text">लोग आउट</string>
+  <string name="about_us_text">Utkarsh के बारे में</string>
+  <string name="privacy_policy_text">गोपनीयता नीति</string>
+  <string name="term_of_service_text">सेवा की शर्तें</string>
+  <string name="open_source_libraries_text">ओपन सोर्स लाइब्रेरीज़</string>
+  <string name="built_by_wonderslate_text">Utkarsh द्वारा निर्मित</string>
+  <string name="leave_us_a_review_text">हमारे लिए समीक्षा दीजिए</string>
+  <string name="help_wonderslate_text">ई-उत्कर्ष बेहतर बनाने में मदद करें</string>
+  <string name="copyrighttext">© 2019 ई-उत्कर्ष इनोवेशन प्रा.लि. सर्वाधिकार सुरक्षित</string>
+  <string name="makebettertext">ऐप को बेहतर बनाने के लिए हम क्रैश रिपोर्ट और अन्य डायग्नोस्टिक डेटा एकत्र करते हैं</string>
+  <string name="settings_activity">सेटिंग्स</string>
+  <string name="libusedtext">निम्नलिखित तृतीय पक्ष सॉफ़्टवेयर की एक सूची है जिसका उपयोग Wonderslate उत्पाद के हिस्सों में किया गया है। हम उनके सभी योगदानों के लिए ओपन सोर्स समुदाय का धन्यवाद करते हैं।</string>
+  <string name="open_source_library_activity">ओपन सोर्स लाइब्रेरीज़</string>
+
+  <string name="libraries_used">लाइब्रेरीज जिनका उपयोग किया गया है </string>
+
+  <!-- FACEBOOK APP ID -->
+    <!--<string name="facebook_app_id">202640123616502</string>-->
+  <!--<string name="fb_login_protocol_scheme">fb202640123616502</string>-->
+
+  <!--old facebook id-->
+  <!--  <string name="facebook_app_id">1727329897559970</string>
+      <string name="fb_login_protocol_scheme">fb1727329897559970</string>-->
+
+  <string name="allcourses">सभी पाठ्यक्रम</string>
+  <string name="mycourse">मेरे पाठ्यक्रम</string>
+    <string name="specialities">विशेषता</string>
+  <string name="savedNotes">सहेजे गए नोट</string>
+  <string name="course">पाठ्यक्रम</string>
+    <string name="feedback">प्रतिक्रिया</string>
+  <string name="video">वीडियो</string>
+
+    <!--Feed Preferences Strings-->
+
+    <string name="appSettings">एप्लिकेशन सेटिंग</string>
+  <string name="Settings">सेटिंग्स</string>
+    <string name="logout">लॉगआउट</string>
+    <string name="finishQuiz">क्या आप वाकई यह परीक्षण सबमिट करना चाहते हैं? आपके द्वारा सबमिट करने के बाद आप उसे संपादित नहीं कर सकते। </string>
+  <string name="pauseQuiz">क्या आप वाकई इस परीक्षा को रोकना चाहते हैं?</string>
+
+    <string name="navigation_drawer_open">नेविगेशन दराज खोलें</string>
+  <string name="navigation_drawer_close">नेविगेशन ड्रॉअर बंद करें</string>
+  <string name="action_settings">सेटिंग्स</string>
+
+    <string name="confirm_password">पासवर्ड की पुष्टि कीजिये</string>
+
+    <string name="submit">जमा करें</string>
+  <string name="verfiy">सत्यापित</string>
+
+
+    <string name="changepassowrd_new_password">नया पासवर्ड </string>
+  <string name="changepassowrd_retype_password">पासवर्ड फिर से लिखें</string>
+
+    <string name="save">बचाना</string>
+  <string name="cancel">कैंसिल</string>
+
+  <string name="saving_image">सेविंग इमेज</string>
+  <string name="preparing_card">कार्ड तैयार करना</string>
+  <string name="no_storage_card">कोई भंडारण कार्ड नहीं</string>
+  <string name="not_enough_space">स्थान पर्याप्त नहीं</string>
+
+    <string name="name">नाम</string>
+  <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="next">आगामी</string>
+    <string name="notification">नोटिफिकेशन</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+  <string name="forget_password">पासवर्ड भूलें?</string>
+
+    <string name="pin_content_desc">पिन इनपुट फ़ील्ड</string>
+
+    <string name="jsonparsing_error_message">कुछ गलत हो गया ,कृपया कुछ समय बाद पुनः कोशिश करें</string>
+  <string name="internet_error_message">कृपया अपना इंटरनेट जांचे और पुनः प्रयास करें</string>
+  <string name="exception_api_error_message">कुछ गलत हो गया ,कृपया कुछ समय बाद पुनः कोशिश करें</string>
+    <string name="no_data_found">आंकड़े अपर्याप्त</string>
+    <string name="pdf_extension">.pdf</string>
+  <string name="doc_extension">.doc</string>
+  <string name="xls_extension">.xls</string>
+  <string name="file_format_error">यह फ़ाइल स्वरूप समर्थित नहीं है</string>
+    <string name="logout_confirmation_message">क्या आप लॉगआउट करना चाहते हैं?</string>
+  <string name="logout_title">लोग आउट</string>
+    <string name="description">विवरण</string>
+    <string name="update_app_dialog_title">ऐप अपडेट करें</string>
+  <string name="update_app_dialog_message">आप पुराने संस्करण का उपयोग कर रहे हैं। कृपया इसे PlayStore से अपडेट करें</string>
+
+    <!--JWPlayer-->
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="seeAll">सभी देखें</string>
+    <string name="faq_title">सामान्य प्रश्न</string>
+    <string name="submit_rev">जमा करें</string>
+    <string name="prev">पिछला</string>
+    <string name="leaderboard">मेरा स्कोरकार्ड</string>
+
+    <string name="retry">पुनः प्रयास करें</string>
+
+    <string name="rewardpoints">इनाम के अंक</string>
+    <string name="press_again_to_exit">बाहर निकलने के लिए एक बार फिर से दबाएँ</string>
+    <string name="optingAttempt">कृपया ध्यान दे : पुनर्प्रयास आपके रैंक को प्रभावित नहीं करेगा|</string>
+  <string name="proceed">आगे बढ़ें</string>
+  <string name="finish">समाप्त</string>
+
+    <item name="questions" type="id" />
+  <item name="optionsAns" type="id" />
+
+    <!--<item>@string/mme_expert_feed</item>-->
+
+
+    <string-array name="dialog_choose_language_array">
+    <item>अंग्रेज़ी</item>
+    <item>हिंदी</item>
+  </string-array>
+
+  // to set rs. symbol
+  <string name="rs">\u20A8</string>
+  <string name="purchased">Purchased</string>
+  <string name="yourrank">Your Rank</string>
+  <string name="totalUser">Total User</string>
+    <string name="try_again">पुनः प्रयास करें</string>
+    <!--<string name="mcqNote">Mark your answer for this survey.</string>-->
+    <string name="Invoice">कोर्स चालान</string>
+  <string name="attempted">का प्रयास किया गया</string>
+  <string name="notattempted">प्रयास नहीं किया</string>
+
+
+  <!--ibt-->
+
+  <string name="choose_language">अपनी भाषा को चुनें</string>
+  <string name="hindi">हिंदी</string>
+  <string name="english">अंग्रेज़ी</string>
+  <string name="continuee">जारी रहना</string>
+    <string name="by_signing_up">साइन अप करके, आप सभी सहमत हैं</string>
+    <string name="get_your_doubts_resolved">अपने संदेह को हल करें</string>
+  <string name="bank_exam">बैंक परीक्षा</string>
+    <string name="india_trusted_app">भारत का विश्वसनीय लर्निंग एप्प</string>
+  <string name="signin">साइन इन</string>
+    <string name="get_tips">युक्तियाँ और तैयारी रणनीति प्राप्त करें\</string>
+    <string name="resendotp">ओ टी पी प्राप्त नहीं हुआ? ओ टी पी दोबारा भेजें</string>
+    <string name="buy_now">अभी खरीदें</string>
+    <string name="home">होम</string>
+    <string name="my_notes">मेरी टिप्पणियाँ</string>
+    <string name="my_exam_selection">मेरा परीक्षा चयन</string>
+    <string name="correct">सही</string>
+  <string name="incorrect">ग़लत</string>
+  <string name="coins">सिक्के</string>
+
+    <string name="attempt_now">अब प्रयास करें</string>
+
+    <string name="channel_description">यह नोटिफिकेशन चैनल मेक माय एग्जाम ऐप के सभी बेसिक नोटिफिकेशन को मैनेज करता है</string>
+  <string name="channel_name">मेरा परीक्षा ऐप नोटिफिकेशन बनाओ</string>
+    <string name="generalInstr"><u>सामान्य निर्देश</u></string>
+    <string name="language">भाषा</string>
+
+    <string name="free">मुफ्त</string>
+    <string name="something_went_wrong">कुछ गलत हो गया है</string>
+    <string name="can_change_lang">आप बाद में सेटिंग से अपनी भाषा भी बदल सकते हैं।</string>
+    <string name="skip">छोड़ें </string>
+    <string name="welcome_to_mme">मेक माई एग्जाम में आपका स्वागत है</string>
+  <string name="interactive_video_leactures">इंटरएक्टिव वीडियो व्याख्यान</string>
+  <string name="simple_covering_videos">सभी अवधारणाओं को कवर करने वाले सरल और प्रभावी वीडियो</string>
+  <string name="unlimited_quiz"><![CDATA[असीमित प्रश्नोत्तरी और अभ्यास]]></string>
+  <string name="wide_range_of"><![CDATA[विषयवार प्रश्नोत्तरी और अभ्यास परीक्षण की विस्तृत श्रृंखला]]></string>
+  <string name="all_india_test_series">ऑल इंडिया टेस्ट सीरीज</string>
+  <string name="attempt_test">राष्टीय स्तर की प्रतिस्पर्धा के लिए टेस्ट दें</string>
+    <string name="loading">लोडिंग</string>
+    <string name="read_all">सब पढ़ो</string>
+    <string name="validity">वैधता</string>
+  <string name="month">महीना</string>
+  <string name="months">महीने</string>
+    <string name="coupon_applied">कूपन लागू</string>
+  <string name="grand_total">कुल योग</string>
+  <string name="have_a_coupon">कूपन कोड है?</string>
+    <string name="alert">चेतावनी</string>
+  <string name="reGrantPermissionMsg">आपने आवश्यक अनुमति से इनकार कर दिया है। कृपया आगे बढ़ने के लिए अनुदान दें।</string>
+    <string name="resume">पुनः शुरू करना</string>
+    <string name="mobile_no">मोबाइल नंबर</string>
+  <string name="forgot_your_password">क्या आप पासवर्ड भूल गए?</string>
+    <string name="course_not_found">कोर्स नहीं मिला।</string>
+    <string name="profile_image_error">प्रोफ़ाइल फ़ोटो अपडेट करने में विफल कृपया बाद में पुनः प्रयास करें</string>
+  <string name="click_here">यहां क्लिक करे</string>
+    <string name="pay_now">अभी भुगतान करें</string>
+  <string name="add_coupon">कूपन जोड़ें</string>
+    <string name="yes">हाँ</string>
+  <string name="no">नहीं</string>
+    <string name="privacy_policy">प्राइवेसी पॉलिसी</string>
+  <string name="term_and_condition_underline"><u>नियम और शर्तें</u></string>
+  <string name="term_and_condition">नियम और शर्तें</string>
+  <string name="old_password">अपना पुराना पासवर्ड डालें</string>
+
+</resources>

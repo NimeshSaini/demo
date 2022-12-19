@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.utkarshnew.android.R"/>
+
+        <variable
+            name="audiobind"
+            type="com.utkarshnew.android.feeds.dataclass.Data" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:src="@mipmap/square_placeholder"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:imageUrl="@{audiobind.profile_picture}" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:text="@{audiobind.name}"
+            android:layout_toStartOf="@id/pinIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_toEndOf="@id/profileImage"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#071E57"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/pinIV"
+            android:layout_width="@dimen/dp18"
+            android:layout_height="@dimen/dp18"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginEnd="@dimen/dp10"
+            app:imageResource="@{audiobind.my_pinned.equals(`1`) ? R.drawable.pinned : R.drawable.unpinned}" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toEndOf="@id/profileImage"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp6"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="#8A000000"
+
+                android:textSize="10sp"
+                app:date="@{audiobind.created}" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp4"
+                android:background="@drawable/circle_skip" />
+
+
+            <TextView
+                android:id="@+id/post_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp6"
+                android:fontFamily="@font/inter_medium"
+                android:text="Mathematics"
+                android:textColor="#8A000000"
+
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/auido_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileImage">
+
+            <ImageView
+                android:id="@+id/play_icon"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:scaleType="fitXY"
+                android:src="@drawable/play_icon" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_toEndOf="@id/play_icon"
+                android:src="@drawable/sound_wave" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/audio_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auido_layout"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:padding="@dimen/dp4"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/audio_text"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp10"
+            android:fontFamily="@font/inter_bold"
+            android:padding="@dimen/dp4"
+            android:text="Read More"
+            android:textColor="@color/gray_dark2"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/like_comment_count_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/read_more"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginEnd="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/post_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp6"
+                android:fontFamily="@font/inter_regular"
+                app:like="@{audiobind.total_likes}"
+                android:textColor="#8A000000"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp4"
+                android:background="@drawable/circle_skip" />
+
+
+            <TextView
+                android:id="@+id/post_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp6"
+                android:fontFamily="@font/inter_regular"
+                android:visibility="invisible"
+
+                android:text="@{audiobind.total_comments +` Comment`}"
+                android:textColor="#8A000000"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/like_comment_count_layout"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/off_white" />
+
+        <LinearLayout
+            android:id="@+id/like_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@id/view"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp6"
+                android:layout_marginEnd="@dimen/dp20"
+                android:drawableLeft="@drawable/favorite_border"
+                android:drawablePadding="@dimen/dp10"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center_vertical"
+                android:text="Like"
+                android:textColor="#8A000000"
+                android:textSize="15sp"
+                app:likeview="@{audiobind.my_like}" />
+
+
+            <TextView
+                android:id="@+id/post_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp6"
+                android:drawableLeft="@mipmap/comment"
+                android:drawablePadding="@dimen/dp10"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center_vertical"
+                android:text="Comment"
+                android:visibility="invisible"
+                android:layout_marginEnd="20dp"
+                android:textColor="#8A000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/postShare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp6"
+                android:drawableLeft="@drawable/share"
+                android:drawablePadding="@dimen/dp10"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center_vertical"
+                android:text="Share"
+                android:textColor="#8A000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@id/like_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_dark2" />
+
+    </RelativeLayout>
+
+</layout>

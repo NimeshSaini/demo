@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ibt_single_sub_vd_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp8"
+        android:outlineAmbientShadowColor="@color/gray_dark2"
+        android:outlineSpotShadowColor="@color/gray_dark2"
+        android:padding="@dimen/dp3"
+        app:cardBackgroundColor="@color/background_all_Lite"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="@dimen/dp4">
+
+        <LinearLayout
+            android:id="@+id/currentAffairRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5">
+                    <!--TODO Changing height from 100 to 90 for now , In future it will be changed again ,And also set Visibility hide of a text vie below-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/dp10"
+                        app:cardElevation="0dp"
+                        app:cardMaxElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/dp65"
+                            android:layout_height="@dimen/dp90"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/ibt_single_vd_iv"
+                                android:layout_width="@dimen/dp65"
+                                android:layout_height="@dimen/dp90"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/square_placeholder" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/dp5">
+
+                    <TextView
+                        android:id="@+id/ibt_current_affair_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:hint="Appsquadz Testing"
+                        android:maxLines="3"
+                        android:textColor="@color/blackApp"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/ibt_single_vd_tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ibt_current_affair_title"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/inter_regular"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Appsquadz Testing short texts"
+                        android:textColor="@color/black_white_text"
+                        android:textSize="@dimen/extrasmall_text_size_11"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lockRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/gray_lock" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/open_eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:src="@mipmap/eye_open"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--<TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:minHeight="@dimen/dp200"
+        android:text="No Data found"
+        android:textColor="@color/black"
+        android:visibility="gone" />-->
+
+    <include layout="@layout/no_data_found" />
+
+</RelativeLayout>

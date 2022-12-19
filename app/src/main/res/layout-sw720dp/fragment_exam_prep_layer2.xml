@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/parentLL"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tileRv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp10"
+            android:gravity="center" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/progressBar"
+            android:layout_below="@id/tileRv">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/examPrepLayerRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:padding="@dimen/dp5"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <include layout="@layout/no_data_found" />
+
+        <include layout="@layout/layout_buy_button" />
+
+    </RelativeLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/allResourceAddMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        app:fab_elevationCompat="8dp"
+        app:menu_animationDelayPerItem="50"
+        app:menu_backgroundColor="#CC000000"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="#FFD601"
+        app:menu_fab_size="normal"
+        app:menu_icon="@mipmap/ic_add_content"
+        app:menu_labels_colorNormal="@color/white"
+        app:menu_labels_cornerRadius="@dimen/dp12"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_paddingBottom="6dp"
+        app:menu_labels_paddingLeft="@dimen/dp15"
+        app:menu_labels_paddingRight="@dimen/dp15"
+        app:menu_labels_paddingTop="6dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_textColor="#B3000000"
+        app:menu_labels_textSize="16sp"
+        app:menu_openDirection="up">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addRelatedVideoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_related_videos_ic"
+            app:fab_colorNormal="@color/white"
+            app:fab_label="Add related video"
+            app:fab_showShadow="true"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addRevisionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_content_add_menu"
+            app:fab_colorNormal="@color/white"
+            app:fab_label="Add revision set"
+            app:fab_showShadow="true"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addRelatedReferenceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_releted_web_links_ic"
+            app:fab_colorNormal="@color/white"
+
+            app:fab_label="Add related weblinks"
+            app:fab_showShadow="true"
+            app:fab_size="mini" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/support_add_rev_ic"
+            app:fab_colorNormal="@color/white"
+            app:fab_label="Support"
+            app:fab_showShadow="true"
+            android:visibility="gone"
+            app:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+    <!--    <com.github.clans.fab.FloatingActionMenu-->
+    <!--        android:id="@+id/allResourceAddMenu"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_gravity="bottom|end"-->
+    <!--        android:paddingEnd="16dp"-->
+    <!--        android:paddingRight="16dp"-->
+    <!--        android:paddingBottom="16dp"-->
+    <!--        app:fab_elevationCompat="8dp"-->
+    <!--        app:menu_animationDelayPerItem="50"-->
+    <!--        app:menu_backgroundColor="#CC000000"-->
+    <!--        app:menu_buttonSpacing="0dp"-->
+    <!--        app:menu_colorNormal="#FFD601"-->
+    <!--        app:menu_fab_size="normal"-->
+    <!--        app:menu_icon="@mipmap/ic_add_content"-->
+    <!--        app:menu_labels_colorNormal="@color/white"-->
+    <!--        app:menu_labels_cornerRadius="@dimen/dp12"-->
+    <!--        app:menu_labels_margin="0dp"-->
+    <!--        app:menu_labels_paddingBottom="6dp"-->
+    <!--        app:menu_labels_paddingLeft="@dimen/dp15"-->
+    <!--        app:menu_labels_paddingRight="@dimen/dp15"-->
+    <!--        app:menu_labels_paddingTop="6dp"-->
+    <!--        app:menu_labels_position="left"-->
+    <!--        app:menu_labels_showShadow="true"-->
+    <!--        app:menu_labels_textColor="#B3000000"-->
+    <!--        app:menu_labels_textSize="16sp"-->
+    <!--        app:menu_openDirection="up">-->
+
+
+    <!--        <com.github.clans.fab.FloatingActionButton-->
+    <!--            android:id="@+id/addRelatedVideoBtn"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@mipmap/ic_content_add_menu"-->
+    <!--            app:fab_colorNormal="@color/white"-->
+    <!--            app:fab_label="Add related videos"-->
+    <!--            app:fab_showShadow="true"-->
+    <!--            app:fab_size="mini" />-->
+
+    <!--        <com.github.clans.fab.FloatingActionButton-->
+    <!--            android:id="@+id/addRelatedReferenceBtn"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@mipmap/ic_content_search_menu"-->
+    <!--            app:fab_colorNormal="@color/white"-->
+
+    <!--            app:fab_label="Search weblinks for this chapter"-->
+    <!--            app:fab_showShadow="true"-->
+    <!--            app:fab_size="mini" />-->
+
+    <!--        <com.github.clans.fab.FloatingActionButton-->
+    <!--            android:id="@+id/addRevisionBtn"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@mipmap/ic_content_add_menu"-->
+    <!--            app:fab_colorNormal="@color/white"-->
+    <!--            app:fab_label="Add Revision Set"-->
+    <!--            app:fab_showShadow="true"-->
+    <!--            app:fab_size="mini" />-->
+
+    <!--    </com.github.clans.fab.FloatingActionMenu>-->
+
+
+</FrameLayout>
